@@ -1,12 +1,20 @@
 {
   "name": "stackblitzhelpers",
-  "version": "1.0.0",
+  "version": "0.1.6",
   "description": "Helper methods for Stackblitz ecmascript projects",
   "keywords": ["Stackblitz", "es20xx", "utility"],
   "author": "KooiInc",
   "license": "CCO-1.0",
   "type": "module",
   "dependencies": {
-    "jqlmodule": "latest"
+    "jqlmodule": "latest",
+    "regexhelper": "git@github.com:KooiInc/RegexHelper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KooiInc/SBHelpers/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KooiInc/SBHelpers.git"
   }
 }
