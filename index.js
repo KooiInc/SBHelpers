@@ -1,13 +1,13 @@
 import $ from "jqlmodule";
+import regexhelper from "jsregexphelper"
 defaultStyling();
-export { $, logFactory, defaultStyling };
+export { $, logFactory, defaultStyling, regexhelper };
 
 function logFactory() {
   const ul = $(`<ul/>`);
   const head = t => `${t}`.startsWith(`!!`) ? ` class="head"` : ``;
-  const logItem = top => t => ul.append(
-    `<li${head(t)}>${`${t}`.replace(/^!!/, ``)}</li>`,
-    top ? `afterbegin` : `beforeend` ) ;
+  const logItem = top => t => ul[top? `prepend` : `append`](
+    `<li${head(t)}>${`${t}`.replace(/^!!/, ``)}</li>` ) ;
   return {
     log: (...txt) => txt.forEach( logItem() ),
     logTop: (...txt) => txt.forEach( logItem(true) ), };
