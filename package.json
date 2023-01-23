@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "Helper methods for Stackblitz ecmascript projects",
   "keywords": ["Stackblitz", "es20xx", "utility"],
   "author": "KooiInc",
@@ -8,7 +8,11 @@
   "type": "module",
   "dependencies": {
     "jqlmodule": "latest",
-    "jsregexphelper": "latest"
+    "jsregexphelper": "latest",
+    "datefiddler": "latest",
+    "intl-dateformatter": "latest",
+    "datediffcalculator": "latest",
+    "protoxt": "latest"
   },
   "bugs": {
     "url": "https://github.com/KooiInc/SBHelpers/issues"
