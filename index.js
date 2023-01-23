@@ -1,12 +1,11 @@
 import $ from "jqlmodule";
 import extendSymbolic from "protoxt";
 import dateFiddlerFactory from "datefiddler";
-import dateFormatFactory from "intl-dateformatter";
+import dtFormat from "intl-dateformatter";
 import dateDiffFactory from "datediffcalculator";
 import regexhelper from "jsregexphelper";
 defaultStyling();
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
-const dtFormat = dateFormatFactory();
 const dtDiffCalc = dateDiffFactory();
 export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
 
