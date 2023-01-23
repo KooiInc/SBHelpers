@@ -1,7 +1,14 @@
 import $ from "jqlmodule";
-import regexhelper from "jsregexphelper"
+import addSymbolExtension from "protoxt";
+import dateFiddlerFactory from "datefiddler";
+import dateFormatFactory from "intl-dateformatter";
+import dateDiffFactory from "datediffcalculator";
+import regexhelper from "jsregexphelper";
 defaultStyling();
-export { $, logFactory, defaultStyling, regexhelper };
+const xDate = dateFiddlerFactory();
+const dtFormat = dateFormatFactory();
+const dtDiffCalc = dateDiffFactory();
+export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc };
 
 function logFactory() {
   const ul = $(`<ul/>`);
