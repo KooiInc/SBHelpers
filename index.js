@@ -10,7 +10,7 @@ const dtDiffCalc = dateDiffFactory();
 export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
 
 function logFactory() {
-  const ul = $(`<ul/>`);
+  const ul = $(`<ul id="log2screen"/>`);
   const head = t => `${t}`.startsWith(`!!`) ? ` class="head"` : ``;
   const logItem = top => t => ul[top? `prepend` : `append`](
     `<li${head(t)}>${`${t}`.replace(/^!!/, ``)}</li>` ) ;
@@ -59,8 +59,8 @@ function defaultStyling() {
     [`.cmmt`, {color: `#888`}],
     [`.hidden`, {display: `none`}],
     [`.attention`, {color: `red`, fontSize: `1.2em`, fontWeight: `bold`}],
-    [`li`, { listStyle: `'\\2713'`, paddingLeft: `6px`, margin: `0.5rem 0 0 -1.2rem`, fontFamily: `monospace` }],
-    [`li.head`, {
+    [`#log2screen li`, { listStyle: `'\\2713'`, paddingLeft: `6px`, margin: `0.5rem 0 0 -1.2rem`, fontFamily: `monospace` }],
+    [`#log2screen li.head`, {
       listStyleType: `none`,
       fontWeight: `bold`,
       marginTop: `0.8rem`,
