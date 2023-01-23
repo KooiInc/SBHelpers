@@ -1,14 +1,14 @@
 import $ from "jqlmodule";
-import addSymbolExtension from "protoxt";
+import extendSymbolic from "protoxt";
 import dateFiddlerFactory from "datefiddler";
 import dateFormatFactory from "intl-dateformatter";
 import dateDiffFactory from "datediffcalculator";
 import regexhelper from "jsregexphelper";
 defaultStyling();
-const xDate = dateFiddlerFactory();
+const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtFormat = dateFormatFactory();
 const dtDiffCalc = dateDiffFactory();
-export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc };
+export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
 
 function logFactory() {
   const ul = $(`<ul/>`);
@@ -18,6 +18,24 @@ function logFactory() {
   return {
     log: (...txt) => txt.forEach( logItem() ),
     logTop: (...txt) => txt.forEach( logItem(true) ), };
+}
+
+function dateFiddlerExtentions(instance) {
+  const add = toAdd => instance.add(toAdd);
+  return {
+    nextWeek: _ => add(`7 days`),
+    previousWeek: _ => add("-7 days"),
+    addWeeks: (n = 1) => add(`${n * 7} days`),
+    nextYear: _ => add("1 year"),
+    previousYear: _ => add("-1 year"),
+    addYears: (n = 1) => add(`${n} years`),
+    nextMonth: _ => add("1 month"),
+    previousMonth: _ => add("-1 month"),
+    addMOnths: (n = 1) => add(`${n} months`),
+    tomorrow: _ => add("1 day"),
+    yesterday: _ => add("-1 day"),
+    addDays: (n = 1) => add(`${n} days`),
+  };
 }
 
 function defaultStyling() {
