@@ -1,6 +1,13 @@
 # SBHelpers
 Some handy helpers for Stackblitz ES/html projects
 
+
+### Install the package
+`npm install stackblitzhelpers`
+
+### Use in the browser
+`import {$, logFactory, ...[see 'exposed as']} from "https://cdn.jsdelivr.net/gh/KooiInc/SBHelpers@main/index.browser.min.js";`
+
 ### The library includes the following packets:
 
 - [jqlmodule](https://www.npmjs.com/package/jqlmodule): a JQuery alike DOM manipulation library. 
