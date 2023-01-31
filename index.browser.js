@@ -4,13 +4,12 @@ import dateFiddlerFactory from "https://cdn.jsdelivr.net/gh/KooiInc/datefiddler@
 import dtFormat from "https://cdn.jsdelivr.net/gh/KooiInc/dateformat@latest/index.min.js";
 import dateDiffFactory from "https://cdn.jsdelivr.net/gh/KooiInc/DateDifferenceCalculator@latest/index.min.js";
 import regexhelper from "https://cdn.jsdelivr.net/gh/KooiInc/RegexHelper@latest/RegexpCreator.min.js";
-defaultStyling();
-
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
 export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
 
 function logFactory() {
+  defaultStyling();
   const ul = $(`<ul id="log2screen"/>`);
   const head = t => `${t}`.startsWith(`!!`) ? ` class="head"` : ``;
   const logItem = top => t => ul[top? `prepend` : `append`](
@@ -39,35 +38,58 @@ function dateFiddlerExtentions(instance) {
 }
 
 function defaultStyling() {
-  [
-    [`body`, {font: `normal 14px/17px verdana, arial`, margin: `1rem`,}],
-    [`code`, {
-      color: `green`,
-      backgroundColor: `#eee`,
-      padding: `3px`,
-      fontFamily: `'Courier New', Courier, monospace`,
-    }],
-    [`code.codeblock`, {display: `block`, padding: `6px`, border: `1px solid #999`, margin: `0.5rem 0`}],
-    [`h3`, {marginTop: `1.5rem`}],
-    [`.thickBorder`, {border: `5px solid green`, borderWidth: `5px`, padding: `0.5rem`, display: `inline-block`}],
-    ["a.ExternalLink", {
-      textDecoration: `none`,
-      color: `blue`,
-      backgroundColor: `#EEE`,
-      padding: `3px`,
-      'font-weight': `bold`
-    }],
-    [`.cmmt`, {color: `#888`}],
-    [`.hidden`, {display: `none`}],
-    [`.attention`, {color: `red`, fontSize: `1.2em`, fontWeight: `bold`}],
-    [`#log2screen li`, { listStyle: `'\\2713'`, paddingLeft: `6px`, margin: `0.5rem 0 0 -1.2rem`, fontFamily: `monospace` }],
-    [`#log2screen li.head`, {
-      listStyleType: `none`,
-      fontWeight: `bold`,
-      marginTop: `0.8rem`,
-      marginBottom: `-0.2rem`,
-      fontFamily: `revert`
-    }],
-    [`.err`, {fontStyle: `italic`, color: `red`}]
-  ].forEach( ( styleDeclaration ) => $.setStyle(...styleDeclaration) );
+  [ `body {
+        font: normal 14px/17px verdana, arial; 
+        margin: 1rem;
+    }`,
+    `code {
+        color: green;
+        background-color: #eee;
+        padding: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }`,
+    `code.codeblock {
+        display: block; 
+        padding: 6px; 
+        border: 1px solid #999;
+        margin: 0.5rem 0;
+    }`,
+    `h3 { marginTop: 1.5rem; }`,
+    `.thickBorder {
+        border: 5px solid green; 
+        border-width: 5px; 
+        padding: 0.5rem;
+        display: inline-block;
+    }`,
+    `a.ExternalLink {
+      text-decoration: none;
+        color: blue;
+        background-color: #EEE;
+        padding: 3px;
+        font-weight: bold;
+    }`,
+    `.cmmt { color: #888; }`,
+    `.hidden {display: none; }`,
+    `.attention {
+      color: red; 
+      fontSize: 1.2em; 
+      font-weight: bold;
+    }`,
+    `#log2screen li { 
+      list-style: '\\2713'; 
+      padding-left: 6px;
+      margin: 0.5rem 0 0 -1.2rem;
+      fontFamily: monospace 
+    }`,
+    `#log2screen li.head {
+      list-style-type: none;
+      font-weight: bold;
+      margin-top: 0.8rem;
+      margin-bottom: -0.2rem;
+      font-family: revert;
+    }`,
+    `.err { 
+      font-style: italic, 
+      color: red
+    }` ].forEach( ( styleDeclaration ) => $.setStyle(...styleDeclaration) );
 }
