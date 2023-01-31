@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Helper methods for Stackblitz ecmascript projects",
   "keywords": ["Stackblitz", "es20xx", "utility"],
   "author": "KooiInc",
@@ -14,7 +14,6 @@
     "datediffcalculator": "latest",
     "protoxt": "latest"
   },
-  "browser": "index.browser.js",
   "main": "index.js",
   "bugs": {
     "url": "https://github.com/KooiInc/SBHelpers/issues"
