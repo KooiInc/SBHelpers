@@ -1,9 +1,9 @@
 import $ from "https://cdn.jsdelivr.net/gh/KooiInc/JQL@latest/lib/JQLBundle.js";
-import extendSymbolic from "https://cdn.jsdelivr.net/gh/KooiInc/ProtoXT/protoxt.min.js";
-import dateFiddlerFactory from "https://cdn.jsdelivr.net/gh/KooiInc/datefiddler/datefiddler.min.js";
-import dtFormat from "https://cdn.jsdelivr.net/gh/KooiInc/dateformat/index.min.js";
-import dateDiffFactory from "https://cdn.jsdelivr.net/gh/KooiInc/DateDifferenceCalculator/index.min.js";
-import regexhelper from "https://cdn.jsdelivr.net/gh/KooiInc/RegexHelper/RegexpCreator.min.js";
+import extendSymbolic from "https://cdn.jsdelivr.net/gh/KooiInc/ProtoXT@latest/protoxt.min.js";
+import dateFiddlerFactory from "https://cdn.jsdelivr.net/gh/KooiInc/datefiddler@latest/datefiddler.min.js";
+import dtFormat from "https://cdn.jsdelivr.net/gh/KooiInc/dateformat@latest/index.min.js";
+import dateDiffFactory from "https://cdn.jsdelivr.net/gh/KooiInc/DateDifferenceCalculator@latest/index.min.js";
+import regexhelper from "https://cdn.jsdelivr.net/gh/KooiInc/RegexHelper@latest/RegexpCreator.min.js";
 defaultStyling();
 
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
