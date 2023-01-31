@@ -6,7 +6,7 @@ import dateDiffFactory from "https://cdn.jsdelivr.net/gh/KooiInc/DateDifferenceC
 import regexhelper from "https://cdn.jsdelivr.net/gh/KooiInc/RegexHelper@latest/RegexpCreator.min.js";
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
-export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
+export { $, logFactory, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
 
 function logFactory() {
   defaultStyling();
@@ -54,7 +54,9 @@ function defaultStyling() {
         border: 1px solid #999;
         margin: 0.5rem 0;
     }`,
-    `h3 { marginTop: 1.5rem; }`,
+    `h3 { 
+      marginTop: 1.5rem; 
+    }`,
     `.thickBorder {
         border: 5px solid green; 
         border-width: 5px; 
@@ -62,34 +64,38 @@ function defaultStyling() {
         display: inline-block;
     }`,
     `a.ExternalLink {
-      text-decoration: none;
+        text-decoration: none;
         color: blue;
         background-color: #EEE;
         padding: 3px;
         font-weight: bold;
     }`,
-    `.cmmt { color: #888; }`,
-    `.hidden {display: none; }`,
+    `.cmmt { 
+        color: #888; 
+    }`,
+    `.hidden {
+      display: none; 
+    }`,
     `.attention {
-      color: red; 
-      fontSize: 1.2em; 
-      font-weight: bold;
+        color: red; 
+        fontSize: 1.2em; 
+        font-weight: bold;
     }`,
     `#log2screen li { 
-      list-style: '\\2713'; 
-      padding-left: 6px;
-      margin: 0.5rem 0 0 -1.2rem;
-      fontFamily: monospace 
+        list-style: '\\2713'; 
+        padding-left: 6px;
+        margin: 0.5rem 0 0 -1.2rem;
+        fontFamily: monospace 
     }`,
     `#log2screen li.head {
-      list-style-type: none;
-      font-weight: bold;
-      margin-top: 0.8rem;
-      margin-bottom: -0.2rem;
-      font-family: revert;
+        list-style-type: none;
+        font-weight: bold;
+        margin-top: 0.8rem;
+        margin-bottom: -0.2rem;
+        font-family: revert;
     }`,
     `.err { 
-      font-style: italic, 
-      color: red
-    }` ].forEach( ( styleDeclaration ) => $.setStyle(...styleDeclaration) );
+        font-style: italic, 
+        color: red
+    }` ].forEach( rule => $.setStyle(rule) );
 }
