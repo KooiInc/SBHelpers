@@ -1,5 +1,5 @@
 import $ from "jqlmodule";
-import extendSymbolic from "protoxt";
+import { addExtension as extendSymbolic, addExtensionFn } from "protoxt";
 import dateFiddlerFactory from "datefiddler";
 import dtFormat from "intl-dateformatter";
 import dateDiffFactory from "datediffcalculator";
@@ -7,7 +7,7 @@ import regexhelper from "jsregexphelper";
 defaultStyling();
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
-export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
+export { $, logFactory, defaultStyling, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic, addExtensionFn };
 
 function logFactory() {
   const ul = $(`<ul id="log2screen"/>`);
