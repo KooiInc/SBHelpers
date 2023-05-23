@@ -4,10 +4,10 @@ import dateFiddlerFactory from "datefiddler";
 import dtFormat from "intl-dateformatter";
 import dateDiffFactory from "datediffcalculator";
 import regexhelper from "jsregexphelper";
-setDefaultStyling();
-fixSBLinks2TopProblem();
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
+setDefaultStyling();
+fixSBLinks2TopProblem();
 export { $, logFactory, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
 
 function fixSBLinks2TopProblem() {
@@ -24,13 +24,14 @@ function fixSBLinks2TopProblem() {
 }
 
 function logFactory() {
-  const ul = $(`<ul id="log2screen"/>`);
-  const head = t => `${t}`.startsWith(`!!`) ? ` class="head"` : ``;
-  const logItem = top => t => ul[top? `prepend` : `append`](
-    `<li${head(t)}>${`${t}`.replace(/^!!/, ``)}</li>` ) ;
+  const logContainer = $(`<ul id="log2screen"/>`);
+  const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
+  const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
+  const addContent = content => createItem(content).append( $(content.replace(/^!!/, ``)) );
+  const logItem = (pos = `bottom`) => content => logPosition[pos]( addContent(content) );
   return {
     log: (...txt) => txt.forEach( logItem() ),
-    logTop: (...txt) => txt.forEach( logItem(true) ), };
+    logTop: (...txt) => txt.forEach( logItem(`top`) ), };
 }
 
 function dateFiddlerExtentions(instance) {
