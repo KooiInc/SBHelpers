@@ -39,4 +39,4 @@ The `SBHelpers` library supplies a default (css-)style for Stackblitz Ecmascript
 ## Notes
 - Stackblitz seems to rewrite links with `target="_top"` (to `target="_blank"`). 
   Version 0.3.6 of this library catches and fixes this. For links to `_top`, 
-  use `target="_top"` OR `class="internalLink"`.
+  use `target="_top"` OR `class="internalLink"` OR the data-attribute `data-top`.
