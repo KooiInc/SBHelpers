@@ -27,8 +27,10 @@ function logFactory() {
   const logContainer = $(`<ul id="log2screen"/>`);
   const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
-  const addContent = content => createItem(content).append( $(content.replace(/^!!/, ``)) );
-  const logItem = (pos = `bottom`) => content => logPosition[pos]( addContent(content) );
+  const isStringOrNumber = v => [String, Number].find(type => Object.getPrototypeOf( v ?? ``)?.constructor === type);
+  const cleanContent = content => !isStringOrNumber(content) ? JSON.stringify(content) : content;
+  const addContent = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}<span>`) );
+  const logItem = (pos = `bottom`) => content => logPosition[pos]( addContent(cleanContent(content)) );
   return {
     log: (...txt) => txt.forEach( logItem() ),
     logTop: (...txt) => txt.forEach( logItem(`top`) ), };
@@ -60,7 +62,7 @@ function setDefaultStyling() {
      }`,
     `code {
       color: green
-      background-color: #eee';
+      background-color: #eee;
       padding: 2px;
       font-family: monospace;
     }`,
@@ -69,6 +71,8 @@ function setDefaultStyling() {
       padding: 6px;
       border: 1px solid #999;
       margin: 0.5rem 0; 
+      background-color: #eee;
+      white-space: pre-wrap;
     }`,
     `h3 {marginTop: 1.5rem;}`,
     `.thickBorder {
