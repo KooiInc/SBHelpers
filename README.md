@@ -4,8 +4,13 @@ Some handy helpers for Stackblitz ES/html projects
 ### Install the package
 `npm install stackblitzhelpers`
 
-### Use in the browser
+### Use in the browser (or in Stackblitz front end project)
 `import {$, logFactory, ...[see 'exposed as']} from "https://cdn.jsdelivr.net/gh/KooiInc/SBHelpers@main/index.browser.min.js";`
+
+### Use in Stackblitz plain ecmascript project ('javascript blank project')
+Type 'stackblitzhelpers' in the DEPENDENCIES input field
+
+![image](https://github.com/KooiInc/SBHelpers/assets/836043/f1e33a6a-48d4-4d58-acb3-7150cd77806e)
 
 ### The library includes the following packets:
 
