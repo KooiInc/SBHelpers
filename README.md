@@ -1,7 +1,6 @@
 # SBHelpers
 Some handy helpers for Stackblitz ES/html projects
 
-
 ### Install the package
 `npm install stackblitzhelpers`
 
@@ -36,3 +35,8 @@ Some handy helpers for Stackblitz ES/html projects
 The `SBHelpers` library supplies a default (css-)style for Stackblitz Ecmascript projects. Style may be edited using `$.setStyle`.
 
 ### [Example project @Stackblitz](https://stackblitz.com/edit/js-eukuys?file=index.js)
+
+## Notes
+- Stackblitz seems to rewrite links with `target="_top"` (to `target="_blank"`). 
+  Version 0.3.6 of this library catches and fixes this. For links to `_top`, 
+  use `target="_top"` OR `class="internalLink"`.
