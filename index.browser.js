@@ -27,8 +27,10 @@ function logFactory() {
   const logContainer = $(`<ul id="log2screen"/>`);
   const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
-  const addContent = content => createItem(content).append( $(content.replace(/^!!/, ``)) );
-  const logItem = (pos = `bottom`) => content => logPosition[pos]( addContent(content) );
+  const isStringOrNumber = v => [String, Number].find(type => Object.getPrototypeOf( v ?? ``)?.constructor === type);
+  const cleanContent = content => !isStringOrNumber(content) ? JSON.stringify(content) : content;
+  const addContent = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}<span>`) );
+  const logItem = (pos = `bottom`) => content => logPosition[pos]( addContent(cleanContent(content)) );
   return {
     log: (...txt) => txt.forEach( logItem() ),
     logTop: (...txt) => txt.forEach( logItem(`top`) ), };
