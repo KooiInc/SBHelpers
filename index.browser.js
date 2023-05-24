@@ -30,7 +30,7 @@ function logFactory() {
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
   const isStringOrNumber = v => [String, Number].find(type => Object.getPrototypeOf( v ?? ``)?.constructor === type);
   const cleanContent = content => !isStringOrNumber(content) ? JSON.stringify(content) : content;
-  const addContent = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}<span>`) );
+  const addContent = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}</span>`) );
   const logItem = (pos = `bottom`) => content => logPosition[pos]( addContent(cleanContent(content)) );
   return {
     log: (...txt) => txt.forEach( logItem() ),
