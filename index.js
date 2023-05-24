@@ -29,8 +29,8 @@ function logFactory() {
   const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
   const isStringOrNumber = v => [String, Number].find(type => Object.getPrototypeOf( v ?? ``)?.constructor === type);
-  const cleanContent = content => (!isStringOrNumber(content) ? JSON.stringify(content) : content)?.replace(/^!!/, ``);
-  const writeLogEntry = content => createItem(content).append( $(`<span>${content}</span>`) );
+  const cleanContent = content => (!isStringOrNumber(content) ? JSON.stringify(content) : content);
+  const writeLogEntry = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}</span>`) );
   const logItem = (pos = `bottom`) => content => logPosition[pos]( writeLogEntry(cleanContent(content)) );
   return {
     log: (...txt) => txt.forEach( logItem() ),
