@@ -62,7 +62,7 @@ function setDefaultStyling() {
       margin: 1rem;
      }`,
     `code {
-      color: green
+      color: green;
       background-color: #eee';
       padding: 2px;
       font-family: monospace;
