@@ -15,8 +15,9 @@ function fixSBLinks2TopProblem() {
   console.info(`✔ Stackblitz rewrites links to _top. The 'stackblitzhelpers' module fixed it.`);
   document.addEventListener(`click`, evt => {
     if (evt.target.href) {
-      if (evt.target.dataset.top || evt.target.classList.contains(`internalLink`)) {
-        return top.location.href = evt.target.href;
+      const ref = evt.target;
+      if (ref.dataset.top || ref.classList.contains(`internalLink`) || ref.target === `_top`) {
+        return top.location.href = ref.href;
       }
     }
     return true;
