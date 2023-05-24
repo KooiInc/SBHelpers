@@ -63,7 +63,7 @@ function setDefaultStyling() {
      }`,
     `code {
       color: green;
-      background-color: #eee';
+      background-color: #eee;
       padding: 2px;
       font-family: monospace;
     }`,
