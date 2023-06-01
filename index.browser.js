@@ -24,12 +24,12 @@ function fixSBLinks2TopProblem() {
   });
 }
 
-function logFactory() {
+function logFactory(formatJSON = true) {
   const logContainer = $(`<ul id="log2screen"/>`);
+  const toJSON = content => formatJSON ? `<pre>${JSON.stringify(content, null, 2)}</pre>` : JSON.stringify(content);
   const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
-  const isStringOrNumber = v => [String, Number].find(type => Object.getPrototypeOf( v ?? ``)?.constructor === type);
-  const cleanContent = content => (!isStringOrNumber(content) ? JSON.stringify(content) : content);
+  const cleanContent = content => !$.IS(content, String, Number) ? toJSON(content) : `${content}`;
   const writeLogEntry = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}</span>`) );
   const logItem = (pos = `bottom`) => content => logPosition[pos]( writeLogEntry(cleanContent(content)) );
   return {
