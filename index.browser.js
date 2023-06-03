@@ -26,7 +26,7 @@ function fixSBLinks2TopProblem() {
 
 function logFactory(formatJSON = true) {
   const logContainer = $(`<ul id="log2screen"/>`);
-  const toJSON = content => formatJSON ? `<pre>${JSON.stringify(content, null, 2)}</pre>` : JSON.stringify(content);
+  const toJSON = content => tryJSON(content, formatJSON);
   const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
   const cleanContent = content => !$.IS(content, String, Number) ? toJSON(content) : `${content}`;
@@ -35,6 +35,11 @@ function logFactory(formatJSON = true) {
   return {
     log: (...txt) => txt.forEach( logItem() ),
     logTop: (...txt) => txt.forEach( logItem(`top`) ), };
+}
+
+function tryJSON(content, formatted) {
+  try { return formatted ? `<pre>${JSON.stringify(content, null, 2)}</pre>` : JSON.stringify(content); }
+  catch(err) {return `[Object object] (can't convert to JSON)`}
 }
 
 function dateFiddlerExtentions(instance) {
