@@ -2,7 +2,6 @@ import $ from "https://cdn.jsdelivr.net/gh/KooiInc/JQL@latest/lib/JQLBundle.js";
 import extendSymbolic from "https://cdn.jsdelivr.net/gh/KooiInc/ProtoXT@latest/protoxt.min.js";
 import dateFiddlerFactory from "https://cdn.jsdelivr.net/gh/KooiInc/datefiddler@latest/datefiddler.min.js";
 import dtFormat from "https://cdn.jsdelivr.net/gh/KooiInc/dateformat@latest/index.min.js";
-import dateDiffFactory from "https://cdn.jsdelivr.net/gh/KooiInc/DateDifferenceCalculator@latest/index.min.js";
 import regexhelper from "https://cdn.jsdelivr.net/gh/KooiInc/RegexHelper@latest/RegexpCreator.min.js";
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
@@ -35,6 +34,64 @@ function logFactory(formatJSON = true) {
   return {
     log: (...txt) => txt.forEach( logItem() ),
     logTop: (...txt) => txt.forEach( logItem(`top`) ), };
+}
+
+function dateDiffFactory() {
+  const checkParams = (start, end) => {
+    if (!end && !start || (!IS(start, Date) || !IS(end, Date)) ) {
+      const [message, full, clean] = Array(3).fill(`please provide a (valid) start and end Date!`);
+      return { error: true, message, full, clean };
+    }
+
+    if (!end) {
+      const [message, full, clean] = Array(3).fill(`please provide a (valid) end Date!`);
+      return { error: true, message, full, clean };
+    }
+
+    if (!start) {
+      const [message, full, clean] = Array(3).fill(`please provide a start Date!`);
+      return { error: true, message, full, clean };
+    }
+
+    return { error: false };
+  };
+
+  const stringify = stringifyComposed();
+
+  return function getDifference({start, end} = {}) {
+    const checks = checkParams(start, end);
+    if (checks.error) { return checks; }
+    const date1 = new Date(start);
+    const date2 = new Date(end);
+    const differenceMs = Math.abs(date2 - date1);
+    const differenceDate = new Date(differenceMs);
+    const years = differenceDate.getUTCFullYear() - 1970;
+    const months = differenceDate.getUTCMonth();
+    const days = differenceDate.getUTCDate() - 1;
+    const seconds = Math.floor((differenceMs / 1000 % 3600) % 60);
+    const minutes =  Math.floor(differenceMs / 60_000 % 60);
+    const hours = Math.floor( differenceMs / 3_600_000 % 24);
+    const milliseconds = Math.floor( differenceMs % 1000);
+    const diffs = { years, months, days, hours, minutes, seconds, milliseconds };
+    diffs.full = stringify({values: diffs, full: true});
+    diffs.clean = stringify({ values: diffs });
+    return diffs;
+  };
+
+  function stringifyComposed() {
+    const pipe = (...functions) => initial => functions.reduce((param, func) => func(param), initial);
+    const singleOrMultiple = (numberOf, term) => (numberOf === 1 ? term.slice(0, -1) : term);
+    const filterRelevant = ({values, full}) =>
+      [Object.entries(values).filter( ([key, ]) => /^(years|month|days|hours|minutes|seconds)/i.test(key)), full];
+    const aggregateDiffs = ([diffs, full]) =>
+      full ? diffs : diffs.filter(([, value]) => full ? +value : value > 0);
+    const stringifyDiffs = diffsFiltered => diffsFiltered.reduce( (acc, [key, value])  =>
+      [...acc, `${value} ${singleOrMultiple(value, key)}`], [] );
+    const diffs2SingleString = diffStrings  => diffStrings.length < 1
+      ? `Dates are equal` : `${diffStrings.slice(0, -1).join(`, `)}${
+        diffStrings.length > 1 ? ` and ` : ``}${diffStrings.slice(-1).shift()}`;
+    return pipe(filterRelevant, aggregateDiffs, stringifyDiffs, diffs2SingleString);
+  }
 }
 
 function tryJSON(content, formatted) {
