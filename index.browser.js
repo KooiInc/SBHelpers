@@ -119,7 +119,8 @@ function setDefaultStyling() {
       vertical-align: bottom;
      }`,
     `a[target="_blank"]:before, a.externalLink:before {
-       content: '\\2197'' '; 
+       content: '\\2197'' ';
+       vertical-align: text-top;
      }`,
     `a[data-top]:before, a.internalLink:before, a[target="_top"]:before {
       content: '\\21BA'' '; 
