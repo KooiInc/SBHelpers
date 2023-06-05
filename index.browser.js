@@ -7,6 +7,7 @@ const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
 setDefaultStyling();
 fixSBLinks2TopProblem();
+const IS = $.IS;
 export { $, logFactory, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
 
 function fixSBLinks2TopProblem() {

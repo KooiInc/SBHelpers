@@ -5,6 +5,7 @@ import dtFormat from "intl-dateformatter";
 import regexhelper from "jsregexphelper";
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
+const IS = $.IS;
 setDefaultStyling();
 fixSBLinks2TopProblem();
 export { $, logFactory, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic };
