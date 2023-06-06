@@ -29,7 +29,7 @@ function logFactory(formatJSON = true) {
   const toJSON = content => tryJSON(content, formatJSON);
   const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
-  const cleanContent = content => !$.IS(content, String, Number) ? toJSON(content) : `${content}`;
+  const cleanContent = content => !$.IS(content, String, Number) ? toJSON(content || ``) : `${content}`;
   const writeLogEntry = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}</span>`) );
   const logItem = (pos = `bottom`) => content => logPosition[pos]( writeLogEntry(cleanContent(content)) );
   return {
@@ -39,7 +39,7 @@ function logFactory(formatJSON = true) {
 
 function tryJSON(content, formatted) {
   try { return formatted ? `<pre>${JSON.stringify(content, null, 2)}</pre>` : JSON.stringify(content); }
-  catch(err) {return `[Object object] (can't convert to JSON)`}
+  catch(err) {return `Some [Object object] can not be converted to JSON`}
 }
 
 function dateFiddlerExtentions(instance) {
@@ -176,14 +176,14 @@ function setDefaultStyling() {
     `a[target]:before, a.internalLink:before, a.externalLink:before {
       color: rgba(0,0,238,0.7);
       font-size: 1.1rem;
-      vertical-align: bottom;
+      padding-right: 2px;
+      vertical-align: baseline;
      }`,
     `a[target="_blank"]:before, a.externalLink:before {
-       content: '\\2197'' ';
-       vertical-align: text-top;
+      content: '\\2197';
      }`,
     `a[data-top]:before, a.internalLink:before, a[target="_top"]:before {
-      content: '\\21BA'' '; 
+      content: '\\21BA';
      }`,
   ]);
 }

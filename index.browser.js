@@ -135,6 +135,8 @@ function setDefaultStyling() {
       padding: 6px;
       border: 1px solid #999;
       margin: 0.5rem 0; 
+      background-color: #eee;
+      white-space: pre-wrap;
     }`,
     `h3 {marginTop: 1.5rem;}`,
     `.thickBorder {
@@ -174,14 +176,14 @@ function setDefaultStyling() {
     `a[target]:before, a.internalLink:before, a.externalLink:before {
       color: rgba(0,0,238,0.7);
       font-size: 1.1rem;
-      vertical-align: bottom;
+      padding-right: 2px;
+      vertical-align: baseline;
      }`,
     `a[target="_blank"]:before, a.externalLink:before {
-       content: '\\2197'' ';
-       vertical-align: text-top;
+      content: '\\2197';
      }`,
     `a[data-top]:before, a.internalLink:before, a[target="_top"]:before {
-      content: '\\21BA'' '; 
+      content: '\\21BA';
      }`,
   ]);
 }
