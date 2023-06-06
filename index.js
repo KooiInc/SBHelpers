@@ -29,8 +29,8 @@ function logFactory(formatJSON = true) {
   const toJSON = content => tryJSON(content, formatJSON);
   const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
-  const cleanContent = content => !$.IS(content, String, Number) ? toJSON(content || ``) : `${content}`;
-  const writeLogEntry = content => createItem(content).append( $(`<span>${content.replace(/^!!/, ``)}</span>`) );
+  const cleanContent = content => !$.IS(content, String, Number) ? toJSON(content) : `${content}`;
+  const writeLogEntry = content => createItem(content).append( $(`<span>${content?.replace(/^!!/, ``)}</span>`) );
   const logItem = (pos = `bottom`) => content => logPosition[pos]( writeLogEntry(cleanContent(content)) );
   return {
     log: (...txt) => txt.forEach( logItem() ),
