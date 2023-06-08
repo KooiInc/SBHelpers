@@ -24,7 +24,7 @@ Type 'stackblitzhelpers' in the DEPENDENCIES input field
   - Exposed as `xDate`
 - [intl-dateformatter](https://www.npmjs.com/package/intl-dateformatter): a library to format an EcmaScript `Date` instance with a template string and using the [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) namespace
   - Exposed as `dtFormat`
-- [datediffcalculator](https://www.npmjs.com/package/datediffcalculator): a library to calculate the difference between two dates in years, months, days etc.
+- datediffcalculator (a small library to calculate the difference between two dates).
   - Exposed as `dtDiffCalc`
 
 ### For printing/logging to screen
