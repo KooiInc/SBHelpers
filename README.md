@@ -5,7 +5,7 @@ Some handy helpers for Stackblitz ES/html projects
 `npm install stackblitzhelpers`
 
 ### Use in the browser (or in Stackblitz front end project)
-`import {$, logFactory, ...[see 'exposed as']} from "https://cdn.jsdelivr.net/gh/KooiInc/SBHelpers@main/index.browser.min.js";`
+`import {$, logFactory, ...[see 'exposed as']} from "https://cdn.jsdelivr.net/gh/KooiInc/SBHelpers@main/index.browser.bundled.js";`
 
 ### Use in Stackblitz plain ecmascript project ('javascript blank project')
 Type 'stackblitzhelpers' in the DEPENDENCIES input field
