@@ -2,16 +2,23 @@
   "name": "stackblitzhelpers",
   "version": "0.4.82",
   "description": "Helper methods for Stackblitz ecmascript projects",
-  "keywords": ["Stackblitz", "es20xx", "utility"],
+  "keywords": [
+    "Stackblitz",
+    "es20xx",
+    "utility"
+  ],
   "author": "KooiInc",
   "license": "CCO-1.0",
   "type": "module",
   "dependencies": {
-    "jqlmodule": "latest",
-    "jsregexphelper": "latest",
     "datefiddler": "latest",
     "intl-dateformatter": "latest",
+    "jqlmodule": "latest",
+    "jsregexphelper": "latest",
     "protoxt": "latest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.17"
   },
   "main": "index.js",
   "bugs": {
