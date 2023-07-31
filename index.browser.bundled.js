@@ -1,130 +1,130 @@
 // node_modules/jqlmodule/Bundle/jql.min.js
-var Nt = "url('data:image/svg+xml\\3butf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20128%20128%22%20style%3D%22enable-background%3Anew%200%200%20128%20128%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%22-368%22%20y%3D%226%22%20style%3D%22display%3Anone%3Bfill%3A%23E0E0E0%3B%22%20width%3D%22866%22%20height%3D%221018%22%2F%3E%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2248%22%2F%3E%3Ccircle%20style%3D%22fill%3A%238CCFB9%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2239%22%2F%3E%3Ccircle%20style%3D%22fill%3Anone%3Bstroke%3A%23444B54%3Bstroke-width%3A6%3Bstroke-miterlimit%3A10%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2248%22%2F%3E%3Cpolyline%20style%3D%22fill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A6%3Bstroke-linecap%3Around%3Bstroke-miterlimit%3A10%3B%22%20points%3D%2242%2C69%2055.55%2C81%20%20%2086%2C46%20%22%2F%3E%3C%2Fsvg%3E')";
-var K = Jt();
-var ft = Bt();
-var q = kt();
+var kt = "url('data:image/svg+xml\\3butf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20128%20128%22%20style%3D%22enable-background%3Anew%200%200%20128%20128%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%22-368%22%20y%3D%226%22%20style%3D%22display%3Anone%3Bfill%3A%23E0E0E0%3B%22%20width%3D%22866%22%20height%3D%221018%22%2F%3E%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2248%22%2F%3E%3Ccircle%20style%3D%22fill%3A%238CCFB9%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2239%22%2F%3E%3Ccircle%20style%3D%22fill%3Anone%3Bstroke%3A%23444B54%3Bstroke-width%3A6%3Bstroke-miterlimit%3A10%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2248%22%2F%3E%3Cpolyline%20style%3D%22fill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A6%3Bstroke-linecap%3Around%3Bstroke-miterlimit%3A10%3B%22%20points%3D%2242%2C69%2055.55%2C81%20%20%2086%2C46%20%22%2F%3E%3C%2Fsvg%3E')";
+var tt = Bt();
+var yt = Pt();
 var _ = Ot();
-function kt() {
+var U = Jt();
+function Ot() {
   return { html: "accept,action,align,alt,autocapitalize,autocomplete,autopictureinpicture,autoplay,background,bgcolor,border,capture,cellpadding,cellspacing,checked,cite,class,clear,contenteditable,color,cols,colspan,controls,controlslist,coords,crossorigin,datetime,decoding,default,dir,disabled,disablepictureinpicture,disableremoteplayback,download,draggable,enctype,enterkeyhint,face,for,headers,height,hidden,high,href,hreflang,id,inputmode,integrity,ismap,kind,label,lang,list,loading,loop,low,max,maxlength,media,method,min,minlength,multiple,muted,name,nonce,noshade,novalidate,nowrap,open,optimum,pattern,placeholder,playsinline,poster,preload,pubdate,radiogroup,readonly,rel,required,rev,reversed,role,rows,rowspan,spellcheck,scope,selected,shape,size,sizes,span,srclang,start,src,srcset,step,style,summary,tabindex,target,title,translate,type,usemap,valign,value,width,xmlns,slot".split(","), svg: "accent-height,accumulate,additive,alignment-baseline,ascent,attributename,attributetype,azimuth,basefrequency,baseline-shift,begin,bias,by,class,clip,clippathunits,clip-path,clip-rule,color,color-interpolation,color-interpolation-filters,color-profile,color-rendering,cx,cy,d,dx,dy,diffuseconstant,direction,display,divisor,dur,edgemode,elevation,end,fill,fill-opacity,fill-rule,filter,filterunits,flood-color,flood-opacity,font-family,font-size,font-size-adjust,font-stretch,font-style,font-variant,font-weight,fx,fy,g1,g2,glyph-name,glyphref,gradientunits,gradienttransform,height,href,id,image-rendering,in,in2,k,k1,k2,k3,k4,kerning,keypoints,keysplines,keytimes,lang,lengthadjust,letter-spacing,kernelmatrix,kernelunitlength,lighting-color,local,marker-end,marker-mid,marker-start,markerheight,markerunits,markerwidth,maskcontentunits,maskunits,max,mask,media,method,mode,min,name,numoctaves,offset,operator,opacity,order,orient,orientation,origin,overflow,paint-order,path,pathlength,patterncontentunits,patterntransform,patternunits,points,preservealpha,preserveaspectratio,primitiveunits,r,rx,ry,radius,refx,refy,repeatcount,repeatdur,restart,result,rotate,scale,seed,shape-rendering,specularconstant,specularexponent,spreadmethod,startoffset,stddeviation,stitchtiles,stop-color,stop-opacity,stroke-dasharray,stroke-dashoffset,stroke-linecap,stroke-linejoin,stroke-miterlimit,stroke-opacity,stroke,stroke-width,style,surfacescale,systemlanguage,tabindex,targetx,targety,transform,text-anchor,text-decoration,text-rendering,textlength,type,u1,u2,unicode,values,viewbox,visibility,version,vert-adv-y,vert-origin-x,vert-origin-y,width,word-spacing,wrap,writing-mode,xchannelselector,ychannelselector,x,x1,x2,xmlns,y,y1,y2,z,zoomandpan".split(",") };
 }
-function Ot() {
-  return { a: true, area: true, audio: false, br: true, base: true, body: true, button: true, canvas: true, dl: true, data: true, datalist: true, div: true, em: true, embed: false, fieldset: true, font: false, footer: true, form: false, hr: true, head: true, header: true, output: true, iframe: false, frameset: false, img: true, input: true, li: true, label: true, legend: true, link: true, map: true, mark: true, menu: true, media: true, meta: true, nav: true, meter: true, ol: true, object: false, optgroup: true, option: true, p: true, param: true, picture: true, pre: true, progress: false, quote: true, script: false, select: true, source: true, span: true, style: true, caption: true, td: true, col: true, table: true, tr: true, template: false, textarea: true, time: true, title: true, track: true, details: true, ul: true, video: true, del: true, ins: true, slot: true, blockquote: true, svg: true, dialog: true, summary: true, main: true, address: true, colgroup: true, tbody: true, tfoot: true, thead: true, th: true, dd: true, dt: true, figcaption: true, figure: true, i: true, b: true, code: true, h1: true, h2: true, h3: true, h4: true, abbr: true, bdo: true, dfn: true, kbd: true, q: true, rb: true, rp: true, rt: true, ruby: true, s: true, strike: true, samp: true, small: true, strong: true, sup: true, sub: true, u: true, var: true, wbr: true, nobr: false, tt: true, noscript: true };
-}
 function Jt() {
-  return ["#logBox{min-width:0px;max-width:0px;min-height:0px;max-height:0px;,width:0;height:0;z-index:-1;border:none;padding:0px;overflow:hidden;transition:all 0.3s ease;margin-top:-100px;}", "#logBox.visible{background-color:rgb(255, 255, 224);z-index:1;position:static;border:1px dotted rgb(153, 153, 153);max-width:50vw;min-width:30vw;min-height:10vh;max-height:90vh;overflow:auto;width:50vw;height:20vh;margin:1rem 0px;padding:0px 8px 19px;resize:both;}", "#logBox.visible .legend{position:absolute;}", "#logBox .legend{text-align:center;margin-top:-1em;width:inherit;max-width:inherit;}", "#logBox .legend div{text-align:center;display:inline-block;max-width:inherit;height:1.2rem;background-color:rgb(119, 119, 119);padding:2px 10px;color:rgb(255, 255, 255);box-shadow:rgb(119 119 119) 2px 1px 10px;border-radius:4px;}", "#logBox .legend div:before{content:'JQL Logging (chronological)';}", "#logBox .legend.reversed div:before{content:'JQL Logging (reversed)';}", "#logBox #jql_logger{marginTop:0.7rem;lineHeight:1.4em;font-family:consolas,monospace;whiteSpace:pre-wrap;maxWidth:inherit;padding-left:100px;}", "#logBox #jql_logger div.entry{text-indent:-100px;whiteSpace:normal;}"];
+  return { a: true, area: true, audio: false, br: true, base: true, body: true, button: true, canvas: true, dl: true, data: true, datalist: true, div: true, em: true, embed: false, fieldset: true, font: true, footer: true, form: false, hr: true, head: true, header: true, output: true, iframe: false, frameset: false, img: true, input: true, li: true, label: true, legend: true, link: true, map: true, mark: true, menu: true, media: true, meta: true, nav: true, meter: true, ol: true, object: false, optgroup: true, option: true, p: true, param: true, picture: true, pre: true, progress: false, quote: true, script: false, select: true, source: true, span: true, style: true, caption: true, td: true, col: true, table: true, tr: true, template: false, textarea: true, time: true, title: true, track: true, details: true, ul: true, video: true, del: true, ins: true, slot: true, blockquote: true, svg: true, dialog: true, summary: true, main: true, address: true, colgroup: true, tbody: true, tfoot: true, thead: true, th: true, dd: true, dt: true, figcaption: true, figure: true, i: true, b: true, code: true, h1: true, h2: true, h3: true, h4: true, abbr: true, bdo: true, dfn: true, kbd: true, q: true, rb: true, rp: true, rt: true, ruby: true, s: true, strike: true, samp: true, small: true, strong: true, sup: true, sub: true, u: true, var: true, wbr: true, nobr: true, tt: true, noscript: true };
 }
 function Bt() {
-  return [".popupContainer{position:fixed;inset:-5000px;opacity:0;height:0;width:0;background:rgba(0,0,0,0.1);transition:opacity 0.6s ease-in-out 0s;}", ".popupContainer.popup-active{opacity:1;inset:0;height:auto;width:auto;}", ".popupContainer .content{box-shadow:rgba(0,0,0,0.5) 2px 2px 8px;border-radius:3px;min-width:125px;max-width:40vw;max-height:40vh;padding:8px;overflow:auto;background:#FFF;z-index:inherit;opacity:1;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}", ".popupContainer .content .popup-warn{position:relative;padding:3px 8px 0 8px;color:red;margin:6px -8px -4px -8px;text-align:center;display:none;}", ".popupContainer .content.popup-warn-active .popup-warn{display:block;border-top:1px dashed rgb(0,0,0);}", `.closeHandleIcon{z-index:1;position:absolute;opacity:0;cursor:pointer;width:24px;height:24px;background:${Nt} no-repeat;}`, ".closeHandleIcon.popup-active{opacity:1;}", "@media screen and (width < 1200px){.popupContainer .content{max-width:75vw;}}", "@media screen and (width < 640px){.popupContainer .content{max-width:90vw;max-height:60vw;}}"];
+  return ["#logBox{min-width:0px;max-width:0px;min-height:0px;max-height:0px;,width:0;height:0;z-index:-1;border:none;padding:0px;overflow:hidden;transition:all 0.3s ease;margin-top:-100px;}", "#logBox.visible{background-color:rgb(255, 255, 224);z-index:1;position:static;border:1px dotted rgb(153, 153, 153);max-width:50vw;min-width:30vw;min-height:10vh;max-height:90vh;overflow:auto;width:50vw;height:20vh;margin:1rem 0px;padding:0px 8px 19px;resize:both;}", "#logBox.visible .legend{position:absolute;}", "#logBox .legend{text-align:center;margin-top:-1em;width:inherit;max-width:inherit;}", "#logBox .legend div{text-align:center;display:inline-block;max-width:inherit;height:1.2rem;background-color:rgb(119, 119, 119);padding:2px 10px;color:rgb(255, 255, 255);box-shadow:rgb(119 119 119) 2px 1px 10px;border-radius:4px;}", "#logBox .legend div:before{content:'JQL Logging (chronological)';}", "#logBox .legend.reversed div:before{content:'JQL Logging (reversed)';}", "#logBox #jql_logger{marginTop:0.7rem;lineHeight:1.4em;font-family:consolas,monospace;whiteSpace:pre-wrap;maxWidth:inherit;padding-left:100px;}", "#logBox #jql_logger div.entry{text-indent:-100px;whiteSpace:normal;}"];
 }
-var tt = false;
-var Pt = { on: () => tt = true, off: () => tt = false };
-var D = { tagsRaw: _, allowUnknownHtmlTags: Pt, isAllowed(t) {
-  if (tt)
+function Pt() {
+  return [".popupContainer{position:fixed;inset:-5000px;opacity:0;height:0;width:0;background:rgba(0,0,0,0.1);transition:opacity 0.6s ease-in-out 0s;}", ".popupContainer.popup-active{opacity:1;inset:0;height:auto;width:auto;}", ".popupContainer .content{box-shadow:rgba(0,0,0,0.5) 2px 2px 8px;border-radius:3px;min-width:125px;max-width:40vw;max-height:40vh;padding:8px;overflow:auto;background:#FFF;z-index:inherit;opacity:1;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}", ".popupContainer .content .popup-warn{position:relative;padding:3px 8px 0 8px;color:red;margin:6px -8px -4px -8px;text-align:center;display:none;}", ".popupContainer .content.popup-warn-active .popup-warn{display:block;border-top:1px dashed rgb(0,0,0);}", `.closeHandleIcon{z-index:1;position:absolute;opacity:0;cursor:pointer;width:24px;height:24px;background:${kt} no-repeat;}`, ".closeHandleIcon.popup-active{opacity:1;}", "@media screen and (width < 1200px){.popupContainer .content{max-width:75vw;}}", "@media screen and (width < 640px){.popupContainer .content{max-width:90vw;max-height:60vw;}}"];
+}
+var et = false;
+var Qt = { on: () => et = true, off: () => et = false };
+var j = { tagsRaw: U, allowUnknownHtmlTags: Qt, isAllowed(t) {
+  if (et)
     return true;
   let e = t?.nodeName.toLowerCase() || "none";
-  return e === "#text" || !!_[e];
-}, allowTag: (t) => _[t.toLowerCase()] = true, prohibitTag: (t) => _[tag.toLowerCase()] = false };
-var nt = false;
-var U = false;
-var O = true;
+  return e === "#text" || !!U[e];
+}, allowTag: (t) => U[t.toLowerCase()] = true, prohibitTag: (t) => U[tag.toLowerCase()] = false };
 var ot = false;
-var Qt = true;
-var yt;
-var k = () => y("#logBox");
-var xt = "#jql_logger";
-var zt = (t) => {
-  K?.forEach((e) => t(e));
+var V = false;
+var J = true;
+var it = false;
+var zt = true;
+var bt;
+var O = () => y("#logBox");
+var vt = "#jql_logger";
+var Wt = (t) => {
+  tt?.forEach((e) => t(e));
 };
-var Wt = () => {
-  K && zt(yt);
-  let t = Qt ? "div" : "pre", e = `<div id="logBox"><div class="legend"><div></div></div><${t} id="jql_logger"></${t}></div>`;
-  return it(F(e), void 0, H.AfterBegin), y.node(xt);
+var qt = () => {
+  tt && Wt(bt);
+  let t = zt ? "div" : "pre", e = `<div id="logBox"><div class="legend"><div></div></div><${t} id="jql_logger"></${t}></div>`;
+  return st(R(e), void 0, A.AfterBegin), y.node(vt);
 };
-var ht = (t) => a(t, String) && Object.assign(document.createElement("textarea"), { innerHTML: t }).textContent || t;
-var A = (...t) => {
+var xt = (t) => c(t, String) && Object.assign(document.createElement("textarea"), { innerHTML: t }).textContent || t;
+var F = (...t) => {
   let e = t[0] === "fromStatic";
-  if (t = e ? t.slice(1) : t, e && !U)
-    return t.forEach((n) => console.info(`${J()} \u2714 ${ht(n)}`));
-  if (!U)
+  if (t = e ? t.slice(1) : t, e && !V)
+    return t.forEach((n) => console.info(`${B()} \u2714 ${xt(n)}`));
+  if (!V)
     return;
-  !O && !y.node("#logBox") && (yt = y.createStyle("JQLLogCSS"), Wt());
-  let r = (n) => `${a(n, Object) ? JSON.stringify(n, null, 2) : n}
+  !J && !y.node("#logBox") && (bt = y.createStyle("JQLLogCSS"), qt());
+  let r = (n) => `${c(n, Object) ? JSON.stringify(n, null, 2) : n}
 `;
-  t.forEach((n) => O ? console.info(`${J()} \u2714 ${ht(n)}`) : y.node("#jql_logger").insertAdjacentHTML(ot ? "afterbegin" : "beforeend", `<div class="entry">${J()} ${r(n.replace(/\n/g, "<br>"))}</div>`));
+  t.forEach((n) => J ? console.info(`${B()} \u2714 ${xt(n)}`) : y.node("#jql_logger").insertAdjacentHTML(it ? "afterbegin" : "beforeend", `<div class="entry">${B()} ${r(n.replace(/\n/g, "<br>"))}</div>`));
 };
-var et = { on() {
-  U = true, A("Logging activated");
-}, off() {
-  U = false, console.log("Logging deactivated");
-} };
 var rt = { on() {
-  nt = true;
+  V = true, F("Logging activated");
 }, off() {
-  nt = false;
+  V = false, console.log("Logging deactivated");
 } };
-var B = (...t) => nt && A(...t);
+var nt = { on() {
+  ot = true;
+}, off() {
+  ot = false;
+} };
+var P = (...t) => ot && F(...t);
 var $ = { get isConsole() {
-  return O === true;
-}, isOn: () => U, isVisible: () => y("#jql_logger").is("visible"), on: () => (et.on(), rt.on(), O || k()?.addClass("visible"), A("Debug logging started. Every call to [jql instance] is logged"), $), off: () => (k().isEmpty || (rt.off(), A("Debug logging stopped"), k()?.removeClass("visible")), et.off(), $), toConsole: { on: () => (O = true, A("Started logging to console"), $), off() {
-  return A("Stopped logging to console (except error messages)"), O = false, $;
-} }, remove: () => (et.off(), rt.off(), k()?.remove(), console.clear(), console.log(`${J()} logging completely disabled and all entries removed`), $), log: (...t) => (A(...t), $), hide: () => (k()?.removeClass("visible"), $), show: () => (k()?.addClass("visible"), $), reversed: { on: () => (ot = true, A("Reverse logging set: now logging bottom to top (latest first)"), y("#logBox .legend").addClass("reversed"), $), off: () => (ot = false, y("#logBox .legend").removeClass("reversed"), A("Reverse logging reset: now logging chronological (latest last)"), $) }, clear: () => (y(xt).text(""), console.clear(), A("Logging cleared"), $) };
-var a = bt;
-function bt(t, ...e) {
+  return J === true;
+}, isOn: () => V, isVisible: () => y("#jql_logger").is("visible"), on: () => (rt.on(), nt.on(), J || O()?.addClass("visible"), F("Debug logging started. Every call to [jql instance] is logged"), $), off: () => (O().isEmpty || (nt.off(), F("Debug logging stopped"), O()?.removeClass("visible")), rt.off(), $), toConsole: { on: () => (J = true, F("Started logging to console"), $), off() {
+  return F("Stopped logging to console (except error messages)"), J = false, $;
+} }, remove: () => (rt.off(), nt.off(), O()?.remove(), console.clear(), console.log(`${B()} logging completely disabled and all entries removed`), $), log: (...t) => (F(...t), $), hide: () => (O()?.removeClass("visible"), $), show: () => (O()?.addClass("visible"), $), reversed: { on: () => (it = true, F("Reverse logging set: now logging bottom to top (latest first)"), y("#logBox .legend").addClass("reversed"), $), off: () => (it = false, y("#logBox .legend").removeClass("reversed"), F("Reverse logging reset: now logging chronological (latest last)"), $) }, clear: () => (y(vt).text(""), console.clear(), F("Logging cleared"), $) };
+var c = Lt;
+function Lt(t, ...e) {
   let r = ["NaN", "null", "undefined"], n = (h) => typeof h == "symbol" ? Symbol : h;
   return e.length > 1 ? u(t, ...e) : o();
   function o() {
     let h = n(t), x = e.length > 0;
-    return e = x && e.shift(), x && s(e) ? `${h}` == `${e}` : t === false ? e === Boolean ? true : "Boolean" : w();
+    return e = x && e.shift(), x && i(e) ? `${h}` == `${e}` : t === false ? e === Boolean ? true : "Boolean" : w();
     function w() {
-      let E = t === 0 ? Number : t === "" ? String : h ? Object.getPrototypeOf(t)?.constructor : { name: `${h}` };
-      return e ? e === E || e === Object.getPrototypeOf(E) || `${e}` === E?.name : E?.name;
+      let C = t === 0 ? Number : t === "" ? String : h ? Object.getPrototypeOf(t)?.constructor : { name: `${h}` };
+      return e ? e === C || e === Object.getPrototypeOf(C) || `${e}` === C?.name : C?.name;
     }
   }
-  function s(h) {
+  function i(h) {
     for (let x of r)
       if (x === `${h}`)
         return true;
     return false;
   }
   function u(h, ...x) {
-    for (let p of x)
-      if (bt(h, p))
+    for (let f of x)
+      if (Lt(h, f))
         return true;
     return false;
   }
 }
-var qt = [...Array(26)].map((t, e) => String.fromCharCode(e + 65)).concat([...Array(26)].map((t, e) => String.fromCharCode(e + 97))).concat([...Array(10)].map((t, e) => `${e}`));
-var Z = (t, e = 2) => `${t}`.padStart(e, "0");
-var _t = (t, e = 0) => ([t, e] = [Math.floor(t), Math.ceil(e)], Math.floor([...crypto.getRandomValues(new Uint32Array(1))].shift() / 2 ** 32 * (t - e + 1) + e));
-var Ut = (t) => {
+var _t = [...Array(26)].map((t, e) => String.fromCharCode(e + 65)).concat([...Array(26)].map((t, e) => String.fromCharCode(e + 97))).concat([...Array(10)].map((t, e) => `${e}`));
+var Y = (t, e = 2) => `${t}`.padStart(e, "0");
+var Ut = (t, e = 0) => ([t, e] = [Math.floor(t), Math.ceil(e)], Math.floor([...crypto.getRandomValues(new Uint32Array(1))].shift() / 2 ** 32 * (t - e + 1) + e));
+var Vt = (t) => {
   let e = t.length;
   for (; e--; ) {
-    let r = _t(e);
+    let r = Ut(e);
     [t[e], t[r]] = [t[r], t[e]];
   }
   return t;
 };
-var I = (t, e = 120) => `${t}`.trim().slice(0, e).replace(/>\s+</g, "><").replace(/</g, "&lt;").replace(/\s{2,}/g, " ").replace(/\n/g, "\\n") + (t.length > e ? " &hellip;" : "").trim();
-var P = (t) => t.replace(/[A-Z]/g, (e) => `-${e.toLowerCase()}`).replace(/^-|-$/, "");
-var Vt = ([t, ...e]) => `${t.toUpperCase()}${e.join("")}`;
-var vt = (t) => a(t, String) ? t.toLowerCase().split("-").map((e, r) => r && `${Vt(e)}` || e).join("") : t;
-var V = () => `_${Ut(qt).slice(0, 8).join("")}`;
-var Y = (t, e = 120) => I(t, e).replace(/&lt;/g, "<");
-var J = () => ((t) => `[${Z(t.getHours())}:${Z(t.getMinutes())}:${Z(t.getSeconds())}.${Z(t.getMilliseconds(), 3)}]`)(/* @__PURE__ */ new Date());
-var Q = (t) => t.replace(/</g, "&lt;");
-function Lt() {
-  let t = function(s) {
-    if (!s)
+var D = (t, e = 120) => `${t}`.trim().slice(0, e).replace(/>\s+</g, "><").replace(/</g, "&lt;").replace(/\s{2,}/g, " ").replace(/\n/g, "\\n") + (t.length > e ? " &hellip;" : "").trim();
+var Q = (t) => t.replace(/[A-Z]/g, (e) => `-${e.toLowerCase()}`).replace(/^-|-$/, "");
+var Gt = ([t, ...e]) => `${t.toUpperCase()}${e.join("")}`;
+var St = (t) => c(t, String) ? t.toLowerCase().split("-").map((e, r) => r && `${Gt(e)}` || e).join("") : t;
+var G = () => `_${Vt(_t).slice(0, 8).join("")}`;
+var X = (t, e = 120) => D(t, e).replace(/&lt;/g, "<");
+var B = () => ((t) => `[${Y(t.getHours())}:${Y(t.getMinutes())}:${Y(t.getSeconds())}.${Y(t.getMilliseconds(), 3)}]`)(/* @__PURE__ */ new Date());
+var z = (t) => t.replace(/</g, "&lt;");
+function Et() {
+  let t = function(i) {
+    if (!i)
       return;
-    let u = s.style, h = getComputedStyle(s), x = [u.visibility, h.visibility].includes("hidden"), p = [u.display, h.display].includes("none"), w = s.offsetTop < 0 || s.offsetLeft + s.offsetWidth < 0 || s.offsetLeft > document.body.offsetWidth, E = +h.opacity == 0 || +(u.opacity || 1) == 0;
-    return !(w || E || p || x);
-  }, e = function(s) {
-    return !!y.nodes(":is(:read-write)", s.parentNode).find((u) => u === s);
-  }, r = function(s) {
-    return !!y.nodes(":is(:modal)", s.parentNode).find((u) => u === s);
+    let u = i.style, h = getComputedStyle(i), x = [u.visibility, h.visibility].includes("hidden"), f = [u.display, h.display].includes("none"), w = i.offsetTop < 0 || i.offsetLeft + i.offsetWidth < 0 || i.offsetLeft > document.body.offsetWidth, C = +h.opacity == 0 || +(u.opacity || 1) == 0;
+    return !(w || C || f || x);
+  }, e = function(i) {
+    return !!y.nodes(":is(:read-write)", i.parentNode).find((u) => u === i);
+  }, r = function(i) {
+    return !!y.nodes(":is(:modal)", i.parentNode).find((u) => u === i);
   }, n = "n/a", o = { writable: n, modal: n, empty: true, open: n, visible: n };
-  return (s) => {
-    let u = s[0];
+  return (i) => {
+    let u = i[0];
     return u ? { get writable() {
       return e(u);
     }, get modal() {
@@ -138,121 +138,121 @@ function Lt() {
     }, get empty() {
       return false;
     }, get virtual() {
-      return s.isVirtual;
+      return i.isVirtual;
     } } : o;
   };
 }
-var Gt = true;
-var X = { data: /data-[\-\w.\p{L}]/ui, validURL: /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i, whiteSpace: /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g, notAllowedValues: /javascript|injected|noreferrer|alert|DataURL/gi };
-var Zt = (t) => {
-  if (Gt && Object.keys(t.removed).length) {
-    let e = Object.entries(t.removed).reduce((r, [n, o]) => [...r, `${Q(n)} => ${o}`], []).join("\\000A");
-    $.log(`JQL HTML creation errors: ${$.isConsole ? e : Q(e)}`);
+var Zt = true;
+var K = { data: /data-[\-\w.\p{L}]/ui, validURL: /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i, whiteSpace: /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g, notAllowedValues: /javascript|injected|noreferrer|alert|DataURL/gi };
+var Yt = (t) => {
+  if (Zt && Object.keys(t.removed).length) {
+    let e = Object.entries(t.removed).reduce((r, [n, o]) => [...r, `${z(n)} => ${o}`], []).join("\\000A");
+    $.log(`JQL HTML creation errors: ${$.isConsole ? e : z(e)}`);
   }
 };
-var St = (t) => {
+var at = (t) => {
   let e = { rawHTML: t.outerHTML, removed: {} };
-  return a(t, HTMLElement) && [...t.childNodes].forEach((r) => {
-    if (r?.attributes) {
-      let o = a(r, SVGElement) ? q.svg : q.html;
-      [...(r ?? { attributes: [] }).attributes].forEach((s) => {
-        let u = s.name.trim().toLowerCase(), h = s.value.trim().toLowerCase().replace(X.whiteSpace, ""), x = u === "href" ? !X.validURL.test(h) : X.notAllowedValues.test(h), p = u.startsWith("data") ? !X.data.test(u) : !!o[u];
-        if (x || p) {
-          let w = Y(s.value || "none", 60);
-          w += w.length === 60 ? "..." : "", e.removed[`${s.name}`] = `attribute/property (-value) not allowed, removed. Value: ${w}`, r.removeAttribute(s.name);
+  return c(t, HTMLElement) && [...t.childNodes].forEach((r) => {
+    if (r?.children?.length && at(r), r?.attributes) {
+      let o = c(r, SVGElement) ? _.svg : _.html;
+      [...(r ?? { attributes: [] }).attributes].forEach((i) => {
+        let u = i.name.trim().toLowerCase(), h = i.value.trim().toLowerCase().replace(K.whiteSpace, ""), x = u === "href" ? !K.validURL.test(h) : K.notAllowedValues.test(h), f = u.startsWith("data") ? !K.data.test(u) : !!o[u];
+        if (x || f) {
+          let w = X(i.value || "none", 60);
+          w += w.length === 60 ? "..." : "", e.removed[`${i.name}`] = `attribute/property (-value) not allowed, removed. Value: ${w}`, r.removeAttribute(i.name);
         }
       });
     }
-    if (!D.isAllowed(r)) {
-      let o = (r?.outerHTML || r?.textContent).trim(), s = Y(o, 60) ?? "EMPTY";
-      s += s.length === 60 ? "..." : "", e.removed[`<${r.nodeName?.toLowerCase()}>`] = `not allowed, not rendered. Value: ${s}`, r.remove();
+    if (!j.isAllowed(r)) {
+      let o = (r?.outerHTML || r?.textContent).trim(), i = X(o, 60) ?? "EMPTY";
+      i += i.length === 60 ? "..." : "", e.removed[`<${r.nodeName?.toLowerCase()}>`] = `not allowed, not rendered. Value: ${i}`, r.remove();
     }
-  }), Zt(e), t;
+  }), Yt(e), t;
 };
-var H = { BeforeBegin: "beforebegin", AfterBegin: "afterbegin", BeforeEnd: "beforeend", AfterEnd: "afterend" };
-var st = document.createElement("div");
-var Yt = (t) => (st.innerHTML = t, st.childNodes.length ? St(st) : void 0);
-var Xt = (t, e, r) => a(t, Comment) ? e.insertAdjacentHTML(r, `<!--${t.data}-->`) : e.insertAdjacentText(r, t.data);
-var z = (t = [], e = document.body, r = H.BeforeEnd) => t.reduce((n, o) => {
-  let s = j(o) && it(o, e, r);
-  return s ? [...n, s] : n;
+var A = { BeforeBegin: "beforebegin", AfterBegin: "afterbegin", BeforeEnd: "beforeend", AfterEnd: "afterend" };
+var ct = document.createElement("div");
+var Xt = (t) => (ct.innerHTML = t, ct.childNodes.length ? at(ct) : void 0);
+var Kt = (t, e, r) => c(t, Comment) ? e.insertAdjacentHTML(r, `<!--${t.data}-->`) : e.insertAdjacentText(r, t.data);
+var W = (t = [], e = document.body, r = A.BeforeEnd) => t.reduce((n, o) => {
+  let i = N(o) && st(o, e, r);
+  return i ? [...n, i] : n;
 }, []);
-var it = (t, e = document.body, r = H.BeforeEnd) => (e = e?.isJQL ? e?.[0] : e, a(t, Comment, Text) ? Xt(t, e, r) : e.insertAdjacentElement(r, t));
-var F = (t) => {
-  if (a(t, Text, Comment))
+var st = (t, e = document.body, r = A.BeforeEnd) => (e = e?.isJQL ? e?.[0] : e, c(t, Comment, Text) ? Kt(t, e, r) : e.insertAdjacentElement(r, t));
+var R = (t) => {
+  if (c(t, Text, Comment))
     return t;
   let e = t.trim(), r = e.split(/<text>|<\/text>/i);
   if (r = r.length > 1 ? r.filter((o) => o.length).shift() : void 0, e.startsWith("<!--") && e.endsWith("-->"))
     return document.createComment(t.replace(/<!--|-->$/g, ""));
   if (r || !/^<(.+)[^>]+>/m.test(e))
     return document.createTextNode(r);
-  let n = Yt(t);
-  return n.childNodes.length < 1 ? F(`<span data-jqlcreationerror="1">${I(t, 60)}</span>`) : n.children[0];
+  let n = Xt(t);
+  return n.childNodes.length < 1 ? R(`<span data-jqlcreationerror="1">${D(t, 60)}</span>`) : n.children[0];
 };
 var L = (t, e) => {
-  let r = t.collection.filter((n) => !lt(n));
+  let r = t.collection.filter((n) => !dt(n));
   for (let n = 0; n < r.length; n += 1)
     e(r[n], n);
   return t;
 };
-var Kt = Lt();
-var Et = (t) => t && (t.textContent = "");
-var te = (t, e) => t.toLowerCase().trim() === e.trim().toLowerCase();
-var wt = (t, e) => {
-  t && a(e, Object) && Object.entries(e).forEach(([r, n]) => t.setAttribute(`data-${P(r)}`, n));
+var te = Et();
+var wt = (t) => t && (t.textContent = "");
+var ee = (t, e) => t.toLowerCase().trim() === e.trim().toLowerCase();
+var Ct = (t, e) => {
+  t && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setAttribute(`data-${Q(r)}`, n));
 };
-var Ct = (t) => q.html.find((e) => t.toLowerCase() === e);
-var ee = (t, e, r) => {
-  r && a(e, String) && (e = { [e]: r === "-" ? "" : r });
+var $t = (t) => _.html.find((e) => t.toLowerCase() === e);
+var re = (t, e, r) => {
+  r && c(e, String) && (e = { [e]: r === "-" ? "" : r });
   let n;
-  e.className && (n = e.className, delete e.className), n = [...t.classList].find((s) => s.startsWith("JQLClass-") || n && s === n) || n || `JQLClass-${V().slice(1)}`, y.editCssRule(`.${n}`, e), t.classList.add(n);
+  e.className && (n = e.className, delete e.className), n = [...t.classList].find((i) => i.startsWith("JQLClass-") || n && i === n) || n || `JQLClass-${G().slice(1)}`, y.editCssRule(`.${n}`, e), t.classList.add(n);
 };
-var re = (t, e) => {
+var ne = (t, e) => {
   t && Object.entries(e).forEach(([r, n]) => {
     if (r.toLowerCase().startsWith("data"))
-      return wt(t, n);
-    if (te(r, "class"))
+      return Ct(t, n);
+    if (ee(r, "class"))
       return n.split(/,/).forEach((o) => t.classList.add(`${o.trim()}`));
-    if (a(n, String) && Ct(r))
+    if (c(n, String) && $t(r))
       return t[r] = n;
   });
 };
-var at = (t, e) => {
-  a(e, Object) && Object.entries(e).forEach(([r, n]) => {
+var lt = (t, e) => {
+  c(e, Object) && Object.entries(e).forEach(([r, n]) => {
     let o;
-    /!important/i.test(n) && (n = n.slice(0, n.indexOf("!")).trim(), o = "important"), t.style.setProperty(P(r), n, o);
+    /!important/i.test(n) && (n = n.slice(0, n.indexOf("!")).trim(), o = "important"), t.style.setProperty(Q(r), n, o);
   });
 };
-var ne = { get(t, e) {
-  return t[vt(e)] || t[e];
+var oe = { get(t, e) {
+  return t[St(e)] || t[e];
 } };
-var oe = { factoryExtensions: { is: (t) => Kt(t), length: (t) => t.collection.length, dimensions: (t) => t.first()?.getBoundingClientRect(), parent: (t) => {
+var ie = { factoryExtensions: { is: (t) => te(t), length: (t) => t.collection.length, dimensions: (t) => t.first()?.getBoundingClientRect(), parent: (t) => {
   let e = y(t[0]?.parentNode);
   return e.is.empty ? t : e;
 }, outerHtml: (t) => (t.first() || { outerHTML: void 0 }).outerHTML, data: (t) => ({ get all() {
-  return new Proxy(t[0]?.dataset ?? {}, ne);
-}, set: (e = {}) => (!t.is.empty && a(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), get: (e, r) => t.data.all[e] ?? r, add: (e = {}) => (!t.is.empty && a(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), remove: (e) => (t[0]?.removeAttribute(`data-${P(e)}`), t) }), Style: (t) => ({ get computed() {
+  return new Proxy(t[0]?.dataset ?? {}, oe);
+}, set: (e = {}) => (!t.is.empty && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), get: (e, r) => t.data.all[e] ?? r, add: (e = {}) => (!t.is.empty && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), remove: (e) => (t[0]?.removeAttribute(`data-${Q(e)}`), t) }), Style: (t) => ({ get computed() {
   return t.is.empty ? {} : getComputedStyle(t[0]);
-}, inline: (e) => t.style(e), inSheet: (e) => t.css(e), valueOf: (e) => t.is.empty ? void 0 : getComputedStyle(t[0])[P(e)], nwRule: (e) => t.Style.byRule({ rules: e }), byRule: ({ classes2Apply: e = [], rules: r = [] } = {}) => {
-  let o = a(r, String) && !e.length ? r.split("{")[0].trim() : "";
-  return r = r && a(r, String) ? [r] : r, e = e && a(e, String) ? [e] : e, (r?.length || e?.length) && (r?.length && y.editCssRules(...r), e?.forEach((s) => t.addClass(s))), o?.startsWith(".") && t.addClass(o.slice(1)), o?.startsWith("#") && !t.attr("id") && t.prop({ id: o.slice(1) }), t;
+}, inline: (e) => t.style(e), inSheet: (e) => t.css(e), valueOf: (e) => t.is.empty ? void 0 : getComputedStyle(t[0])[Q(e)], nwRule: (e) => t.Style.byRule({ rules: e }), byRule: ({ classes2Apply: e = [], rules: r = [] } = {}) => {
+  let o = c(r, String) && !e.length ? r.split("{")[0].trim() : "";
+  return r = r && c(r, String) ? [r] : r, e = e && c(e, String) ? [e] : e, (r?.length || e?.length) && (r?.length && y.editCssRules(...r), e?.forEach((i) => t.addClass(i))), o?.startsWith(".") && t.addClass(o.slice(1)), o?.startsWith("#") && !t.attr("id") && t.prop({ id: o.slice(1) }), t;
 } }), HTML: (t) => ({ get: (e, r) => {
   if (t.is.empty)
     return "NO ELEMENTS IN COLLECTION";
   let n = e ? t.outerHtml : t.html();
-  return r ? Q(n) : n;
+  return r ? z(n) : n;
 }, set: (e, r = false, n = false) => {
   e = e.isJQL ? e.HTML.get(1) : e;
-  let o = a(e, String);
-  return e = o && n ? Q(e) : e, o && (e || "").trim().length && t.html(e, r), t;
+  let o = c(e, String);
+  return e = o && n ? z(e) : e, o && (e || "").trim().length && t.html(e, r), t;
 }, replace: (e, r = false) => t.HTML.set(e, false, r), append: (e, r = false) => t.HTML.set(e, true, r), insert: (e, r = false) => (e = e.isJQL ? e.HTML.get() : e, t.HTML.set(e + t.HTML.get(), false, r)) }) }, instanceExtensions: { isEmpty: (t) => t.collection.length < 1, replaceClass: (t, e, ...r) => L(t, (n) => {
   n.classList.remove(e), r.forEach((o) => n.classList.add(o));
-}), removeClass: (t, ...e) => L(t, (r) => r && e.forEach((n) => r.classList.remove(n))), addClass: (t, ...e) => L(t, (r) => r && e.forEach((n) => r.classList.add(n))), setData: (t, e) => L(t, (r) => wt(r, e)), show: (t) => L(t, (e) => at(e, { display: "revert-layer !important" })), hide: (t) => L(t, (e) => at(e, { display: "none !important" })), empty: (t) => L(t, Et), clear: (t) => L(t, Et), closest: (t, e) => {
-  let r = a(e, String) ? t[0].closest(e) : null;
+}), removeClass: (t, ...e) => L(t, (r) => r && e.forEach((n) => r.classList.remove(n))), addClass: (t, ...e) => L(t, (r) => r && e.forEach((n) => r.classList.add(n))), setData: (t, e) => L(t, (r) => Ct(r, e)), show: (t) => L(t, (e) => lt(e, { display: "revert-layer !important" })), hide: (t) => L(t, (e) => lt(e, { display: "none !important" })), empty: (t) => L(t, wt), clear: (t) => L(t, wt), closest: (t, e) => {
+  let r = c(e, String) ? t[0].closest(e) : null;
   return r ? y(r) : t;
 }, style: (t, e, r) => L(t, (o) => {
-  r && a(e, String) && (e = { [e]: r || "none" }), at(o, e);
-}), toggleClass: (t, e) => L(t, (r) => r.classList.toggle(e)), css: (t, e, r) => L(t, (n) => ee(n, e, r)), text: (t, e, r = false) => t.isEmpty() ? t : a(e, String) ? L(t, (o) => o.textContent = r ? o.textContent + e : e) : t.first().textContent, removeAttribute: (t, e) => L(t, (r) => r.removeAttribute(e)), each: (t, e) => L(t, e), remove: (t, e) => {
+  r && c(e, String) && (e = { [e]: r || "none" }), lt(o, e);
+}), toggleClass: (t, e) => L(t, (r) => r.classList.toggle(e)), css: (t, e, r) => L(t, (n) => re(n, e, r)), text: (t, e, r = false) => t.isEmpty() ? t : c(e, String) ? L(t, (o) => o.textContent = r ? o.textContent + e : e) : t.first().textContent, removeAttribute: (t, e) => L(t, (r) => r.removeAttribute(e)), each: (t, e) => L(t, e), remove: (t, e) => {
   let r = (o) => o.remove(), n = () => t.collection = t.collection.filter((o) => document.documentElement.contains(o));
   if (e) {
     let o = t.find$(e);
@@ -264,22 +264,22 @@ var oe = { factoryExtensions: { is: (t) => Kt(t), length: (t) => t.collection.le
   return !r || !r.classList.length ? false : e.find((n) => r.classList.contains(n)) && true || false;
 }, replace: (t, e, r) => {
   let n = t[0];
-  return !e || !r || !a(r, HTMLElement) && !r.isJQL ? (console.error("JQL replace: invalid replacement value"), t) : (r.isJQL && (r = r[0]), a(r, NodeList) && (r = r[0]), n && e && (e = a(e, String) ? n.querySelectorAll(e) : e.isJQL ? e.collection : e, a(e, HTMLElement, NodeList, Array) && a(r, HTMLElement) && (a(e, HTMLElement) ? [e] : [...e]).forEach((o) => o.replaceWith(r.cloneNode(true)))), t);
-}, replaceWith: (t, e) => (e = a(e, Element) ? e : e.isJQL ? e[0] : void 0, e && (t[0].replaceWith(e), t = y.virtual(e)), t), replaceMe: (t, e) => t.replaceWith(e), val: (t, e) => {
+  return !e || !r || !c(r, HTMLElement) && !r.isJQL ? (console.error("JQL replace: invalid replacement value"), t) : (r.isJQL && (r = r[0]), c(r, NodeList) && (r = r[0]), n && e && (e = c(e, String) ? n.querySelectorAll(e) : e.isJQL ? e.collection : e, c(e, HTMLElement, NodeList, Array) && c(r, HTMLElement) && (c(e, HTMLElement) ? [e] : [...e]).forEach((o) => o.replaceWith(r.cloneNode(true)))), t);
+}, replaceWith: (t, e) => (e = c(e, Element) ? e : e.isJQL ? e[0] : void 0, e && (t[0].replaceWith(e), t = y.virtual(e)), t), replaceMe: (t, e) => t.replaceWith(e), val: (t, e) => {
   let r = t[0];
-  return !r || !a(r, HTMLInputElement, HTMLSelectElement, HTMLTextAreaElement) ? t : e === void 0 ? r.value : (r.value = a(e, String) ? e : "", t);
-}, attr: (t, e, r) => !r && a(e, String) ? e === "class" ? [...t[0]?.classList].join(" ") : t[0]?.getAttribute(e) : (a(e, String) && r && (e = { [e]: r }), a(e, Object) && !t.is.empty && re(t[0], e), t), andThen: (t, e, r = false) => {
-  e = e.isJQL ? e.collection : y.virtual(F(e)).collection;
-  let [n, o, s] = r ? [0, "before", e.concat(t.collection)] : [t.collection.length - 1, "after", t.collection.concat(e)];
-  return t[n][o](...e), t.collection = s, t;
+  return !r || !c(r, HTMLInputElement, HTMLSelectElement, HTMLTextAreaElement) ? t : e === void 0 ? r.value : (r.value = c(e, String) ? e : "", t);
+}, attr: (t, e, r) => !r && c(e, String) ? e === "class" ? [...t[0]?.classList].join(" ") : t[0]?.getAttribute(e) : (c(e, String) && r && (e = { [e]: r }), c(e, Object) && !t.is.empty && ne(t[0], e), t), andThen: (t, e, r = false) => {
+  e = e.isJQL ? e.collection : y.virtual(R(e)).collection;
+  let [n, o, i] = r ? [0, "before", e.concat(t.collection)] : [t.collection.length - 1, "after", t.collection.concat(e)];
+  return t[n][o](...e), t.collection = i, t;
 }, afterMe: (t, e) => t.andThen(e), beforeMe: (t, e) => t.andThen(e, true), append: (t, ...e) => {
   if (!t.is.empty && e.length)
     for (let r of e) {
-      if (a(r, String)) {
+      if (c(r, String)) {
         let n = r.trim();
-        r = !/^<(.+)[^>]+>$/m.test(n) ? y.text(r) : F(r), L(t, (s) => s.append(r));
+        r = !/^<(.+)[^>]+>$/m.test(n) ? y.text(r) : R(r), L(t, (i) => i.append(r));
       }
-      if (j(r)) {
+      if (N(r)) {
         let n = r;
         t.length > 1 && (n = r, n.removeAttribute && n.removeAttribute("id")), L(t, (o) => o.append(n));
       }
@@ -292,11 +292,11 @@ var oe = { factoryExtensions: { is: (t) => Kt(t), length: (t) => t.collection.le
 }, prepend: (t, ...e) => {
   if (!t.isEmpty() && e)
     for (let r of e) {
-      if (a(r, String)) {
+      if (c(r, String)) {
         let n = !/^<.+>$/m.test(r.trim());
-        L(t, (o) => o.prepend(n ? y.text(r) : F(r)));
+        L(t, (o) => o.prepend(n ? y.text(r) : R(r)));
       }
-      if (j(r)) {
+      if (N(r)) {
         let n = r;
         t.length > 1 && (n = r.cloneNode(true), n.removeAttribute && n.removeAttribute("id")), L(t, (o) => o.insertBefore(n, o.firstChild));
       }
@@ -306,32 +306,32 @@ var oe = { factoryExtensions: { is: (t) => Kt(t), length: (t) => t.collection.le
       }
     }
   return t;
-}, appendTo: (t, e) => (e.isJQL || (e = y(e)), e.append(t), t), prependTo: (t, e) => (e.isJQL || (e = y.virtual(e)), e.prepend(t), t), single: (t, e) => t.collection.length > 0 ? a(e, String) ? t.find$(e) : a(e, Number) ? y(t.collection[e]) : y(t.collection[0]) : t, toNodeList: (t) => [...t.collection].map((e) => document.importNode(e, true)), duplicate: (t, e = false, r = document.body) => {
-  let n = t.toNodeList().map((s) => s.removeAttribute && s.removeAttribute("id") || s), o = y.virtual(n);
+}, appendTo: (t, e) => (e.isJQL || (e = y(e)), e.append(t), t), prependTo: (t, e) => (e.isJQL || (e = y.virtual(e)), e.prepend(t), t), single: (t, e) => t.collection.length > 0 ? c(e, String) ? t.find$(e) : c(e, Number) ? y(t.collection[e]) : y(t.collection[0]) : t, toNodeList: (t) => [...t.collection].map((e) => document.importNode(e, true)), duplicate: (t, e = false, r = document.body) => {
+  let n = t.toNodeList().map((i) => i.removeAttribute && i.removeAttribute("id") || i), o = y.virtual(n);
   return e ? o.toDOM(r) : o;
-}, toDOM: (t, e = document.body, r = H.BeforeEnd) => (t.collection = z(t.collection, e, r), t.isVirtual && (t.isVirtual = false), t), first: (t, e = false) => {
+}, toDOM: (t, e = document.body, r = A.BeforeEnd) => (t.collection = W(t.collection, e, r), t.isVirtual && (t.isVirtual = false), t), first: (t, e = false) => {
   if (t.collection.length > 0)
     return e ? t.single() : t.collection[0];
 }, first$: (t, e) => t.single(e), find: (t, e) => t.first()?.querySelectorAll(e) || [], find$: (t, e) => y(e, t), prop: (t, e, r) => {
-  if (a(e, String) && !r)
+  if (c(e, String) && !r)
     return t[0]?.[e];
-  let n = a(e, Object) ? e : { [e]: r };
-  return Object.entries(n).forEach(([o, s]) => {
-    if (o = o.trim(), s && !Ct(o) || !s)
+  let n = c(e, Object) ? e : { [e]: r };
+  return Object.entries(n).forEach(([o, i]) => {
+    if (o = o.trim(), i && !$t(o) || !i)
       return false;
     let u = o.toLowerCase() === "id";
-    u && (t[0].id = s), !u && L(t, (h) => h[o] = s);
+    u && (t[0].id = i), !u && L(t, (h) => h[o] = i);
   }), t;
 }, on: (t, e, ...r) => (t.collection.length && r?.forEach((n) => {
-  let o = $t(t);
+  let o = Tt(t);
   y.delegate(e, o, n);
 }), t), html: (t, e, r) => {
   if (e === void 0)
     return t[0]?.innerHTML;
   if (!t.isEmpty()) {
-    let n = F(`<div>${e.isJQL ? e.HTML.get(true) : e}</div>`);
-    if (!a(n, Comment))
-      return L(t, (s) => s.innerHTML = r ? s.innerHTML + n.innerHTML : n.innerHTML);
+    let n = R(`<div>${e.isJQL ? e.HTML.get(true) : e}</div>`);
+    if (!c(n, Comment))
+      return L(t, (i) => i.innerHTML = r ? i.innerHTML + n.innerHTML : n.innerHTML);
   }
   return t;
 }, htmlFor: (t, e, r = "", n = false) => {
@@ -341,266 +341,272 @@ var oe = { factoryExtensions: { is: (t) => Kt(t), length: (t) => t.collection.le
       return t;
     if ("{htmlValue}".trim().length < 1)
       return o.textContent = "", t;
-    let s = F(`<div>${r}</div>`);
-    s && o.html(s.innerHTML, n);
+    let i = R(`<div>${r}</div>`);
+    i && o.html(i.innerHTML, n);
   }
   return t;
 }, trigger: (t, e, r = Event, n = {}) => {
   if (t.collection.length) {
     let o = new r(e, { ...n, bubbles: n.bubbles ?? true });
-    for (let s of t.collection)
-      s.dispatchEvent(o);
+    for (let i of t.collection)
+      i.dispatchEvent(o);
   }
   return t;
 } } };
-var ct = oe;
-var Tt = ie;
-function ie(t) {
+var ut = ie;
+var Ht = se;
+function se(t) {
   let e = t.createStyle("JQLPopupCSS");
-  ft.forEach((i) => e(i));
-  let r, n, o, s, u = t.virtual('<div class="popup-warn">'), h = t('<div class="popupContainer">').append(t('<span class="closeHandleIcon">')).append(t('<div class="content">')), [x, p] = [t(".popupContainer > .closeHandleIcon"), t(".popupContainer > .content")], w = () => {
+  yt.forEach((a) => e(a));
+  let r, n, o, i, u = t.virtual('<div class="popup-warn">'), h = t('<div class="popupContainer">').append(t('<span class="closeHandleIcon">')).append(t('<div class="content">')), [x, f] = [t(".popupContainer > .closeHandleIcon"), t(".popupContainer > .content")], w = () => {
     if (x.hasClass("popup-active")) {
-      let { x: i, y: l, width: f } = p.dimensions;
-      x.style({ top: `${l - 12}px`, left: `${i + f - 12}px` });
+      let { x: a, y: s, width: g } = f.dimensions;
+      x.style({ top: `${s - 12}px`, left: `${a + g - 12}px` });
     }
-  }, E = (i, l = false) => {
-    let f = l ? i.min - 100 : i.max + 10;
-    h.style({ zIndex: f }), x.style({ zIndex: f + 1 });
-  }, R = () => {
-    o && t(".popup-warn").clear().append(t(`<div>${o}</div>`)), p.addClass("popup-warn-active");
+  }, C = (a, s = false) => {
+    let g = s ? a.min - 100 : a.max + 10;
+    h.style({ zIndex: g }), x.style({ zIndex: g + 1 });
+  }, M = () => {
+    o && t(".popup-warn").clear().append(t(`<div>${o}</div>`)), f.addClass("popup-warn-active");
   }, S = () => {
     r = false, d(x[0]);
-  }, C = () => {
-    let i = [0, ...t.nodes("*:not(.popupContainer, .closeHandleIcon)", document.body).map((l) => +getComputedStyle(l).zIndex).filter((l) => t.IS(l, Number))];
-    return { max: Math.max(...i) ?? 0, min: Math.min(...i) ?? 0 };
-  }, M = (i, l) => s = setTimeout(() => d(x[0]), +i * 1e3);
-  return E(C(), true), t.delegate("click", ".popupContainer, .closeHandleIcon", (i) => d(i.target)), t.delegate("click", ".popupContainer .content", (i, l) => r && l.removeClass("popup-warn-active")), t.delegate("resize", w), { show: m, create: (i, l, f, v) => {
-    let c = t.IS(l, Boolean) ? l : false;
-    m({ content: i, modal: c, callback: c ? f : l, warnMessage: v });
-  }, createTimed: (i, l, f) => m({ content: i, closeAfter: l, callback: f }), removeModal: S };
-  function m({ content: i, modal: l, closeAfter: f, callback: v, warnMessage: c }) {
-    return i ? (clearTimeout(s), E(C()), r = l ?? false, o = t.IS(c, String) && `${c?.trim()}`.length || c?.isJQL ? c : void 0, p.clear().append(i.isJQL ? i : t(`<div>${i}</div>`)), r && c && p.append(u.duplicate()), h.addClass("popup-active"), t.IS(v, Function) && (n = () => {
+  }, T = () => {
+    let a = [0, ...t.nodes("*:not(.popupContainer, .closeHandleIcon)", document.body).map((s) => +getComputedStyle(s).zIndex).filter((s) => t.IS(s, Number))];
+    return { max: Math.max(...a) ?? 0, min: Math.min(...a) ?? 0 };
+  }, I = (a, s) => i = setTimeout(() => d(x[0]), +a * 1e3);
+  return C(T(), true), t.delegate("click", ".popupContainer, .closeHandleIcon", (a) => d(a.target)), t.delegate("click", ".popupContainer .content", (a, s) => r && s.removeClass("popup-warn-active")), t.delegate("resize", w), { show: m, create: (a, s, g, v) => {
+    let E = t.IS(s, Boolean) ? s : false;
+    m({ content: a, modal: E, callback: E ? g : s, warnMessage: v });
+  }, createTimed: (a, s, g) => m({ content: a, closeAfter: s, callback: g }), removeModal: S };
+  function m({ content: a, modal: s, closeAfter: g, callback: v, warnMessage: E }) {
+    return a ? (clearTimeout(i), C(T()), r = s ?? false, o = t.IS(E, String) && `${E?.trim()}`.length || E?.isJQL ? E : void 0, f.clear().append(a.isJQL ? a : t(`<div>${a}</div>`)), r && E && f.append(u.duplicate()), h.addClass("popup-active"), t.IS(v, Function) && (n = () => {
       v(), n = null;
-    }), r || (t.IS(+f, Number) && M(f, n), x.addClass("popup-active"), w()), true) : console.error("Popup creation needs at least some text to show");
+    }), r || (t.IS(+g, Number) && I(g, n), x.addClass("popup-active"), w()), true) : console.error("Popup creation needs at least some text to show");
   }
-  function d(i) {
-    if (!r && !i.closest(".content")) {
-      clearTimeout(s), p.clear(), t(".popup-active").removeClass("popup-active"), E(C(), true), t.IS(n, Function) && n(), o = "";
+  function d(a) {
+    if (!r && !a.closest(".content")) {
+      clearTimeout(i), f.clear(), t(".popup-active").removeClass("popup-active"), C(T(), true), t.IS(n, Function) && n(), o = "";
       return;
     }
-    return r && R();
+    return r && M();
   }
 }
-var N = {};
-var se = ["load", "unload", "scroll", "focus", "blur", "DOMNodeRemovedFromDocument", "DOMNodeInsertedIntoDocument", "loadstart", "progress", "error", "abort", "load", "loadend", "pointerenter", "pointerleave", "readystatechange"];
-var ae = (t) => !!se.find((e) => e === t);
-var Ht = () => {
-  let t = (n) => N[n.type].forEach((o) => o(n)), e = (n, o) => (s) => {
-    let u = s.target?.closest?.(n);
-    return u && o(s, y(u));
+var k = {};
+var ae = ["load", "unload", "scroll", "focus", "blur", "DOMNodeRemovedFromDocument", "DOMNodeInsertedIntoDocument", "loadstart", "progress", "error", "abort", "load", "loadend", "pointerenter", "pointerleave", "readystatechange"];
+var ce = (t) => !!ae.find((e) => e === t);
+var At = () => {
+  let t = (n) => k[n.type].forEach((o) => o(n)), e = (n, o) => (i) => {
+    let u = i.target?.closest?.(n);
+    return u && o(i, y(u));
   }, r = (n, o) => {
-    N[n] || addEventListener(n, t, ae(n));
+    k[n] || addEventListener(n, t, ce(n));
   };
-  return (n, o, s, u = false) => {
+  return (n, o, i, u = false) => {
     r(n, u);
-    let h = o ? e(o, s) : s;
-    N = N[n] ? { ...N, [n]: N[n].concat(h) } : { ...N, [n]: [h] };
+    let h = o ? e(o, i) : i;
+    k = k[n] ? { ...k, [n]: k[n].concat(h) } : { ...k, [n]: [h] };
   };
 };
-var ut = ce;
-function ce({ styleSheet: t, createWithId: e }) {
-  let { cssRuleFromText: r, checkAtRules: n, toDashedNotation: o, IS: s, shortenRule: u, consider: h, ruleExists: x, checkParams: p, atMedia2String: w, sheet: E, compareSelectors: R } = le({ styleSheet: t, createWithId: e }), S = (i, l) => {
-    if (i && l.removeProperties) {
-      Object.keys(l.removeProperties).forEach((f) => {
-        i.style.removeProperty(f);
-      });
+var mt = le;
+function le({ styleSheet: t, createWithId: e }) {
+  let { cssRuleFromText: r, checkAtRules: n, toDashedNotation: o, IS: i, shortenRule: u, consider: h, tryAndCatch: x, ruleExists: f, checkParams: w, atMedia2String: C, sheet: M, compareSelectors: S } = ue({ styleSheet: t, createWithId: e }), T = (s, g) => {
+    if (s && g.removeProperties) {
+      x(() => Object.keys(g.removeProperties).forEach((v) => {
+        s.style.removeProperty(v);
+      }), "StylingFactory instance (remove property/properties) failed");
       return;
     }
-    Object.entries(l).forEach(([f, v]) => {
-      let c;
-      /!important/.test(v) && (v = v.slice(0, v.indexOf("!important")).trim(), c = "important"), i.style.setProperty(o(f), v, c);
+    Object.entries(g).forEach(([v, E]) => {
+      let l;
+      /!important/.test(E) && (E = E.slice(0, E.indexOf("!important")).trim(), l = "important"), x(() => s.style.setProperty(o(v), E, l), "StylingFactory instance (setRule4Selector) failed");
     });
-  }, C = (i, l, f = E) => {
-    if (!s(i, String) || !i.trim().length || /[;,]$/g.test(i.trim()))
-      return console.error(`StylingFactory instance (setRules): [${i || "[no selector given]"}] is not a valid selector`);
-    let v = x(i, true), c = v || f.cssRules[f.insertRule(`${i} {}`, f.cssRules.length || 0)];
-    if (l.removeRule) {
-      if (!v)
-        return console.error(`Remove rule: ${i} does not exist`);
-      let g = [...E.rules].findIndex((b) => R(b.selectorText || "", i));
-      return h(() => E.deleteRule(g));
+  }, I = (s, g, v = M) => {
+    if (!i(s, String) || !s.trim().length || /[;,]$/g.test(s.trim()))
+      return console.error(`StylingFactory instance (setRules): [${s || "[no selector given]"}] is not a valid selector`);
+    let E = f(s, true), l = E || v.cssRules[v.insertRule(`${s} {}`, v.cssRules.length || 0)];
+    if (g.removeRule) {
+      if (!E)
+        return console.error(`Remove rule: ${s} does not exist`);
+      let p = [...M.rules].findIndex((b) => S(b.selectorText || "", s));
+      return h(() => M.deleteRule(p));
     }
-    return h(() => S(c, l), i, v);
-  }, M = (i) => {
-    let l = i.trim().split(/{/, 2), f = l.shift().trim();
-    if (!s(f, String) || !f.trim())
-      return console.error(`StylingFactory instance (doParse): no (valid) selector could be extracted from rule ${u(i)}`);
-    let v = r(l.shift());
-    return C(f, v);
-  }, m = (i) => {
-    let l = n(i);
-    return l.done ? l.existing : M(i);
-  }, d = (i, l) => i.trim().startsWith("@media") ? m(w(i, l)) : C(i, l);
-  return (i, l = {}) => p(i, l) && (Object.keys(l).length ? d(i, l) : m(i));
+    return h(() => T(l, g), s, E);
+  }, m = (s) => {
+    let g = s.trim().split(/{/, 2), v = g.shift().trim();
+    if (!i(v, String) || !v.trim())
+      return console.error(`StylingFactory instance (doParse): no (valid) selector could be extracted from rule ${u(s)}`);
+    let E = r(g.shift());
+    return x(() => I(v, E), "StylingFactory instance (setRules) failed");
+  }, d = (s) => {
+    let g = n(s);
+    return g.done ? g.existing : m(s);
+  }, a = (s, g) => s.trim().startsWith("@media") ? d(C(s, g)) : I(s, g);
+  return (s, g = {}) => w(s, g) && (Object.keys(g).length ? a(s, g) : d(s));
 }
-function le({ styleSheet: t, createWithId: e }) {
-  let r = "Note: The rule or some of its properties may not be supported by your browser (yet)", n = (c) => c.replace(/([*\[\]()-+{}.$?\\])/g, "\\$1");
-  t = e ? ((c) => document.querySelector(`#${c}`)?.sheet ?? document.head.insertAdjacentElement("beforeend", Object.assign(document.createElement("style"), { id: c, type: "text/css" })).sheet)(e) : t;
-  let s = (c, ...g) => {
-    let b = g.length && Array.isArray(g.slice(-1)) ? g.pop().join("") : "";
-    return new RegExp((g.length && c.raw.reduce((T, G, jt) => T.concat(g[jt - 1] || "").concat(G), "") || c.raw.join("")).split(`
-`).map((T) => T.replace(/\s|\/\/.*$/g, "").trim().replace(/(@s!)/g, " ")).join(""), b);
-  }, u = (c, g) => [...t.rules].find((b) => g ? M(b.selectorText || "", c) : s`${n(c)}${[..."gim"]}`.test(b.cssText)), h = (c) => /@import|@charset|@font-face/i.test(c) ? { existing: i(c, 0), done: true } : w.test(c) ? { ok: i(c, t.cssRules.length), done: true } : { ok: false, done: false }, x = (c, ...g) => !!g.find((b) => p(c, b)), p = (c, ...g) => {
-    if (g.length > 1)
-      return x(c, ...g);
-    g = g.shift();
-    let b = "Invalid parameter(s)", T = c === 0 ? Number : c === "" ? String : c ? Object.getPrototypeOf(c)?.constructor : { name: b };
-    return g ? g === T?.__proto__ || g === T : T?.name ?? b;
-  }, w = s`@keyframes | @font-feature-values | @font-palette-values 
-    | @layer | @namespace | @page | @counter-style | @container | @media ${["i"]}`, E = (c) => c.reduce((g, b) => {
-    let [T, G] = [b.slice(0, b.indexOf(":")).trim(), b.slice(b.indexOf(":") + 1).trim().replace(/;$|;.+(?=\/*).+\/$/, "")];
-    return T && G ? { ...g, [T]: G } : g;
-  }, {}), R = (c) => c.replace(/[}{\r\n]/g, "").split(";").map((g) => g.trim()).join(`;
+function ue({ styleSheet: t, createWithId: e }) {
+  let r = "Note: The rule or some of its properties may not be supported by your browser (yet)", n = (l) => l.replace(/([*\[\]()-+{}.$?\\])/g, "\\$1");
+  t = e ? ((l) => document.querySelector(`#${l}`)?.sheet ?? document.head.insertAdjacentElement("beforeend", Object.assign(document.createElement("style"), { id: l, type: "text/css" })).sheet)(e) : t;
+  let i = (l, ...p) => {
+    let b = p.length && Array.isArray(p.slice(-1)) ? p.pop().join("") : "";
+    return new RegExp((p.length && l.raw.reduce((H, Z, Nt) => H.concat(p[Nt - 1] || "").concat(Z), "") || l.raw.join("")).split(`
+`).map((H) => H.replace(/\s|\/\/.*$/g, "").trim().replace(/(@s!)/g, " ")).join(""), b);
+  }, u = (l, p) => [...t.rules].find((b) => p ? I(b.selectorText || "", l) : i`${n(l)}${[..."gim"]}`.test(b.cssText)), h = (l) => /@import|@charset|@font-face/i.test(l) ? { existing: s(l, 0), done: true } : w.test(l) ? { ok: s(l, t.cssRules.length), done: true } : { ok: false, done: false }, x = (l, ...p) => !!p.find((b) => f(l, b)), f = (l, ...p) => {
+    if (p.length > 1)
+      return x(l, ...p);
+    p = p.shift();
+    let b = "Invalid parameter(s)", H = l === 0 ? Number : l === "" ? String : l ? Object.getPrototypeOf(l)?.constructor : { name: b };
+    return p ? p === H?.__proto__ || p === H : H?.name ?? b;
+  }, w = i`@keyframes | @font-feature-values | @font-palette-values 
+    | @layer | @namespace | @page | @counter-style | @container | @media ${["i"]}`, C = (l) => l.reduce((p, b) => {
+    let [H, Z] = [b.slice(0, b.indexOf(":")).trim(), b.slice(b.indexOf(":") + 1).trim().replace(/;$|;.+(?=\/*).+\/$/, "")];
+    return H && Z ? { ...p, [H]: Z } : p;
+  }, {}), M = (l) => l.replace(/[}{\r\n]/g, "").split(";").map((p) => p.trim()).join(`;
 `).split(`
-`), S = (c) => E(R(c)), C = (c) => c.replace(/[A-Z]/g, (g) => `-${g.toLowerCase()}`).replace(/[^--]^-|-$/, ""), M = (c, g) => c?.replace("::", ":") === g?.replace("::", ":"), m = (c, g) => c && p(c, String) && c.trim().length && p(g, Object) || (console.error("StylingFactory instance called with invalid parameters"), false), d = (c) => {
-    let g = (c || "NO RULE").trim().slice(0, 50).replace(/\n/g, "\\n").replace(/\s{2,}/g, " ");
-    return c.length > g.length ? `${g.trim()}...truncated` : g;
-  }, i = (c) => {
-    c = c.trim();
-    let g = !!u(c.slice(0, c.indexOf("{")));
+`), S = (l) => C(M(l)), T = (l) => l.replace(/[A-Z]/g, (p) => `-${p.toLowerCase()}`).replace(/[^--]^-|-$/, ""), I = (l, p) => l?.replace("::", ":") === p?.replace("::", ":"), m = (l, p) => l && f(l, String) && l.trim().length && f(p, Object) || (console.error("StylingFactory instance called with invalid parameters"), false), d = (l) => {
+    let p = (l || "NO RULE").trim().slice(0, 50).replace(/\n/g, "\\n").replace(/\s{2,}/g, " ");
+    return l.length > p.length ? `${p.trim()}...truncated` : p;
+  }, a = (l, p) => {
     try {
-      return t.insertRule(`${c}`, t.cssRules.length), g;
+      return l();
+    } catch (b) {
+      console.error(`${p || "an error occured"}: ${b.message}`);
+    }
+  }, s = (l) => {
+    l = l.trim();
+    let p = !!u(l.slice(0, l.indexOf("{")));
+    try {
+      return t.insertRule(`${l}`, t.cssRules.length), p;
     } catch (b) {
       return console.error(`StylingFactory instance (tryParse) ${b.name} Error:
 ${b.message}
-Rule: ${d(c)}
-${r}`), g;
+Rule: ${d(l)}
+${r}`), p;
     }
-  }, l = (c, g, b) => {
+  }, g = (l, p, b) => {
     try {
-      return c(), b;
-    } catch (T) {
-      return console.error(`StylingFactory instance (tryAddOrModify) ${T.name} Error:
-${T.message}
-Rule: ${d(g)}
+      return l(), b;
+    } catch (H) {
+      return console.error(`StylingFactory instance (tryAddOrModify) ${H.name} Error:
+${H.message}
+Rule: ${d(p)}
 ${r}`), b;
     }
-  }, f = (c) => Object.entries(c).map(([g, b]) => `${g}: ${b.trim()}`).join(`;
+  }, v = (l) => Object.entries(l).map(([p, b]) => `${p}: ${b.trim()}`).join(`;
 `);
-  return { sheet: t, cssRuleFromText: S, checkAtRules: h, ruleExists: u, atMedia2String: (c, g) => `${c.trim()} ${Object.entries(g).map(([b, T]) => `${b}: { ${f(T)}`)}`, compareSelectors: M, toDashedNotation: C, checkParams: m, tryParse: i, consider: l, IS: p, shortenRule: d };
+  return { sheet: t, tryAndCatch: a, cssRuleFromText: S, checkAtRules: h, ruleExists: u, atMedia2String: (l, p) => `${l.trim()} ${Object.entries(p).map(([b, H]) => `${b}: { ${v(H)}`)}`, compareSelectors: I, toDashedNotation: T, checkParams: m, tryParse: s, consider: g, IS: f, shortenRule: d };
 }
-var mt = ct.instanceExtensions;
-var At = ct.factoryExtensions;
-var lt = (t) => a(t, Comment, Text);
-var j = (t) => a(t, Text, HTMLElement, Comment);
-var ue = (t) => a(t, Comment);
-var pt = (t) => a(t, String) && /^<|>$/.test(`${t}`.trim());
-var Ft = (t) => a(t, Array) && !t?.find((e) => !pt(e));
-var gt = (t) => a(t, Array) && !t?.find((e) => !j(e));
-var Mt = (t) => t?.filter((e) => e).reduce((e, r) => e.concat(ue(r) ? `<!--${r.data}-->` : lt(r) ? r.textContent : r.outerHTML), "");
-var Rt = (t) => t ? a(t, NodeList) ? [...t] : j(t) ? [t] : gt(t) ? t : t.isJQL ? t.collection : void 0 : [];
-var It = (t, e, r) => {
-  let n = e !== document.body && a(t, String) && t.toLowerCase() !== "body" ? e : document, o;
+var gt = ut.instanceExtensions;
+var Ft = ut.factoryExtensions;
+var dt = (t) => c(t, Comment, Text);
+var N = (t) => c(t, Text, HTMLElement, Comment);
+var de = (t) => c(t, Comment);
+var ft = (t) => c(t, String) && /^<|>$/.test(`${t}`.trim());
+var Rt = (t) => c(t, Array) && !t?.find((e) => !ft(e));
+var ht = (t) => c(t, Array) && !t?.find((e) => !N(e));
+var Mt = (t) => t?.filter((e) => e).reduce((e, r) => e.concat(de(r) ? `<!--${r.data}-->` : dt(r) ? r.textContent : r.outerHTML), "");
+var It = (t) => t ? c(t, NodeList) ? [...t] : N(t) ? [t] : ht(t) ? t : t.isJQL ? t.collection : void 0 : [];
+var Dt = (t, e, r) => {
+  let n = e !== document.body && c(t, String) && t.toLowerCase() !== "body" ? e : document, o;
   try {
     r.collection = [...n.querySelectorAll(t)];
   } catch {
-    o = `Invalid CSS querySelector. [${a(t, String) ? t : "Nothing valid given!"}]`;
+    o = `Invalid CSS querySelector. [${c(t, String) ? t : "Nothing valid given!"}]`;
   }
   return o ?? `CSS querySelector "${t}", output ${r.collection.length} element(s)`;
 };
-var $t = (t) => {
-  let e = t.data.get("hid") || `HID${V()}`;
+var Tt = (t) => {
+  let e = t.data.get("hid") || `HID${G()}`;
   return t.data.add({ hid: e }), `[data-hid="${e}"]`;
 };
-var W = (t) => {
-  let e = (s) => (...u) => a(s, Function) && s(W(t), ...u), r = (s) => (...u) => a(s, Function) ? { tmpKey: s(W(t), ...u) } : { tmpKey: void 0 }, n = (s, u) => a(u, Symbol) ? () => s : a(+u, Number) ? s.collection?.[u] : u in At ? r(At[u])().tmpKey : u in mt ? e(mt[u]) : s[u], o = { get: (s, u) => n(s, u) };
+var q = (t) => {
+  let e = (i) => (...u) => c(i, Function) && i(q(t), ...u), r = (i) => (...u) => c(i, Function) ? { tmpKey: i(q(t), ...u) } : { tmpKey: void 0 }, n = (i, u) => c(u, Symbol) ? () => i : c(+u, Number) ? i.collection?.[u] : u in Ft ? r(Ft[u])().tmpKey : u in gt ? e(gt[u]) : i[u], o = { get: (i, u) => n(i, u) };
   return new Proxy(t, o);
 };
-var dt = ut({ createWithId: "JQLStylesheet" });
-var de = (t, e) => mt[t] = (r, ...n) => e(r, ...n);
-var me;
-var Dt = (t) => {
-  let e = pe(t);
+var pt = mt({ createWithId: "JQLStylesheet" });
+var me = (t, e) => gt[t] = (r, ...n) => e(r, ...n);
+var pe;
+var jt = (t) => {
+  let e = ge(t);
   return Object.entries(Object.getOwnPropertyDescriptors(e)).forEach(([r, n]) => {
     Object.defineProperty(t, r, n);
-  }), me = { ...e }, t;
+  }), pe = { ...e }, t;
 };
-function pe(t) {
-  let e = { activePopup: void 0 }, r = document.createElement("br"), n = (...m) => m.forEach((d) => dt(d)), o = (m, d) => dt(m, d), s = (m, d, i) => {
-    d = d?.isJQL ? d?.[0] : d, i = i && Object.values(H).find((f) => i === f) ? i : void 0;
-    let l = t(m, r);
-    return d && !a(d, HTMLBRElement) && l.collection.forEach((f) => i ? d.insertAdjacentElement(i, f) : d.append(f)), l;
-  }, u = Ht(), h = (m, d, ...i) => (a(d, Function) && (i.push(d), d = void 0), i.forEach((l) => u(m, d, l))), x = Object.entries(D.tagsRaw).reduce(C, {}), p = (...m) => {
+function ge(t) {
+  let e = { activePopup: void 0 }, r = document.createElement("br"), n = (...m) => m.forEach((d) => pt(d)), o = (m, d) => pt(m, d), i = (m, d, a) => {
+    d = d?.isJQL ? d?.[0] : d, a = a && Object.values(A).find((g) => a === g) ? a : void 0;
+    let s = t(m, r);
+    return d && !c(d, HTMLBRElement) && s.collection.forEach((g) => a ? d.insertAdjacentElement(a, g) : d.append(g)), s;
+  }, u = At(), h = (m, d, ...a) => (c(d, Function) && (a.push(d), d = void 0), a.forEach((s) => u(m, d, s))), x = Object.entries(j.tagsRaw).reduce(T, {}), f = (...m) => {
     if (m.length === 1) {
       let d = String(m.shift().trim());
-      m = d.startsWith("!") ? [d.slice(1, -1)] : d.split(",").map((i) => i.trim());
+      m = d.startsWith("!") ? [d.slice(1, -1)] : d.split(",").map((a) => a.trim());
     }
-    m.map((d) => d.startsWith("!") ? d.slice(1, -1) : d).forEach((d) => dt(d, { removeRule: 1 }));
-  }, w = Object.entries(D.tagsRaw).filter(([, m]) => m).map(([m]) => m).sort((m, d) => m.localeCompare(d));
-  return M(x, ((m) => ({ debugLog: $, log: (...i) => A("fromStatic", ...i), insertPositions: H, get at() {
-    return H;
-  }, editCssRules: n, editCssRule: o, setStyle: o, delegate: h, virtual: s, get fn() {
-    return de;
+    m.map((d) => d.startsWith("!") ? d.slice(1, -1) : d).forEach((d) => pt(d, { removeRule: 1 }));
+  }, w = Object.entries(j.tagsRaw).filter(([, m]) => m).map(([m]) => m).sort((m, d) => m.localeCompare(d));
+  return I(x, ((m) => ({ debugLog: $, log: (...a) => F("fromStatic", ...a), insertPositions: A, get at() {
+    return A;
+  }, editCssRules: n, editCssRule: o, setStyle: o, delegate: h, virtual: i, get fn() {
+    return me;
   }, get allowTag() {
-    return D.allowTag;
+    return j.allowTag;
   }, get prohibitTag() {
-    return D.prohibitTag;
+    return j.prohibitTag;
   }, get lenient() {
-    return D.allowUnknownHtmlTags;
+    return j.allowUnknownHtmlTags;
   }, get IS() {
-    return a;
+    return c;
   }, popup: () => m.Popup, get Popup() {
-    return m.activePopup || (m.activePopup = Tt(m)), m.activePopup;
-  }, createStyle: (i) => ut({ createWithId: i || `jql${V()}` }), removeCssRule: p, removeCssRules: p, text: (i, l = false) => l ? document.createComment(i) : document.createTextNode(i), comment: (i) => m.text(i, true), node: (i, l = document) => l.querySelector(i, l), nodes: (i, l = document) => [...l.querySelectorAll(i, l)] }))(t));
-  function R({ tag: m, content: d = "", cssClass: i = "", props: l = {}, toDOM: f = false } = {}) {
+    return m.activePopup || (m.activePopup = Ht(m)), m.activePopup;
+  }, createStyle: (a) => mt({ createWithId: a || `jql${G()}` }), removeCssRule: f, removeCssRules: f, text: (a, s = false) => s ? document.createComment(a) : document.createTextNode(a), comment: (a) => m.text(a, true), node: (a, s = document) => s.querySelector(a, s), nodes: (a, s = document) => [...s.querySelectorAll(a, s)] }))(t));
+  function M({ tag: m, content: d = "", cssClass: a = "", props: s = {}, toDOM: g = false } = {}) {
     let v = t.virtual(`<${m}></${m}>`);
-    return (a(d, String, HTMLElement, Array) || d.isJQL) && (a(d, Array) || (d = [d]), v.append(...d)), a(l, Object) && v.prop(l), i && (i = a(i, Array) ? i : [i], v.addClass(...i)), f ? v.toDOM() : v;
+    return (c(d, String, HTMLElement, Array) || d.isJQL) && (c(d, Array) || (d = [d]), v.append(...d)), c(s, Object) && v.prop(s), a && (a = c(a, Array) ? a : [a], v.addClass(...a)), g ? v.toDOM() : v;
   }
   function S(m) {
-    function d(i) {
-      return i.toUpperCase() === i ? t.virtual(`<${i}></${i}>`) : (l, f = {}) => R(!l.isJQL && a(l, Object) ? { tag: i, ...l } : { tag: i, content: l, props: f });
+    function d(a) {
+      return a.toUpperCase() === a ? t.virtual(`<${a}></${a}>`) : (s, g = {}) => M(!s.isJQL && c(s, Object) ? { tag: a, ...s } : { tag: a, content: s, props: g });
     }
     return { get() {
       return d(m);
     } };
   }
-  function C(m, [d, i]) {
-    if (!i)
+  function T(m, [d, a]) {
+    if (!a)
       return m;
-    let l = d.toUpperCase();
-    return Object.defineProperty(m, d, S(d)), Object.defineProperty(m, l, S(l)), m;
+    let s = d.toUpperCase();
+    return Object.defineProperty(m, d, S(d)), Object.defineProperty(m, s, S(s)), m;
   }
-  function M(...m) {
+  function I(...m) {
     let d = {};
-    for (let i of m) {
-      let l = Object.getOwnPropertyDescriptors(i);
-      Object.entries(l).forEach(([f, v]) => Object.defineProperty(d, f, v));
+    for (let a of m) {
+      let s = Object.getOwnPropertyDescriptors(a);
+      Object.entries(s).forEach(([g, v]) => Object.defineProperty(d, g, v));
     }
     return d;
   }
 }
-var y = Dt(ge());
-function ge() {
-  return function(r, n, o = H.BeforeEnd) {
-    let s = a(n, HTMLBRElement);
-    n = s && document.body || (n && n?.isJQL ? n[0] : n) || document.body, o = o && Object.values(H).find((S) => o === S) ? o : void 0;
-    let u = pt(r), h = !u && Ft(r), x = h || u, p = { collection: Rt(r) ?? [], isVirtual: s, isJQL: true }, w = gt(p.collection);
-    location.host.startsWith("dev") && (p.params = { virtual: p.isVirtual, jql: p.isJQL, isRawHtml: u, isRawHtmlArray: h, isRawElemCollection: w });
-    let E = `input =&gt; ${h ? `"${I(r.join(", "), 70)}"` : !x && w ? `element collection [${I(p.collection.map((S) => `${a(S, Comment, Text) ? "Comment|Text @" : ""} ${S.outerHTML || S.textContent}`).join(", "), 70)}]` : `"${I(r, 70)}"`}`;
-    if (p.collection.length && w)
-      return B(E), s || p.collection.forEach((S) => {
-        n.contains(S) || z([S], n, o);
-      }), W(p);
+var y = jt(fe());
+function fe() {
+  return function(r, n, o = A.BeforeEnd) {
+    let i = c(n, HTMLBRElement);
+    n = i && document.body || (n && n?.isJQL ? n[0] : n) || document.body, o = o && Object.values(A).find((S) => o === S) ? o : void 0;
+    let u = ft(r), h = !u && Rt(r), x = h || u, f = { collection: It(r) ?? [], isVirtual: i, isJQL: true }, w = ht(f.collection);
+    location.host.startsWith("dev") && (f.params = { virtual: f.isVirtual, jql: f.isJQL, isRawHtml: u, isRawHtmlArray: h, isRawElemCollection: w });
+    let C = `input =&gt; ${h ? `"${D(r.join(", "), 70)}"` : !x && w ? `element collection [${D(f.collection.map((S) => `${c(S, Comment, Text) ? "Comment|Text @" : ""} ${S.outerHTML || S.textContent}`).join(", "), 70)}]` : `"${D(r, 70)}"`}`;
+    if (f.collection.length && w)
+      return P(C), i || f.collection.forEach((S) => {
+        n.contains(S) || W([S], n, o);
+      }), q(f);
     if (x) {
-      if ([r].flat().forEach((S) => p.collection.push(F(S))), p.collection.length > 0) {
-        let S = p.collection.filter((C) => C?.dataset?.jqlcreationerror);
-        p.collection = p.collection.filter((C) => !C?.dataset?.jqlcreationerror), B(`${E}`), B(`*Created ${p.isVirtual ? "VIRTUAL " : ""}[${I(Mt(p.collection) || "sanitized: no elements remaining", 70)}]`), S.length && console.error(`JQL: illegal html, not rendered: "${S.reduce((C, M) => C.concat(`${M.textContent}
-`), "").trim()}"`), p.isVirtual || z(p.collection, n, o);
+      if ([r].flat().forEach((S) => f.collection.push(R(S))), f.collection.length > 0) {
+        let S = f.collection.filter((T) => T?.dataset?.jqlcreationerror);
+        f.collection = f.collection.filter((T) => !T?.dataset?.jqlcreationerror), P(`${C}`), P(`*Created ${f.isVirtual ? "VIRTUAL " : ""}[${D(Mt(f.collection) || "sanitized: no elements remaining", 70)}]`), S.length && console.error(`JQL: illegal html, not rendered: "${S.reduce((T, I) => T.concat(`${I.textContent}
+`), "").trim()}"`), f.isVirtual || W(f.collection, n, o);
       }
-      return W(p);
+      return q(f);
     }
-    let R = It(r, n, p);
-    return B(`input => ${R}`), W(p);
+    let M = Dt(r, n, f);
+    return P(`input => ${M}`), q(f);
   };
 }
 
@@ -734,8 +740,8 @@ function dateFiddleFactory(extensions) {
           things2AddOrSubtract = allInOne.map((v) => v.trim());
         }
         if (things2AddOrSubtract.length) {
-          things2AddOrSubtract.map(function(a2) {
-            return a2.toLowerCase().split(/\s/);
+          things2AddOrSubtract.map(function(a) {
+            return a.toLowerCase().split(/\s/);
           }).forEach(
             function([n, term]) {
               const unit = units[term?.replace(/s$/i, ``)];
@@ -857,7 +863,7 @@ function DateFormatFactory() {
 var RegexpCreator_default = (regexStr, ...args) => {
   const flags = args.length && Array.isArray(args.slice(-1)) ? args.pop().join(``) : ``;
   return new RegExp(
-    (args.length && regexStr.raw.reduce((a2, v, i) => a2.concat(args[i - 1] || ``).concat(v), ``) || regexStr.raw.join(``)).split(`
+    (args.length && regexStr.raw.reduce((a, v, i) => a.concat(args[i - 1] || ``).concat(v), ``) || regexStr.raw.join(``)).split(`
 `).map((line) => line.replace(/\s|\/\/.*$/g, ``).trim().replace(/(@s!)/g, ` `)).join(``),
     flags
   );
