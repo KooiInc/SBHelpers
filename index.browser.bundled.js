@@ -887,7 +887,7 @@ function logFactory(formatJSON = true) {
   const createItem = (t) => y(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
   const logPosition = { top: logContainer.prepend, bottom: logContainer.append };
   const cleanContent = (content) => !y.IS(content, String, Number) ? toJSON(content) : `${content}`;
-  const writeLogEntry = (content) => createItem(content).append(y(`<span>${content?.replace(/^!!/, ``)}</span>`));
+  const writeLogEntry = (content) => createItem(content).append(y(`<div>${content?.replace(/^!!/, ``)}</div>`));
   const logItem = (pos = `bottom`) => (content) => logPosition[pos](writeLogEntry(cleanContent(content)));
   return {
     log: (...txt) => txt.forEach(logItem()),
