@@ -1,7 +1,7 @@
 // node_modules/jqlmodule/Bundle/jql.min.js
 var kt = "url('data:image/svg+xml\\3butf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20128%20128%22%20style%3D%22enable-background%3Anew%200%200%20128%20128%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%22-368%22%20y%3D%226%22%20style%3D%22display%3Anone%3Bfill%3A%23E0E0E0%3B%22%20width%3D%22866%22%20height%3D%221018%22%2F%3E%3Ccircle%20style%3D%22fill%3A%23FFFFFF%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2248%22%2F%3E%3Ccircle%20style%3D%22fill%3A%238CCFB9%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2239%22%2F%3E%3Ccircle%20style%3D%22fill%3Anone%3Bstroke%3A%23444B54%3Bstroke-width%3A6%3Bstroke-miterlimit%3A10%3B%22%20cx%3D%2264%22%20cy%3D%2264%22%20r%3D%2248%22%2F%3E%3Cpolyline%20style%3D%22fill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A6%3Bstroke-linecap%3Around%3Bstroke-miterlimit%3A10%3B%22%20points%3D%2242%2C69%2055.55%2C81%20%20%2086%2C46%20%22%2F%3E%3C%2Fsvg%3E')";
 var tt = Bt();
-var yt = Pt();
+var yt = Qt();
 var _ = Ot();
 var U = Jt();
 function Ot() {
@@ -13,12 +13,12 @@ function Jt() {
 function Bt() {
   return ["#logBox{min-width:0px;max-width:0px;min-height:0px;max-height:0px;,width:0;height:0;z-index:-1;border:none;padding:0px;overflow:hidden;transition:all 0.3s ease;margin-top:-100px;}", "#logBox.visible{background-color:rgb(255, 255, 224);z-index:1;position:static;border:1px dotted rgb(153, 153, 153);max-width:50vw;min-width:30vw;min-height:10vh;max-height:90vh;overflow:auto;width:50vw;height:20vh;margin:1rem 0px;padding:0px 8px 19px;resize:both;}", "#logBox.visible .legend{position:absolute;}", "#logBox .legend{text-align:center;margin-top:-1em;width:inherit;max-width:inherit;}", "#logBox .legend div{text-align:center;display:inline-block;max-width:inherit;height:1.2rem;background-color:rgb(119, 119, 119);padding:2px 10px;color:rgb(255, 255, 255);box-shadow:rgb(119 119 119) 2px 1px 10px;border-radius:4px;}", "#logBox .legend div:before{content:'JQL Logging (chronological)';}", "#logBox .legend.reversed div:before{content:'JQL Logging (reversed)';}", "#logBox #jql_logger{marginTop:0.7rem;lineHeight:1.4em;font-family:consolas,monospace;whiteSpace:pre-wrap;maxWidth:inherit;padding-left:100px;}", "#logBox #jql_logger div.entry{text-indent:-100px;whiteSpace:normal;}"];
 }
-function Pt() {
+function Qt() {
   return [".popupContainer{position:fixed;inset:-5000px;opacity:0;height:0;width:0;background:rgba(0,0,0,0.1);transition:opacity 0.6s ease-in-out 0s;}", ".popupContainer.popup-active{opacity:1;inset:0;height:auto;width:auto;}", ".popupContainer .content{box-shadow:rgba(0,0,0,0.5) 2px 2px 8px;border-radius:3px;min-width:125px;max-width:40vw;max-height:40vh;padding:8px;overflow:auto;background:#FFF;z-index:inherit;opacity:1;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}", ".popupContainer .content .popup-warn{position:relative;padding:3px 8px 0 8px;color:red;margin:6px -8px -4px -8px;text-align:center;display:none;}", ".popupContainer .content.popup-warn-active .popup-warn{display:block;border-top:1px dashed rgb(0,0,0);}", `.closeHandleIcon{z-index:1;position:absolute;opacity:0;cursor:pointer;width:24px;height:24px;background:${kt} no-repeat;}`, ".closeHandleIcon.popup-active{opacity:1;}", "@media screen and (width < 1200px){.popupContainer .content{max-width:75vw;}}", "@media screen and (width < 640px){.popupContainer .content{max-width:90vw;max-height:60vw;}}"];
 }
 var et = false;
-var Qt = { on: () => et = true, off: () => et = false };
-var j = { tagsRaw: U, allowUnknownHtmlTags: Qt, isAllowed(t) {
+var Pt = { on: () => et = true, off: () => et = false };
+var j = { tagsRaw: U, allowUnknownHtmlTags: Pt, isAllowed(t) {
   if (et)
     return true;
   let e = t?.nodeName.toLowerCase() || "none";
@@ -28,16 +28,16 @@ var ot = false;
 var V = false;
 var J = true;
 var it = false;
-var zt = true;
+var Wt = true;
 var bt;
 var O = () => y("#logBox");
 var vt = "#jql_logger";
-var Wt = (t) => {
+var zt = (t) => {
   tt?.forEach((e) => t(e));
 };
 var qt = () => {
-  tt && Wt(bt);
-  let t = zt ? "div" : "pre", e = `<div id="logBox"><div class="legend"><div></div></div><${t} id="jql_logger"></${t}></div>`;
+  tt && zt(bt);
+  let t = Wt ? "div" : "pre", e = `<div id="logBox"><div class="legend"><div></div></div><${t} id="jql_logger"></${t}></div>`;
   return st(R(e), void 0, A.AfterBegin), y.node(vt);
 };
 var xt = (t) => c(t, String) && Object.assign(document.createElement("textarea"), { innerHTML: t }).textContent || t;
@@ -62,7 +62,7 @@ var nt = { on() {
 }, off() {
   ot = false;
 } };
-var P = (...t) => ot && F(...t);
+var Q = (...t) => ot && F(...t);
 var $ = { get isConsole() {
   return J === true;
 }, isOn: () => V, isVisible: () => y("#jql_logger").is("visible"), on: () => (rt.on(), nt.on(), J || O()?.addClass("visible"), F("Debug logging started. Every call to [jql instance] is logged"), $), off: () => (O().isEmpty || (nt.off(), F("Debug logging stopped"), O()?.removeClass("visible")), rt.off(), $), toConsole: { on: () => (J = true, F("Started logging to console"), $), off() {
@@ -71,7 +71,7 @@ var $ = { get isConsole() {
 var c = Lt;
 function Lt(t, ...e) {
   let r = ["NaN", "null", "undefined"], n = (h) => typeof h == "symbol" ? Symbol : h;
-  return e.length > 1 ? u(t, ...e) : o();
+  return e.length > 1 ? d(t, ...e) : o();
   function o() {
     let h = n(t), x = e.length > 0;
     return e = x && e.shift(), x && i(e) ? `${h}` == `${e}` : t === false ? e === Boolean ? true : "Boolean" : w();
@@ -86,7 +86,7 @@ function Lt(t, ...e) {
         return true;
     return false;
   }
-  function u(h, ...x) {
+  function d(h, ...x) {
     for (let f of x)
       if (Lt(h, f))
         return true;
@@ -105,36 +105,36 @@ var Vt = (t) => {
   return t;
 };
 var D = (t, e = 120) => `${t}`.trim().slice(0, e).replace(/>\s+</g, "><").replace(/</g, "&lt;").replace(/\s{2,}/g, " ").replace(/\n/g, "\\n") + (t.length > e ? " &hellip;" : "").trim();
-var Q = (t) => t.replace(/[A-Z]/g, (e) => `-${e.toLowerCase()}`).replace(/^-|-$/, "");
+var P = (t) => t.replace(/[A-Z]/g, (e) => `-${e.toLowerCase()}`).replace(/^-|-$/, "");
 var Gt = ([t, ...e]) => `${t.toUpperCase()}${e.join("")}`;
 var St = (t) => c(t, String) ? t.toLowerCase().split("-").map((e, r) => r && `${Gt(e)}` || e).join("") : t;
 var G = () => `_${Vt(_t).slice(0, 8).join("")}`;
 var X = (t, e = 120) => D(t, e).replace(/&lt;/g, "<");
 var B = () => ((t) => `[${Y(t.getHours())}:${Y(t.getMinutes())}:${Y(t.getSeconds())}.${Y(t.getMilliseconds(), 3)}]`)(/* @__PURE__ */ new Date());
-var z = (t) => t.replace(/</g, "&lt;");
+var W = (t) => t.replace(/</g, "&lt;");
 function Et() {
   let t = function(i) {
     if (!i)
       return;
-    let u = i.style, h = getComputedStyle(i), x = [u.visibility, h.visibility].includes("hidden"), f = [u.display, h.display].includes("none"), w = i.offsetTop < 0 || i.offsetLeft + i.offsetWidth < 0 || i.offsetLeft > document.body.offsetWidth, C = +h.opacity == 0 || +(u.opacity || 1) == 0;
+    let d = i.style, h = getComputedStyle(i), x = [d.visibility, h.visibility].includes("hidden"), f = [d.display, h.display].includes("none"), w = i.offsetTop < 0 || i.offsetLeft + i.offsetWidth < 0 || i.offsetLeft > document.body.offsetWidth, C = +h.opacity == 0 || +(d.opacity || 1) == 0;
     return !(w || C || f || x);
   }, e = function(i) {
-    return !!y.nodes(":is(:read-write)", i.parentNode).find((u) => u === i);
+    return !!y.nodes(":is(:read-write)", i.parentNode).find((d) => d === i);
   }, r = function(i) {
-    return !!y.nodes(":is(:modal)", i.parentNode).find((u) => u === i);
+    return !!y.nodes(":is(:modal)", i.parentNode).find((d) => d === i);
   }, n = "n/a", o = { writable: n, modal: n, empty: true, open: n, visible: n };
   return (i) => {
-    let u = i[0];
-    return u ? { get writable() {
-      return e(u);
+    let d = i[0];
+    return d ? { get writable() {
+      return e(d);
     }, get modal() {
-      return r(u);
+      return r(d);
     }, get open() {
-      return u.open;
+      return d.open;
     }, get visible() {
-      return t(u);
+      return t(d);
     }, get disabled() {
-      return u.hasAttribute("readonly") || u.hasAttribute("disabled");
+      return d.hasAttribute("readonly") || d.hasAttribute("disabled");
     }, get empty() {
       return false;
     }, get virtual() {
@@ -146,8 +146,8 @@ var Zt = true;
 var K = { data: /data-[\-\w.\p{L}]/ui, validURL: /^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i, whiteSpace: /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g, notAllowedValues: /javascript|injected|noreferrer|alert|DataURL/gi };
 var Yt = (t) => {
   if (Zt && Object.keys(t.removed).length) {
-    let e = Object.entries(t.removed).reduce((r, [n, o]) => [...r, `${z(n)} => ${o}`], []).join("\\000A");
-    $.log(`JQL HTML creation errors: ${$.isConsole ? e : z(e)}`);
+    let e = Object.entries(t.removed).reduce((r, [n, o]) => [...r, `${W(n)} => ${o}`], []).join("\\000A");
+    $.log(`JQL HTML creation errors: ${$.isConsole ? e : W(e)}`);
   }
 };
 var at = (t) => {
@@ -156,7 +156,7 @@ var at = (t) => {
     if (r?.children?.length && at(r), r?.attributes) {
       let o = c(r, SVGElement) ? _.svg : _.html;
       [...(r ?? { attributes: [] }).attributes].forEach((i) => {
-        let u = i.name.trim().toLowerCase(), h = i.value.trim().toLowerCase().replace(K.whiteSpace, ""), x = u === "href" ? !K.validURL.test(h) : K.notAllowedValues.test(h), f = u.startsWith("data") ? !K.data.test(u) : !!o[u];
+        let d = i.name.trim().toLowerCase(), h = i.value.trim().toLowerCase().replace(K.whiteSpace, ""), x = d === "href" ? !K.validURL.test(h) : K.notAllowedValues.test(h), f = d.startsWith("data") ? !K.data.test(d) : !!o[d];
         if (x || f) {
           let w = X(i.value || "none", 60);
           w += w.length === 60 ? "..." : "", e.removed[`${i.name}`] = `attribute/property (-value) not allowed, removed. Value: ${w}`, r.removeAttribute(i.name);
@@ -173,7 +173,7 @@ var A = { BeforeBegin: "beforebegin", AfterBegin: "afterbegin", BeforeEnd: "befo
 var ct = document.createElement("div");
 var Xt = (t) => (ct.innerHTML = t, ct.childNodes.length ? at(ct) : void 0);
 var Kt = (t, e, r) => c(t, Comment) ? e.insertAdjacentHTML(r, `<!--${t.data}-->`) : e.insertAdjacentText(r, t.data);
-var W = (t = [], e = document.body, r = A.BeforeEnd) => t.reduce((n, o) => {
+var z = (t = [], e = document.body, r = A.BeforeEnd) => t.reduce((n, o) => {
   let i = N(o) && st(o, e, r);
   return i ? [...n, i] : n;
 }, []);
@@ -199,9 +199,9 @@ var te = Et();
 var wt = (t) => t && (t.textContent = "");
 var ee = (t, e) => t.toLowerCase().trim() === e.trim().toLowerCase();
 var Ct = (t, e) => {
-  t && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setAttribute(`data-${Q(r)}`, n));
+  t && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setAttribute(`data-${P(r)}`, n));
 };
-var $t = (t) => _.html.find((e) => t.toLowerCase() === e);
+var $t = (t) => t.startsWith("data") || _.html.find((e) => t.toLowerCase() === e);
 var re = (t, e, r) => {
   r && c(e, String) && (e = { [e]: r === "-" ? "" : r });
   let n;
@@ -220,7 +220,7 @@ var ne = (t, e) => {
 var lt = (t, e) => {
   c(e, Object) && Object.entries(e).forEach(([r, n]) => {
     let o;
-    /!important/i.test(n) && (n = n.slice(0, n.indexOf("!")).trim(), o = "important"), t.style.setProperty(Q(r), n, o);
+    /!important/i.test(n) && (n = n.slice(0, n.indexOf("!")).trim(), o = "important"), t.style.setProperty(P(r), n, o);
   });
 };
 var oe = { get(t, e) {
@@ -231,20 +231,20 @@ var ie = { factoryExtensions: { is: (t) => te(t), length: (t) => t.collection.le
   return e.is.empty ? t : e;
 }, outerHtml: (t) => (t.first() || { outerHTML: void 0 }).outerHTML, data: (t) => ({ get all() {
   return new Proxy(t[0]?.dataset ?? {}, oe);
-}, set: (e = {}) => (!t.is.empty && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), get: (e, r) => t.data.all[e] ?? r, add: (e = {}) => (!t.is.empty && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), remove: (e) => (t[0]?.removeAttribute(`data-${Q(e)}`), t) }), Style: (t) => ({ get computed() {
+}, set: (e = {}) => (!t.is.empty && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), get: (e, r) => t.data.all[e] ?? r, add: (e = {}) => (!t.is.empty && c(e, Object) && Object.entries(e).forEach(([r, n]) => t.setData({ [r]: n })), t), remove: (e) => (t[0]?.removeAttribute(`data-${P(e)}`), t) }), Style: (t) => ({ get computed() {
   return t.is.empty ? {} : getComputedStyle(t[0]);
-}, inline: (e) => t.style(e), inSheet: (e) => t.css(e), valueOf: (e) => t.is.empty ? void 0 : getComputedStyle(t[0])[Q(e)], nwRule: (e) => t.Style.byRule({ rules: e }), byRule: ({ classes2Apply: e = [], rules: r = [] } = {}) => {
+}, inline: (e) => t.style(e), inSheet: (e) => t.css(e), valueOf: (e) => t.is.empty ? void 0 : getComputedStyle(t[0])[P(e)], nwRule: (e) => t.Style.byRule({ rules: e }), byRule: ({ classes2Apply: e = [], rules: r = [] } = {}) => {
   let o = c(r, String) && !e.length ? r.split("{")[0].trim() : "";
   return r = r && c(r, String) ? [r] : r, e = e && c(e, String) ? [e] : e, (r?.length || e?.length) && (r?.length && y.editCssRules(...r), e?.forEach((i) => t.addClass(i))), o?.startsWith(".") && t.addClass(o.slice(1)), o?.startsWith("#") && !t.attr("id") && t.prop({ id: o.slice(1) }), t;
 } }), HTML: (t) => ({ get: (e, r) => {
   if (t.is.empty)
     return "NO ELEMENTS IN COLLECTION";
   let n = e ? t.outerHtml : t.html();
-  return r ? z(n) : n;
+  return r ? W(n) : n;
 }, set: (e, r = false, n = false) => {
   e = e.isJQL ? e.HTML.get(1) : e;
   let o = c(e, String);
-  return e = o && n ? z(e) : e, o && (e || "").trim().length && t.html(e, r), t;
+  return e = o && n ? W(e) : e, o && (e || "").trim().length && t.html(e, r), t;
 }, replace: (e, r = false) => t.HTML.set(e, false, r), append: (e, r = false) => t.HTML.set(e, true, r), insert: (e, r = false) => (e = e.isJQL ? e.HTML.get() : e, t.HTML.set(e + t.HTML.get(), false, r)) }) }, instanceExtensions: { isEmpty: (t) => t.collection.length < 1, replaceClass: (t, e, ...r) => L(t, (n) => {
   n.classList.remove(e), r.forEach((o) => n.classList.add(o));
 }), removeClass: (t, ...e) => L(t, (r) => r && e.forEach((n) => r.classList.remove(n))), addClass: (t, ...e) => L(t, (r) => r && e.forEach((n) => r.classList.add(n))), setData: (t, e) => L(t, (r) => Ct(r, e)), show: (t) => L(t, (e) => lt(e, { display: "revert-layer !important" })), hide: (t) => L(t, (e) => lt(e, { display: "none !important" })), empty: (t) => L(t, wt), clear: (t) => L(t, wt), closest: (t, e) => {
@@ -309,18 +309,23 @@ var ie = { factoryExtensions: { is: (t) => te(t), length: (t) => t.collection.le
 }, appendTo: (t, e) => (e.isJQL || (e = y(e)), e.append(t), t), prependTo: (t, e) => (e.isJQL || (e = y.virtual(e)), e.prepend(t), t), single: (t, e) => t.collection.length > 0 ? c(e, String) ? t.find$(e) : c(e, Number) ? y(t.collection[e]) : y(t.collection[0]) : t, toNodeList: (t) => [...t.collection].map((e) => document.importNode(e, true)), duplicate: (t, e = false, r = document.body) => {
   let n = t.toNodeList().map((i) => i.removeAttribute && i.removeAttribute("id") || i), o = y.virtual(n);
   return e ? o.toDOM(r) : o;
-}, toDOM: (t, e = document.body, r = A.BeforeEnd) => (t.collection = W(t.collection, e, r), t.isVirtual && (t.isVirtual = false), t), first: (t, e = false) => {
+}, toDOM: (t, e = document.body, r = A.BeforeEnd) => (t.collection = z(t.collection, e, r), t.isVirtual && (t.isVirtual = false), t), first: (t, e = false) => {
   if (t.collection.length > 0)
     return e ? t.single() : t.collection[0];
 }, first$: (t, e) => t.single(e), find: (t, e) => t.first()?.querySelectorAll(e) || [], find$: (t, e) => y(e, t), prop: (t, e, r) => {
   if (c(e, String) && !r)
-    return t[0]?.[e];
+    return e.startsWith("data") ? t[0]?.dataset[e.slice(e.indexOf("-") + 1)] : t[0]?.[e];
   let n = c(e, Object) ? e : { [e]: r };
   return Object.entries(n).forEach(([o, i]) => {
     if (o = o.trim(), i && !$t(o) || !i)
       return false;
-    let u = o.toLowerCase() === "id";
-    u && (t[0].id = i), !u && L(t, (h) => h[o] = i);
+    if (o.toLowerCase() === "id")
+      return t[0].id = i;
+    L(t, (h) => {
+      if (o.startsWith("data"))
+        return h.dataset[o.slice(o.indexOf("-") + 1)] = i;
+      h[o] = i;
+    });
   }), t;
 }, on: (t, e, ...r) => (t.collection.length && r?.forEach((n) => {
   let o = Tt(t);
@@ -358,32 +363,32 @@ var Ht = se;
 function se(t) {
   let e = t.createStyle("JQLPopupCSS");
   yt.forEach((a) => e(a));
-  let r, n, o, i, u = t.virtual('<div class="popup-warn">'), h = t('<div class="popupContainer">').append(t('<span class="closeHandleIcon">')).append(t('<div class="content">')), [x, f] = [t(".popupContainer > .closeHandleIcon"), t(".popupContainer > .content")], w = () => {
+  let r, n, o, i, d = t.virtual('<div class="popup-warn">'), h = t('<div class="popupContainer">').append(t('<span class="closeHandleIcon">')).append(t('<div class="content">')), [x, f] = [t(".popupContainer > .closeHandleIcon"), t(".popupContainer > .content")], w = () => {
     if (x.hasClass("popup-active")) {
-      let { x: a, y: s, width: g } = f.dimensions;
-      x.style({ top: `${s - 12}px`, left: `${a + g - 12}px` });
+      let { x: a, y: s, width: p } = f.dimensions;
+      x.style({ top: `${s - 12}px`, left: `${a + p - 12}px` });
     }
   }, C = (a, s = false) => {
-    let g = s ? a.min - 100 : a.max + 10;
-    h.style({ zIndex: g }), x.style({ zIndex: g + 1 });
+    let p = s ? a.min - 100 : a.max + 10;
+    h.style({ zIndex: p }), x.style({ zIndex: p + 1 });
   }, M = () => {
     o && t(".popup-warn").clear().append(t(`<div>${o}</div>`)), f.addClass("popup-warn-active");
   }, S = () => {
-    r = false, d(x[0]);
+    r = false, u(x[0]);
   }, T = () => {
     let a = [0, ...t.nodes("*:not(.popupContainer, .closeHandleIcon)", document.body).map((s) => +getComputedStyle(s).zIndex).filter((s) => t.IS(s, Number))];
     return { max: Math.max(...a) ?? 0, min: Math.min(...a) ?? 0 };
-  }, I = (a, s) => i = setTimeout(() => d(x[0]), +a * 1e3);
-  return C(T(), true), t.delegate("click", ".popupContainer, .closeHandleIcon", (a) => d(a.target)), t.delegate("click", ".popupContainer .content", (a, s) => r && s.removeClass("popup-warn-active")), t.delegate("resize", w), { show: m, create: (a, s, g, v) => {
-    let E = t.IS(s, Boolean) ? s : false;
-    m({ content: a, modal: E, callback: E ? g : s, warnMessage: v });
-  }, createTimed: (a, s, g) => m({ content: a, closeAfter: s, callback: g }), removeModal: S };
-  function m({ content: a, modal: s, closeAfter: g, callback: v, warnMessage: E }) {
-    return a ? (clearTimeout(i), C(T()), r = s ?? false, o = t.IS(E, String) && `${E?.trim()}`.length || E?.isJQL ? E : void 0, f.clear().append(a.isJQL ? a : t(`<div>${a}</div>`)), r && E && f.append(u.duplicate()), h.addClass("popup-active"), t.IS(v, Function) && (n = () => {
-      v(), n = null;
-    }), r || (t.IS(+g, Number) && I(g, n), x.addClass("popup-active"), w()), true) : console.error("Popup creation needs at least some text to show");
+  }, I = (a, s) => i = setTimeout(() => u(x[0]), +a * 1e3);
+  return C(T(), true), t.delegate("click", ".popupContainer, .closeHandleIcon", (a) => u(a.target)), t.delegate("click", ".popupContainer .content", (a, s) => r && s.removeClass("popup-warn-active")), t.delegate("resize", w), { show: m, create: (a, s, p, E) => {
+    let b = t.IS(s, Boolean) ? s : false;
+    m({ content: a, modal: b, callback: b ? p : s, warnMessage: E });
+  }, createTimed: (a, s, p) => m({ content: a, closeAfter: s, callback: p }), removeModal: S };
+  function m({ content: a, modal: s, closeAfter: p, callback: E, warnMessage: b }) {
+    return a ? (clearTimeout(i), C(T()), r = s ?? false, o = t.IS(b, String) && `${b?.trim()}`.length || b?.isJQL ? b : void 0, f.clear().append(a.isJQL ? a : t(`<div>${a}</div>`)), r && b && f.append(d.duplicate()), h.addClass("popup-active"), t.IS(E, Function) && (n = () => {
+      E(), n = null;
+    }), r || (t.IS(+p, Number) && I(p, n), x.addClass("popup-active"), w()), true) : console.error("Popup creation needs at least some text to show");
   }
-  function d(a) {
+  function u(a) {
     if (!r && !a.closest(".content")) {
       clearTimeout(i), f.clear(), t(".popup-active").removeClass("popup-active"), C(T(), true), t.IS(n, Function) && n(), o = "";
       return;
@@ -396,104 +401,104 @@ var ae = ["load", "unload", "scroll", "focus", "blur", "DOMNodeRemovedFromDocume
 var ce = (t) => !!ae.find((e) => e === t);
 var At = () => {
   let t = (n) => k[n.type].forEach((o) => o(n)), e = (n, o) => (i) => {
-    let u = i.target?.closest?.(n);
-    return u && o(i, y(u));
+    let d = i.target?.closest?.(n);
+    return d && o(i, y(d));
   }, r = (n, o) => {
     k[n] || addEventListener(n, t, ce(n));
   };
-  return (n, o, i, u = false) => {
-    r(n, u);
+  return (n, o, i, d = false) => {
+    r(n, d);
     let h = o ? e(o, i) : i;
     k = k[n] ? { ...k, [n]: k[n].concat(h) } : { ...k, [n]: [h] };
   };
 };
 var mt = le;
 function le({ styleSheet: t, createWithId: e }) {
-  let { cssRuleFromText: r, checkAtRules: n, toDashedNotation: o, IS: i, shortenRule: u, consider: h, tryAndCatch: x, ruleExists: f, checkParams: w, atMedia2String: C, sheet: M, compareSelectors: S } = ue({ styleSheet: t, createWithId: e }), T = (s, g) => {
-    if (s && g.removeProperties) {
-      x(() => Object.keys(g.removeProperties).forEach((v) => {
-        s.style.removeProperty(v);
+  let { cssRuleFromText: r, checkAtRules: n, toDashedNotation: o, IS: i, shortenRule: d, consider: h, tryAndCatch: x, ruleExists: f, checkParams: w, atMedia2String: C, sheet: M, compareSelectors: S } = ue({ styleSheet: t, createWithId: e }), T = (s, p) => {
+    if (s && p.removeProperties) {
+      x(() => Object.keys(p.removeProperties).forEach((E) => {
+        s.style.removeProperty(E);
       }), "StylingFactory instance (remove property/properties) failed");
       return;
     }
-    Object.entries(g).forEach(([v, E]) => {
+    Object.entries(p).forEach(([E, b]) => {
       let l;
-      /!important/.test(E) && (E = E.slice(0, E.indexOf("!important")).trim(), l = "important"), x(() => s.style.setProperty(o(v), E, l), "StylingFactory instance (setRule4Selector) failed");
+      /!important/.test(b) && (b = b.slice(0, b.indexOf("!important")).trim(), l = "important"), x(() => s.style.setProperty(o(E), b, l), "StylingFactory instance (setRule4Selector) failed");
     });
-  }, I = (s, g, v = M) => {
+  }, I = (s, p, E = M) => {
     if (!i(s, String) || !s.trim().length || /[;,]$/g.test(s.trim()))
       return console.error(`StylingFactory instance (setRules): [${s || "[no selector given]"}] is not a valid selector`);
-    let E = f(s, true), l = E || v.cssRules[v.insertRule(`${s} {}`, v.cssRules.length || 0)];
-    if (g.removeRule) {
-      if (!E)
+    let b = f(s, true), l = b || E.cssRules[E.insertRule(`${s} {}`, E.cssRules.length || 0)];
+    if (p.removeRule) {
+      if (!b)
         return console.error(`Remove rule: ${s} does not exist`);
-      let p = [...M.rules].findIndex((b) => S(b.selectorText || "", s));
-      return h(() => M.deleteRule(p));
+      let g = [...M.rules].findIndex((v) => S(v.selectorText || "", s));
+      return h(() => M.deleteRule(g));
     }
-    return h(() => T(l, g), s, E);
+    return h(() => T(l, p), s, b);
   }, m = (s) => {
-    let g = s.trim().split(/{/, 2), v = g.shift().trim();
-    if (!i(v, String) || !v.trim())
-      return console.error(`StylingFactory instance (doParse): no (valid) selector could be extracted from rule ${u(s)}`);
-    let E = r(g.shift());
-    return x(() => I(v, E), "StylingFactory instance (setRules) failed");
-  }, d = (s) => {
-    let g = n(s);
-    return g.done ? g.existing : m(s);
-  }, a = (s, g) => s.trim().startsWith("@media") ? d(C(s, g)) : I(s, g);
-  return (s, g = {}) => w(s, g) && (Object.keys(g).length ? a(s, g) : d(s));
+    let p = s.trim().split(/{/, 2), E = p.shift().trim();
+    if (!i(E, String) || !E.trim())
+      return console.error(`StylingFactory instance (doParse): no (valid) selector could be extracted from rule ${d(s)}`);
+    let b = r(p.shift());
+    return x(() => I(E, b), "StylingFactory instance (setRules) failed");
+  }, u = (s) => {
+    let p = n(s);
+    return p.done ? p.existing : m(s);
+  }, a = (s, p) => s.trim().startsWith("@media") ? u(C(s, p)) : I(s, p);
+  return (s, p = {}) => w(s, p) && (Object.keys(p).length ? a(s, p) : u(s));
 }
 function ue({ styleSheet: t, createWithId: e }) {
   let r = "Note: The rule or some of its properties may not be supported by your browser (yet)", n = (l) => l.replace(/([*\[\]()-+{}.$?\\])/g, "\\$1");
   t = e ? ((l) => document.querySelector(`#${l}`)?.sheet ?? document.head.insertAdjacentElement("beforeend", Object.assign(document.createElement("style"), { id: l, type: "text/css" })).sheet)(e) : t;
-  let i = (l, ...p) => {
-    let b = p.length && Array.isArray(p.slice(-1)) ? p.pop().join("") : "";
-    return new RegExp((p.length && l.raw.reduce((H, Z, Nt) => H.concat(p[Nt - 1] || "").concat(Z), "") || l.raw.join("")).split(`
-`).map((H) => H.replace(/\s|\/\/.*$/g, "").trim().replace(/(@s!)/g, " ")).join(""), b);
-  }, u = (l, p) => [...t.rules].find((b) => p ? I(b.selectorText || "", l) : i`${n(l)}${[..."gim"]}`.test(b.cssText)), h = (l) => /@import|@charset|@font-face/i.test(l) ? { existing: s(l, 0), done: true } : w.test(l) ? { ok: s(l, t.cssRules.length), done: true } : { ok: false, done: false }, x = (l, ...p) => !!p.find((b) => f(l, b)), f = (l, ...p) => {
-    if (p.length > 1)
-      return x(l, ...p);
-    p = p.shift();
-    let b = "Invalid parameter(s)", H = l === 0 ? Number : l === "" ? String : l ? Object.getPrototypeOf(l)?.constructor : { name: b };
-    return p ? p === H?.__proto__ || p === H : H?.name ?? b;
+  let i = (l, ...g) => {
+    let v = g.length && Array.isArray(g.slice(-1)) ? g.pop().join("") : "";
+    return new RegExp((g.length && l.raw.reduce((H, Z, Nt) => H.concat(g[Nt - 1] || "").concat(Z), "") || l.raw.join("")).split(`
+`).map((H) => H.replace(/\s|\/\/.*$/g, "").trim().replace(/(@s!)/g, " ")).join(""), v);
+  }, d = (l, g) => [...t.rules].find((v) => g ? I(v.selectorText || "", l) : i`${n(l)}${[..."gim"]}`.test(v.cssText)), h = (l) => /@import|@charset|@font-face/i.test(l) ? { existing: s(l, 0), done: true } : w.test(l) ? { ok: s(l, t.cssRules.length), done: true } : { ok: false, done: false }, x = (l, ...g) => !!g.find((v) => f(l, v)), f = (l, ...g) => {
+    if (g.length > 1)
+      return x(l, ...g);
+    g = g.shift();
+    let v = "Invalid parameter(s)", H = l === 0 ? Number : l === "" ? String : l ? Object.getPrototypeOf(l)?.constructor : { name: v };
+    return g ? g === H?.__proto__ || g === H : H?.name ?? v;
   }, w = i`@keyframes | @font-feature-values | @font-palette-values 
-    | @layer | @namespace | @page | @counter-style | @container | @media ${["i"]}`, C = (l) => l.reduce((p, b) => {
-    let [H, Z] = [b.slice(0, b.indexOf(":")).trim(), b.slice(b.indexOf(":") + 1).trim().replace(/;$|;.+(?=\/*).+\/$/, "")];
-    return H && Z ? { ...p, [H]: Z } : p;
-  }, {}), M = (l) => l.replace(/[}{\r\n]/g, "").split(";").map((p) => p.trim()).join(`;
+    | @layer | @namespace | @page | @counter-style | @container | @media ${["i"]}`, C = (l) => l.reduce((g, v) => {
+    let [H, Z] = [v.slice(0, v.indexOf(":")).trim(), v.slice(v.indexOf(":") + 1).trim().replace(/;$|;.+(?=\/*).+\/$/, "")];
+    return H && Z ? { ...g, [H]: Z } : g;
+  }, {}), M = (l) => l.replace(/[}{\r\n]/g, "").split(";").map((g) => g.trim()).join(`;
 `).split(`
-`), S = (l) => C(M(l)), T = (l) => l.replace(/[A-Z]/g, (p) => `-${p.toLowerCase()}`).replace(/[^--]^-|-$/, ""), I = (l, p) => l?.replace("::", ":") === p?.replace("::", ":"), m = (l, p) => l && f(l, String) && l.trim().length && f(p, Object) || (console.error("StylingFactory instance called with invalid parameters"), false), d = (l) => {
-    let p = (l || "NO RULE").trim().slice(0, 50).replace(/\n/g, "\\n").replace(/\s{2,}/g, " ");
-    return l.length > p.length ? `${p.trim()}...truncated` : p;
-  }, a = (l, p) => {
+`), S = (l) => C(M(l)), T = (l) => l.replace(/[A-Z]/g, (g) => `-${g.toLowerCase()}`).replace(/[^--]^-|-$/, ""), I = (l, g) => l?.replace("::", ":") === g?.replace("::", ":"), m = (l, g) => l && f(l, String) && l.trim().length && f(g, Object) || (console.error("StylingFactory instance called with invalid parameters"), false), u = (l) => {
+    let g = (l || "NO RULE").trim().slice(0, 50).replace(/\n/g, "\\n").replace(/\s{2,}/g, " ");
+    return l.length > g.length ? `${g.trim()}...truncated` : g;
+  }, a = (l, g) => {
     try {
       return l();
-    } catch (b) {
-      console.error(`${p || "an error occured"}: ${b.message}`);
+    } catch (v) {
+      console.error(`${g || "an error occured"}: ${v.message}`);
     }
   }, s = (l) => {
     l = l.trim();
-    let p = !!u(l.slice(0, l.indexOf("{")));
+    let g = !!d(l.slice(0, l.indexOf("{")));
     try {
-      return t.insertRule(`${l}`, t.cssRules.length), p;
-    } catch (b) {
-      return console.error(`StylingFactory instance (tryParse) ${b.name} Error:
-${b.message}
-Rule: ${d(l)}
-${r}`), p;
+      return t.insertRule(`${l}`, t.cssRules.length), g;
+    } catch (v) {
+      return console.error(`StylingFactory instance (tryParse) ${v.name} Error:
+${v.message}
+Rule: ${u(l)}
+${r}`), g;
     }
-  }, g = (l, p, b) => {
+  }, p = (l, g, v) => {
     try {
-      return l(), b;
+      return l(), v;
     } catch (H) {
       return console.error(`StylingFactory instance (tryAddOrModify) ${H.name} Error:
 ${H.message}
-Rule: ${d(p)}
-${r}`), b;
+Rule: ${u(g)}
+${r}`), v;
     }
-  }, v = (l) => Object.entries(l).map(([p, b]) => `${p}: ${b.trim()}`).join(`;
+  }, E = (l) => Object.entries(l).map(([g, v]) => `${g}: ${v.trim()}`).join(`;
 `);
-  return { sheet: t, tryAndCatch: a, cssRuleFromText: S, checkAtRules: h, ruleExists: u, atMedia2String: (l, p) => `${l.trim()} ${Object.entries(p).map(([b, H]) => `${b}: { ${v(H)}`)}`, compareSelectors: I, toDashedNotation: T, checkParams: m, tryParse: s, consider: g, IS: f, shortenRule: d };
+  return { sheet: t, tryAndCatch: a, cssRuleFromText: S, checkAtRules: h, ruleExists: d, atMedia2String: (l, g) => `${l.trim()} ${Object.entries(g).map(([v, H]) => `${v}: { ${E(H)}`)}`, compareSelectors: I, toDashedNotation: T, checkParams: m, tryParse: s, consider: p, IS: f, shortenRule: u };
 }
 var gt = ut.instanceExtensions;
 var Ft = ut.factoryExtensions;
@@ -519,7 +524,7 @@ var Tt = (t) => {
   return t.data.add({ hid: e }), `[data-hid="${e}"]`;
 };
 var q = (t) => {
-  let e = (i) => (...u) => c(i, Function) && i(q(t), ...u), r = (i) => (...u) => c(i, Function) ? { tmpKey: i(q(t), ...u) } : { tmpKey: void 0 }, n = (i, u) => c(u, Symbol) ? () => i : c(+u, Number) ? i.collection?.[u] : u in Ft ? r(Ft[u])().tmpKey : u in gt ? e(gt[u]) : i[u], o = { get: (i, u) => n(i, u) };
+  let e = (i) => (...d) => c(i, Function) && i(q(t), ...d), r = (i) => (...d) => c(i, Function) ? { tmpKey: i(q(t), ...d) } : { tmpKey: void 0 }, n = (i, d) => c(d, Symbol) ? () => i : c(+d, Number) ? i.collection?.[d] : d in Ft ? r(Ft[d])().tmpKey : d in gt ? e(gt[d]) : i[d], o = { get: (i, d) => n(i, d) };
   return new Proxy(t, o);
 };
 var pt = mt({ createWithId: "JQLStylesheet" });
@@ -532,17 +537,17 @@ var jt = (t) => {
   }), pe = { ...e }, t;
 };
 function ge(t) {
-  let e = { activePopup: void 0 }, r = document.createElement("br"), n = (...m) => m.forEach((d) => pt(d)), o = (m, d) => pt(m, d), i = (m, d, a) => {
-    d = d?.isJQL ? d?.[0] : d, a = a && Object.values(A).find((g) => a === g) ? a : void 0;
+  let e = { activePopup: void 0 }, r = document.createElement("br"), n = (...m) => m.forEach((u) => pt(u)), o = (m, u) => pt(m, u), i = (m, u, a) => {
+    u = u?.isJQL ? u?.[0] : u, a = a && Object.values(A).find((p) => a === p) ? a : void 0;
     let s = t(m, r);
-    return d && !c(d, HTMLBRElement) && s.collection.forEach((g) => a ? d.insertAdjacentElement(a, g) : d.append(g)), s;
-  }, u = At(), h = (m, d, ...a) => (c(d, Function) && (a.push(d), d = void 0), a.forEach((s) => u(m, d, s))), x = Object.entries(j.tagsRaw).reduce(T, {}), f = (...m) => {
+    return u && !c(u, HTMLBRElement) && s.collection.forEach((p) => a ? u.insertAdjacentElement(a, p) : u.append(p)), s;
+  }, d = At(), h = (m, u, ...a) => (c(u, Function) && (a.push(u), u = void 0), a.forEach((s) => d(m, u, s))), x = Object.entries(j.tagsRaw).reduce(T, {}), f = (...m) => {
     if (m.length === 1) {
-      let d = String(m.shift().trim());
-      m = d.startsWith("!") ? [d.slice(1, -1)] : d.split(",").map((a) => a.trim());
+      let u = String(m.shift().trim());
+      m = u.startsWith("!") ? [u.slice(1, -1)] : u.split(",").map((a) => a.trim());
     }
-    m.map((d) => d.startsWith("!") ? d.slice(1, -1) : d).forEach((d) => pt(d, { removeRule: 1 }));
-  }, w = Object.entries(j.tagsRaw).filter(([, m]) => m).map(([m]) => m).sort((m, d) => m.localeCompare(d));
+    m.map((u) => u.startsWith("!") ? u.slice(1, -1) : u).forEach((u) => pt(u, { removeRule: 1 }));
+  }, w = Object.entries(j.tagsRaw).filter(([, m]) => m).map(([m]) => m).sort((m, u) => m.localeCompare(u));
   return I(x, ((m) => ({ debugLog: $, log: (...a) => F("fromStatic", ...a), insertPositions: A, get at() {
     return A;
   }, editCssRules: n, editCssRule: o, setStyle: o, delegate: h, virtual: i, get fn() {
@@ -558,31 +563,31 @@ function ge(t) {
   }, popup: () => m.Popup, get Popup() {
     return m.activePopup || (m.activePopup = Ht(m)), m.activePopup;
   }, createStyle: (a) => mt({ createWithId: a || `jql${G()}` }), removeCssRule: f, removeCssRules: f, text: (a, s = false) => s ? document.createComment(a) : document.createTextNode(a), comment: (a) => m.text(a, true), node: (a, s = document) => s.querySelector(a, s), nodes: (a, s = document) => [...s.querySelectorAll(a, s)] }))(t));
-  function M({ tag: m, content: d = "", cssClass: a = "", props: s = {}, toDOM: g = false } = {}) {
-    let v = t.virtual(`<${m}></${m}>`);
-    return (c(d, String, HTMLElement, Array) || d.isJQL) && (c(d, Array) || (d = [d]), v.append(...d)), c(s, Object) && v.prop(s), a && (a = c(a, Array) ? a : [a], v.addClass(...a)), g ? v.toDOM() : v;
+  function M({ tag: m, content: u = "", cssClass: a = "", props: s = {}, toDOM: p = false, debug: E } = {}) {
+    let b;
+    return s?.cssClass && (a = s.cssClass, delete s.cssClass), c(u, String) && (b = t.virtual(`<${m}>${u}</${m}>`)), (c(u, HTMLElement, Array) || u.isJQL) && (c(u, Array) || (u = [u]), b = t.virtual(`<${m}></${m}>`).append(...u)), c(s, Object) && b.prop(s), a && (a = c(a, Array) ? a : [a], b.addClass(...a)), p ? b.toDOM() : b;
   }
   function S(m) {
-    function d(a) {
-      return a.toUpperCase() === a ? t.virtual(`<${a}></${a}>`) : (s, g = {}) => M(!s.isJQL && c(s, Object) ? { tag: a, ...s } : { tag: a, content: s, props: g });
+    function u(a) {
+      return a.toUpperCase() === a ? t.virtual(`<${a}></${a}>`) : (s, p = {}) => M(!s.isJQL && c(s, Object) ? { tag: a, ...s, props: p } : { tag: a, props: p, content: s });
     }
     return { get() {
-      return d(m);
+      return u(m);
     } };
   }
-  function T(m, [d, a]) {
+  function T(m, [u, a]) {
     if (!a)
       return m;
-    let s = d.toUpperCase();
-    return Object.defineProperty(m, d, S(d)), Object.defineProperty(m, s, S(s)), m;
+    let s = u.toUpperCase();
+    return Object.defineProperty(m, u, S(u)), Object.defineProperty(m, s, S(s)), m;
   }
   function I(...m) {
-    let d = {};
+    let u = {};
     for (let a of m) {
       let s = Object.getOwnPropertyDescriptors(a);
-      Object.entries(s).forEach(([g, v]) => Object.defineProperty(d, g, v));
+      Object.entries(s).forEach(([p, E]) => Object.defineProperty(u, p, E));
     }
-    return d;
+    return u;
   }
 }
 var y = jt(fe());
@@ -590,23 +595,23 @@ function fe() {
   return function(r, n, o = A.BeforeEnd) {
     let i = c(n, HTMLBRElement);
     n = i && document.body || (n && n?.isJQL ? n[0] : n) || document.body, o = o && Object.values(A).find((S) => o === S) ? o : void 0;
-    let u = ft(r), h = !u && Rt(r), x = h || u, f = { collection: It(r) ?? [], isVirtual: i, isJQL: true }, w = ht(f.collection);
-    location.host.startsWith("dev") && (f.params = { virtual: f.isVirtual, jql: f.isJQL, isRawHtml: u, isRawHtmlArray: h, isRawElemCollection: w });
+    let d = ft(r), h = !d && Rt(r), x = h || d, f = { collection: It(r) ?? [], isVirtual: i, isJQL: true }, w = ht(f.collection);
+    location.host.startsWith("dev") && (f.params = { virtual: f.isVirtual, jql: f.isJQL, isRawHtml: d, isRawHtmlArray: h, isRawElemCollection: w });
     let C = `input =&gt; ${h ? `"${D(r.join(", "), 70)}"` : !x && w ? `element collection [${D(f.collection.map((S) => `${c(S, Comment, Text) ? "Comment|Text @" : ""} ${S.outerHTML || S.textContent}`).join(", "), 70)}]` : `"${D(r, 70)}"`}`;
     if (f.collection.length && w)
-      return P(C), i || f.collection.forEach((S) => {
-        n.contains(S) || W([S], n, o);
+      return Q(C), i || f.collection.forEach((S) => {
+        n.contains(S) || z([S], n, o);
       }), q(f);
     if (x) {
       if ([r].flat().forEach((S) => f.collection.push(R(S))), f.collection.length > 0) {
         let S = f.collection.filter((T) => T?.dataset?.jqlcreationerror);
-        f.collection = f.collection.filter((T) => !T?.dataset?.jqlcreationerror), P(`${C}`), P(`*Created ${f.isVirtual ? "VIRTUAL " : ""}[${D(Mt(f.collection) || "sanitized: no elements remaining", 70)}]`), S.length && console.error(`JQL: illegal html, not rendered: "${S.reduce((T, I) => T.concat(`${I.textContent}
-`), "").trim()}"`), f.isVirtual || W(f.collection, n, o);
+        f.collection = f.collection.filter((T) => !T?.dataset?.jqlcreationerror), Q(`${C}`), Q(`*Created ${f.isVirtual ? "VIRTUAL " : ""}[${D(Mt(f.collection) || "sanitized: no elements remaining", 70)}]`), S.length && console.error(`JQL: illegal html, not rendered: "${S.reduce((T, I) => T.concat(`${I.textContent}
+`), "").trim()}"`), f.isVirtual || z(f.collection, n, o);
       }
       return q(f);
     }
     let M = Dt(r, n, f);
-    return P(`input => ${M}`), q(f);
+    return Q(`input => ${M}`), q(f);
   };
 }
 
