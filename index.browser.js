@@ -38,10 +38,10 @@ var zt = (t) => {
 var qt = () => {
   tt && zt(bt);
   let t = Wt ? "div" : "pre", e = `<div id="logBox"><div class="legend"><div></div></div><${t} id="jql_logger"></${t}></div>`;
-  return st(R(e), void 0, F.AfterBegin), x.node(vt);
+  return st(R(e), void 0, A.AfterBegin), x.node(vt);
 };
 var xt = (t) => c(t, String) && Object.assign(document.createElement("textarea"), { innerHTML: t }).textContent || t;
-var A = (...t) => {
+var F = (...t) => {
   let e = t[0] === "fromStatic";
   if (t = e ? t.slice(1) : t, e && !V)
     return t.forEach((n) => console.info(`${B()} \u2714 ${xt(n)}`));
@@ -53,7 +53,7 @@ var A = (...t) => {
   t.forEach((n) => J ? console.info(`${B()} \u2714 ${xt(n)}`) : x.node("#jql_logger").insertAdjacentHTML(it ? "afterbegin" : "beforeend", `<div class="entry">${B()} ${r(n.replace(/\n/g, "<br>"))}</div>`));
 };
 var rt = { on() {
-  V = true, A("Logging activated");
+  V = true, F("Logging activated");
 }, off() {
   V = false, console.log("Logging deactivated");
 } };
@@ -62,12 +62,12 @@ var nt = { on() {
 }, off() {
   ot = false;
 } };
-var Q = (...t) => ot && A(...t);
+var Q = (...t) => ot && F(...t);
 var $ = { get isConsole() {
   return J === true;
-}, isOn: () => V, isVisible: () => x("#jql_logger").is("visible"), on: () => (rt.on(), nt.on(), J || O()?.addClass("visible"), A("Debug logging started. Every call to [jql instance] is logged"), $), off: () => (O().isEmpty || (nt.off(), A("Debug logging stopped"), O()?.removeClass("visible")), rt.off(), $), toConsole: { on: () => (J = true, A("Started logging to console"), $), off() {
-  return A("Stopped logging to console (except error messages)"), J = false, $;
-} }, remove: () => (rt.off(), nt.off(), O()?.remove(), console.clear(), console.log(`${B()} logging completely disabled and all entries removed`), $), log: (...t) => (A(...t), $), hide: () => (O()?.removeClass("visible"), $), show: () => (O()?.addClass("visible"), $), reversed: { on: () => (it = true, A("Reverse logging set: now logging bottom to top (latest first)"), x("#logBox .legend").addClass("reversed"), $), off: () => (it = false, x("#logBox .legend").removeClass("reversed"), A("Reverse logging reset: now logging chronological (latest last)"), $) }, clear: () => (x(vt).text(""), console.clear(), A("Logging cleared"), $) };
+}, isOn: () => V, isVisible: () => x("#jql_logger").is("visible"), on: () => (rt.on(), nt.on(), J || O()?.addClass("visible"), F("Debug logging started. Every call to [jql instance] is logged"), $), off: () => (O().isEmpty || (nt.off(), F("Debug logging stopped"), O()?.removeClass("visible")), rt.off(), $), toConsole: { on: () => (J = true, F("Started logging to console"), $), off() {
+  return F("Stopped logging to console (except error messages)"), J = false, $;
+} }, remove: () => (rt.off(), nt.off(), O()?.remove(), console.clear(), console.log(`${B()} logging completely disabled and all entries removed`), $), log: (...t) => (F(...t), $), hide: () => (O()?.removeClass("visible"), $), show: () => (O()?.addClass("visible"), $), reversed: { on: () => (it = true, F("Reverse logging set: now logging bottom to top (latest first)"), x("#logBox .legend").addClass("reversed"), $), off: () => (it = false, x("#logBox .legend").removeClass("reversed"), F("Reverse logging reset: now logging chronological (latest last)"), $) }, clear: () => (x(vt).text(""), console.clear(), F("Logging cleared"), $) };
 var c = Lt;
 function Lt(t, ...e) {
   let r = ["NaN", "null", "undefined"], n = (h) => typeof h == "symbol" ? Symbol : h;
@@ -169,15 +169,15 @@ var at = (t) => {
     }
   }), Yt(e), t;
 };
-var F = { BeforeBegin: "beforebegin", AfterBegin: "afterbegin", BeforeEnd: "beforeend", AfterEnd: "afterend" };
+var A = { BeforeBegin: "beforebegin", AfterBegin: "afterbegin", BeforeEnd: "beforeend", AfterEnd: "afterend" };
 var ct = document.createElement("div");
 var Xt = (t) => (ct.innerHTML = t, ct.childNodes.length ? at(ct) : void 0);
 var Kt = (t, e, r) => c(t, Comment) ? e.insertAdjacentHTML(r, `<!--${t.data}-->`) : e.insertAdjacentText(r, t.data);
-var z = (t = [], e = document.body, r = F.BeforeEnd) => t.reduce((n, o) => {
+var z = (t = [], e = document.body, r = A.BeforeEnd) => t.reduce((n, o) => {
   let i = N(o) && st(o, e, r);
   return i ? [...n, i] : n;
 }, []);
-var st = (t, e = document.body, r = F.BeforeEnd) => (e = e?.isJQL ? e?.[0] : e, c(t, Comment, Text) ? Kt(t, e, r) : e.insertAdjacentElement(r, t));
+var st = (t, e = document.body, r = A.BeforeEnd) => (e = e?.isJQL ? e?.[0] : e, c(t, Comment, Text) ? Kt(t, e, r) : e.insertAdjacentElement(r, t));
 var R = (t) => {
   if (c(t, Text, Comment))
     return t;
@@ -309,7 +309,7 @@ var ie = { factoryExtensions: { is: (t) => te(t), length: (t) => t.collection.le
 }, appendTo: (t, e) => (e.isJQL || (e = x(e)), e.append(t), t), prependTo: (t, e) => (e.isJQL || (e = x.virtual(e)), e.prepend(t), t), single: (t, e) => t.collection.length > 0 ? c(e, String) ? t.find$(e) : c(e, Number) ? x(t.collection[e]) : x(t.collection[0]) : t, toNodeList: (t) => [...t.collection].map((e) => document.importNode(e, true)), duplicate: (t, e = false, r = document.body) => {
   let n = t.toNodeList().map((i) => i.removeAttribute && i.removeAttribute("id") || i), o = x.virtual(n);
   return e ? o.toDOM(r) : o;
-}, toDOM: (t, e = document.body, r = F.BeforeEnd) => (t.collection = z(t.collection, e, r), t.isVirtual && (t.isVirtual = false), t), first: (t, e = false) => {
+}, toDOM: (t, e = document.body, r = A.BeforeEnd) => (t.collection = z(t.collection, e, r), t.isVirtual && (t.isVirtual = false), t), first: (t, e = false) => {
   if (t.collection.length > 0)
     return e ? t.single() : t.collection[0];
 }, first$: (t, e) => t.single(e), find: (t, e) => t.first()?.querySelectorAll(e) || [], find$: (t, e) => x(e, t), prop: (t, e, r) => {
@@ -399,7 +399,7 @@ function se(t) {
 var k = {};
 var ae = ["load", "unload", "scroll", "focus", "blur", "DOMNodeRemovedFromDocument", "DOMNodeInsertedIntoDocument", "loadstart", "progress", "error", "abort", "load", "loadend", "pointerenter", "pointerleave", "readystatechange"];
 var ce = (t) => !!ae.find((e) => e === t);
-var Ft = () => {
+var At = () => {
   let t = (n) => k[n.type].forEach((o) => o(n)), e = (n, o) => (i) => {
     let d = i.target?.closest?.(n);
     return d && o(i, x(d));
@@ -414,7 +414,7 @@ var Ft = () => {
 };
 var mt = le;
 function le({ styleSheet: t, createWithId: e }) {
-  let { cssRuleFromText: r, checkAtRules: n, toDashedNotation: o, IS: i, shortenRule: d, consider: h, tryAndCatch: b, ruleExists: f, checkParams: w, atMedia2String: C, sheet: M, compareSelectors: E } = ue({ styleSheet: t, createWithId: e }), T = (s, p) => {
+  let { cssRuleFromText: r, checkAtOrAmpersandRules: n, toDashedNotation: o, IS: i, shortenRule: d, consider: h, tryAndCatch: b, ruleExists: f, checkParams: w, atMedia2String: C, sheet: M, compareSelectors: E } = ue({ styleSheet: t, createWithId: e }), T = (s, p) => {
     if (s && p.removeProperties) {
       b(() => Object.keys(p.removeProperties).forEach((L) => {
         s.style.removeProperty(L);
@@ -458,7 +458,7 @@ function ue({ styleSheet: t, createWithId: e }) {
     let v = g.length && Array.isArray(g.slice(-1)) ? g.pop().join("") : "";
     return new RegExp((g.length && l.raw.reduce((H, Z, Nt) => H.concat(g[Nt - 1] || "").concat(Z), "") || l.raw.join("")).split(`
 `).map((H) => H.replace(/\s|\/\/.*$/g, "").trim().replace(/(@s!)/g, " ")).join(""), v);
-  }, d = (l, g) => [...t.rules].find((v) => g ? I(v.selectorText || "", l) : i`${n(l)}${[..."gim"]}`.test(v.cssText)), h = (l) => /@import|@charset|@font-face/i.test(l) ? { existing: s(l, 0), done: true } : w.test(l) ? { ok: s(l, t.cssRules.length), done: true } : { ok: false, done: false }, b = (l, ...g) => !!g.find((v) => f(l, v)), f = (l, ...g) => {
+  }, d = (l, g) => [...t.rules].find((v) => g ? I(v.selectorText || "", l) : i`${n(l)}${[..."gim"]}`.test(v.cssText)), h = (l) => /^(@import|@charset|@font-face)|&.+{.+?}/i.test(l.replace(/\n/g, "")) ? { existing: s(l, 0), done: true } : w.test(l) ? { ok: s(l, t.cssRules.length), done: true } : { ok: false, done: false }, b = (l, ...g) => !!g.find((v) => f(l, v)), f = (l, ...g) => {
     if (g.length > 1)
       return b(l, ...g);
     g = g.shift();
@@ -501,10 +501,10 @@ ${r}`), v;
     }
   }, L = (l) => Object.entries(l).map(([g, v]) => `${g}: ${v.trim()}`).join(`;
 `);
-  return { sheet: t, tryAndCatch: a, cssRuleFromText: E, checkAtRules: h, ruleExists: d, atMedia2String: (l, g) => `${l.trim()} ${Object.entries(g).map(([v, H]) => `${v}: { ${L(H)}`)}`, compareSelectors: I, toDashedNotation: T, checkParams: m, tryParse: s, consider: p, IS: f, shortenRule: u };
+  return { sheet: t, tryAndCatch: a, cssRuleFromText: E, checkAtOrAmpersandRules: h, ruleExists: d, atMedia2String: (l, g) => `${l.trim()} ${Object.entries(g).map(([v, H]) => `${v}: { ${L(H)}`)}`, compareSelectors: I, toDashedNotation: T, checkParams: m, tryParse: s, consider: p, IS: f, shortenRule: u };
 }
 var gt = ut.instanceExtensions;
-var At = ut.factoryExtensions;
+var Ft = ut.factoryExtensions;
 var dt = (t) => c(t, Comment, Text);
 var N = (t) => c(t, Text, HTMLElement, Comment);
 var de = (t) => c(t, Comment);
@@ -527,7 +527,7 @@ var Tt = (t) => {
   return t.data.add({ hid: e }), `[data-hid="${e}"]`;
 };
 var q = (t) => {
-  let e = (i) => (...d) => c(i, Function) && i(q(t), ...d), r = (i) => (...d) => c(i, Function) ? { tmpKey: i(q(t), ...d) } : { tmpKey: void 0 }, n = (i, d) => c(d, Symbol) ? () => i : c(+d, Number) ? i.collection?.[d] : d in At ? r(At[d])().tmpKey : d in gt ? e(gt[d]) : i[d], o = { get: (i, d) => n(i, d) };
+  let e = (i) => (...d) => c(i, Function) && i(q(t), ...d), r = (i) => (...d) => c(i, Function) ? { tmpKey: i(q(t), ...d) } : { tmpKey: void 0 }, n = (i, d) => c(d, Symbol) ? () => i : c(+d, Number) ? i.collection?.[d] : d in Ft ? r(Ft[d])().tmpKey : d in gt ? e(gt[d]) : i[d], o = { get: (i, d) => n(i, d) };
   return new Proxy(t, o);
 };
 var pt = mt({ createWithId: "JQLStylesheet" });
@@ -541,18 +541,18 @@ var jt = (t) => {
 };
 function ge(t) {
   let e = { activePopup: void 0 }, r = document.createElement("br"), n = (...m) => m.forEach((u) => pt(u)), o = (m, u) => pt(m, u), i = (m, u, a) => {
-    u = u?.isJQL ? u?.[0] : u, a = a && Object.values(F).find((p) => a === p) ? a : void 0;
+    u = u?.isJQL ? u?.[0] : u, a = a && Object.values(A).find((p) => a === p) ? a : void 0;
     let s = t(m, r);
     return u && !c(u, HTMLBRElement) && s.collection.forEach((p) => a ? u.insertAdjacentElement(a, p) : u.append(p)), s;
-  }, d = Ft(), h = (m, u, ...a) => (c(u, Function) && (a.push(u), u = void 0), a.forEach((s) => d(m, u, s))), b = Object.entries(j.tagsRaw).reduce(T, {}), f = (...m) => {
+  }, d = At(), h = (m, u, ...a) => (c(u, Function) && (a.push(u), u = void 0), a.forEach((s) => d(m, u, s))), b = Object.entries(j.tagsRaw).reduce(T, {}), f = (...m) => {
     if (m.length === 1) {
       let u = String(m.shift().trim());
       m = u.startsWith("!") ? [u.slice(1, -1)] : u.split(",").map((a) => a.trim());
     }
     m.map((u) => u.startsWith("!") ? u.slice(1, -1) : u).forEach((u) => pt(u, { removeRule: 1 }));
   }, w = Object.entries(j.tagsRaw).filter(([, m]) => m).map(([m]) => m).sort((m, u) => m.localeCompare(u));
-  return I(b, ((m) => ({ debugLog: $, log: (...a) => A("fromStatic", ...a), insertPositions: F, get at() {
-    return F;
+  return I(b, ((m) => ({ debugLog: $, log: (...a) => F("fromStatic", ...a), insertPositions: A, get at() {
+    return A;
   }, editCssRules: n, editCssRule: o, setStyle: o, delegate: h, virtual: i, get fn() {
     return me;
   }, get allowTag() {
@@ -595,9 +595,9 @@ function ge(t) {
 }
 var x = jt(fe());
 function fe() {
-  return function(r, n, o = F.BeforeEnd) {
+  return function(r, n, o = A.BeforeEnd) {
     let i = c(n, HTMLBRElement);
-    n = i && document.body || (n && n?.isJQL ? n[0] : n) || document.body, o = o && Object.values(F).find((E) => o === E) ? o : void 0;
+    n = i && document.body || (n && n?.isJQL ? n[0] : n) || document.body, o = o && Object.values(A).find((E) => o === E) ? o : void 0;
     let d = ft(r), h = !d && Rt(r), b = h || d, f = { collection: It(r) ?? [], isVirtual: i, isJQL: true }, w = ht(f.collection);
     location.host.startsWith("dev") && (f.params = { virtual: f.isVirtual, jql: f.isJQL, isRawHtml: d, isRawHtmlArray: h, isRawElemCollection: w });
     let C = `input =&gt; ${h ? `"${D(r.join(", "), 70)}"` : !b && w ? `element collection [${D(f.collection.map((E) => `${c(E, Comment, Text) ? "Comment|Text @" : ""} ${E.outerHTML || E.textContent}`).join(", "), 70)}]` : `"${D(r, 70)}"`}`;
