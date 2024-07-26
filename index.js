@@ -25,16 +25,27 @@ function fixSBLinks2TopProblem() {
 }
 
 function logFactory(formatJSON = true) {
-  const logContainer = $(`<ul id="log2screen"/>`);
-  const toJSON = content => tryJSON(content, formatJSON);
-  const createItem = t => $(`${t}`.startsWith(`!!`) ? `<li class="head">` : `<li>`);
-  const logPosition = {top: logContainer.prepend, bottom: logContainer.append};
-  const cleanContent = content => !$.IS(content, String, Number) ? toJSON(content) : `${content}`;
-  const writeLogEntry = content => createItem(content).append( $(`<div>${content?.replace(/^!!/, ``)}</div>`) );
-  const logItem = (pos = `bottom`) => content => logPosition[pos]( writeLogEntry(cleanContent(content)) );
+  const logContainer = $(`<ul id="log2screen">`).first();
+  
+  function logItem(top = false) {
+    return content => {
+      content = !$.IS(content, String, Number, Symbol)
+        ? tryJSON(content, formatJSON) : String(content).trim();
+      const isHead = content.startsWith(`!!`);
+      content = isHead ? content.slice(2) : content;
+      
+      logContainer.insertAdjacentHTML(
+        top ? `afterbegin` : `beforeend`,
+        `<li${isHead ? ` class="head"` : ``}>
+           <div>${content}</div>
+        </li>` );
+    };
+  }
+  
   return {
-    log: (...txt) => txt.forEach( logItem() ),
-    logTop: (...txt) => txt.forEach( logItem(`top`) ), };
+    log: (...txt) => { const l = logItem(); txt.forEach( l ); },
+    logTop: (...txt) => { const l = logItem(true); txt.forEach( l ); }
+  };
 }
 
 function tryJSON(content, formatted) {
@@ -120,7 +131,7 @@ function dateDiffFactory() {
 
 function setDefaultStyling() {
   $.editCssRules(...[
-    `body { 
+    `body {
       font: normal 14px/17px  system-ui, sans-serif;
       margin: 1rem;
      }`,
@@ -134,7 +145,7 @@ function setDefaultStyling() {
       display: block;
       padding: 6px;
       border: 1px solid #999;
-      margin: 0.5rem 0; 
+      margin: 0.5rem 0;
       background-color: #eee;
       white-space: pre-wrap;
     }`,
@@ -143,7 +154,7 @@ function setDefaultStyling() {
       border: 5px solid green;
       borderWidth: 5px;
       padding: 0.5rem;
-      display: inline-block; 
+      display: inline-block;
     }`,
     `a.ExternalLink {
       text-decoration: none;
@@ -157,11 +168,11 @@ function setDefaultStyling() {
     }`,
     `.hidden {display: none;}`,
     `.attention {color: red; font-size: 1.2em; font-weight: bold;}`,
-    `#log2screen li { 
-      listStyle: '\\2713'; 
-      paddingLeft: 6px; 
-      margin: 0.5rem 0 0 -1.2rem; 
-      font-family: monospace 
+    `#log2screen li {
+      listStyle: '\\2713';
+      paddingLeft: 6px;
+      margin: 0.5rem 0 0 -1.2rem;
+      font-family: monospace
     }`,
     `#log2screen li.head {
       list-style-type: none;
