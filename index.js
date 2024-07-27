@@ -41,10 +41,11 @@ function logFactory(formatJSON = true) {
         </li>` );
     };
   }
+  const [logLamda, logTopLambda] = [logItem(), logItem(true)];
   
   return {
-    log: (...txt) => { const l = logItem(); txt.forEach( l ); },
-    logTop: (...txt) => { const l = logItem(true); txt.forEach( l ); }
+    log: (...txt) => txt.forEach( logLamda ),
+    logTop: (...txt) => txt.forEach( logTopLambda ),
   };
 }
 
