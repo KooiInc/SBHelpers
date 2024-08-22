@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.5.8",
+  "version": "0.6.0",
   "description": "Helper methods for Stackblitz ecmascript projects",
   "keywords": [
     "Stackblitz",
