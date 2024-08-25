@@ -12,7 +12,7 @@ export { $, logFactory, regexhelper, xDate, dtFormat, dtDiffCalc, extendSymbolic
 
 function fixSBLinks2TopProblem() {
   // fix for stackblitz rewriting hrefs with target _top (see README)
-  /stackblitz/i.test(top.location.href) &&
+  /stackblitz/i.test(location.href) &&
     console.info(`✔ Stackblitz rewrites links to _top. The 'stackblitzhelpers' module fixed it.`);
   document.addEventListener(`click`, evt => {
     if (evt.target.href) {
