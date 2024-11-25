@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "Helper methods for Stackblitz ecmascript projects",
   "keywords": [
     "Stackblitz",
@@ -14,8 +14,7 @@
     "datefiddler": "latest",
     "intl-dateformatter": "latest",
     "jqlmodule": "^3.2.4",
-    "jsregexphelper": "latest",
-    "protoxt": "latest"
+    "jsregexphelper": "latest"
   },
   "devDependencies": {
     "esbuild": "^0.18.17"

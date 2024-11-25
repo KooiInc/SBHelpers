@@ -16,8 +16,6 @@ Type 'stackblitzhelpers' in the DEPENDENCIES input field
 
 - [jqlmodule](https://www.npmjs.com/package/jqlmodule): a JQuery alike DOM manipulation library. 
   - Exposed as `$`
-- [protoxt](https://www.npmjs.com/package/protoxt): a library to extend objects without pollution the global namespace - using `symbol`. 
-  - Exposed as `extendSymbolic`
 - [jsregexhelper](https://www.npmjs.com/package/jsregexphelper): a library to create readable EcmaScript regular expressions (multiline, commenting possible)
   - Exposed as `regexhelper`
 - [datefiddler](https://www.npmjs.com/package/datefiddler): a library to fiddle with dates (add/subtract units from a date)
