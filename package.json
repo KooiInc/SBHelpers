@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Helper methods for Stackblitz ecmascript projects",
   "keywords": [
     "Stackblitz",
@@ -11,6 +11,7 @@
   "license": "CCO-1.0",
   "type": "module",
   "dependencies": {
+    "es-date-fiddler": "latest",
     "datefiddler": "latest",
     "intl-dateformatter": "latest",
     "jqlmodule": "^3.2.4",
