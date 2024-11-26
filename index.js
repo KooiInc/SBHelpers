@@ -1,13 +1,14 @@
 import $ from "jqlmodule";
 import dateFiddlerFactory from "datefiddler";
 import dtFormat from "intl-dateformatter";
+import $D from "es-date-fiddler";
 import regexhelper from "jsregexphelper";
 const xDate = dateFiddlerFactory(dateFiddlerExtentions);
 const dtDiffCalc = dateDiffFactory();
 const IS = $.IS;
 setDefaultStyling();
 fixSBLinks2TopProblem();
-export { $, logFactory, regexhelper, xDate, dtFormat, dtDiffCalc, };
+export { $, logFactory, regexhelper, xDate, dtFormat, $D, dtDiffCalc, };
 
 function fixSBLinks2TopProblem() {
   // fix for stackblitz rewriting hrefs with target _top (see README)
