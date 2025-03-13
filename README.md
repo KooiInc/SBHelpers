@@ -18,10 +18,8 @@ Type 'stackblitzhelpers' in the DEPENDENCIES input field
   - Exposed as `$`
 - [jsregexhelper](https://www.npmjs.com/package/jsregexphelper): a library to create readable ECMAScript regular expressions (multiline, commenting possible)
   - Exposed as `regexhelper`
-- [es-date-fiddler](https://www.npmjs.com/package/es-date-fiddler): a library to fiddle extensively with ECMAScript Dates
+- [ticktock-es](https://www.npmjs.com/package/ticktock-es): a library to fiddle extensively with ECMAScript Dates
   - Exposed as `$D`
-- [intl-dateformatter](https://www.npmjs.com/package/intl-dateformatter): a library to format an EcmaScript `Date` instance with a template string and using the [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) namespace
-  - Exposed as `dtFormat`
 
 ### For printing/logging to screen
 - `logFactory`: logfactory logs string(s) to screen within a formatted unordered listing (`<ul>`). It exposes 2 methods
@@ -33,7 +31,8 @@ Type 'stackblitzhelpers' in the DEPENDENCIES input field
   - `logTop`: same as `log`, but the string(s) will be prependend (inserted on top op the existing logged lines).
 
 ### Automatic style creation
-The `SBHelpers` library supplies a default (css-)style for Stackblitz Ecmascript projects. Style may be edited using `$.setStyle`.
+The `SBHelpers` library supplies a default (css-)style for Stackblitz Ecmascript projects. 
+Style may be edited using `$.editCssRules`.
 
 ### [Example project @Stackblitz](https://stackblitz.com/edit/js-eukuys?file=index.js)
 
