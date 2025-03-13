@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "Helclearper methods for Stackblitz ecmascript projects",
   "keywords": [
     "Stackblitz",
@@ -11,14 +11,9 @@
   "license": "CCO-1.0",
   "type": "module",
   "dependencies": {
-    "es-date-fiddler": "latest",
-    "datefiddler": "latest",
-    "intl-dateformatter": "latest",
     "jqlmodule": "latest",
-    "jsregexphelper": "latest"
-  },
-  "devDependencies": {
-    "esbuild": "^0.18.17"
+    "jsregexphelper": "latest",
+    "ticktock-es": "latest"
   },
   "main": "index.js",
   "bugs": {
