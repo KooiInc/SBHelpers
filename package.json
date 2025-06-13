@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "description": "Helclearper methods for Stackblitz ecmascript projects",
   "keywords": [
     "Stackblitz",
@@ -11,7 +11,7 @@
   "license": "CCO-1.0",
   "type": "module",
   "dependencies": {
-    "jqlmodule": "latest",
+    "jqx-es": "latest",
     "jsregexphelper": "latest",
     "ticktock-es": "latest"
   },
