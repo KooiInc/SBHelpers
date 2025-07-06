@@ -24,18 +24,19 @@ function logFactory(formatJSON = true) {
   const logContainer = $(`<ul id="log2screen">`).first();
   
   function logItem(top = false) {
+    const where2PutIt = top ? $.at.start : $.at.end;
     return content => {
-      if (content.isJQx) {
+      if (content?.isJQx) {
         return $.li(
           content.data.get(`header`) ? {class: `head`} : ``, content
-        ).renderTo(logContainer, top ? $.at.start : $.at.end);
+        ).renderTo(logContainer, where2PutIt);
       }
       
       content = !$.IS(content, String, Number, Symbol) ? tryJSON(content, formatJSON) : String(content);
       const isHead = content.startsWith(`!!`);
       content = isHead ? content.slice(2) : content;
       $.li(isHead ? {class: `head`} : ``, content)
-        .renderTo(logContainer, top ? $.at.start : $.at.end);
+        .renderTo(logContainer, where2PutIt);
     };
   }
   const [logLamda, logTopLambda] = [logItem(), logItem(true)];
