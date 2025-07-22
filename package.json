@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "Helper methods for Stackblitz ES/JS or other HTML projects",
   "keywords": [
     "Stackblitz",

@@ -1,30 +1,44 @@
+<div align="center">
+  <!-- bundlephobia is broken! 
+  <a href="https://bundlephobia.com/package/stackblitzhelpers@latest" rel="nofollow"
+    ><img src="https://badgen.net/bundlephobia/min/stackblitzhelpers"></a>-->
+  <a target="_blank" href="https://www.npmjs.com/package/stackblitzhelpers"
+    ><img src="https://img.shields.io/npm/v/stackblitzhelpers.svg?labelColor=cb3837&logo=npm&color=dcfdd9"></a>
+</div>
+
 # SBHelpers
 Some handy helpers for Stackblitz ES/html projects
+
+> [!NOTE]
+> `index.browser.bundled.js` equals `index.browser.js`. It's there for legacy.
 
 ### Install the package
 `npm install stackblitzhelpers`
 
 ### Use in Stackblitz front end project
-`import {$, logFactory, ...[see 'exposed as']} from "https://cdn.jsdelivr.net/gh/KooiInc/SBHelpers@main/index.browser.js";`
-
-> [!NOTE]
-> `index.browser.bundled.js` equals `index.browser.js`. It's there for legacy.
+```javascript
+import {logFactory /*, ...[see 'exposed as']*/} 
+  from "https://unpkg.com/stackblitzhelpers@latest/index.browser.js";
+```
 
 ### Use as standalone script
 ```html
-<script src="[location of SBHelpers]/Bundle/sbhelpers.script.min.js"></script>
+<script src="https://unpkg.com/stackblitzhelpers@latest/Bundle/sbhelpers.script.min.js"></script>
 <script>
-  const {$, logFactory, ...[see 'exposed as']} = SBHelpers;
+  const {logFactory $ /*, ...[see 'exposed as']*/} = SBHelpers;
   // ... 
 </script>
 ```
 
 ### Use in Stackblitz plain ecmascript project ('javascript blank project')
-Type 'stackblitzhelpers' in the DEPENDENCIES input field.   
-Next use `import {$, logFactory, ...[see 'exposed as']} from "stackblitzhelpers"`
-
 ![image](https://github.com/KooiInc/SBHelpers/assets/836043/f1e33a6a-48d4-4d58-acb3-7150cd77806e)
 
+Type 'stackblitzhelpers' in the DEPENDENCIES input field and press `<ENTER>`.
+
+Next use 
+```javascript
+import {logFactory /*, ...[see 'exposed as'] */} from "stackblitzhelpers"
+```
 ### The library includes the following packets:
 
 - [jqlmodule](https://www.npmjs.com/package/jqlmodule): a JQuery alike DOM manipulation library. 
