@@ -4,11 +4,24 @@ Some handy helpers for Stackblitz ES/html projects
 ### Install the package
 `npm install stackblitzhelpers`
 
-### Use in the browser (or in Stackblitz front end project)
-`import {$, logFactory, ...[see 'exposed as']} from "https://cdn.jsdelivr.net/gh/KooiInc/SBHelpers@main/index.browser.bundled.js";`
+### Use in Stackblitz front end project
+`import {$, logFactory, ...[see 'exposed as']} from "https://cdn.jsdelivr.net/gh/KooiInc/SBHelpers@main/index.browser.js";`
+
+> [!NOTE]
+> `index.browser.bundled.js` equals `index.browser.js`. It's there for legacy.
+
+### Use as standalone script
+```html
+<script src="[location of SBHelpers]/Bundle/sbhelpers.script.min.js"></script>
+<script>
+  const {$, logFactory, ...[see 'exposed as']} = SBHelpers;
+  // ... 
+</script>
+```
 
 ### Use in Stackblitz plain ecmascript project ('javascript blank project')
-Type 'stackblitzhelpers' in the DEPENDENCIES input field
+Type 'stackblitzhelpers' in the DEPENDENCIES input field.   
+Next use `import {$, logFactory, ...[see 'exposed as']} from "stackblitzhelpers"`
 
 ![image](https://github.com/KooiInc/SBHelpers/assets/836043/f1e33a6a-48d4-4d58-acb3-7150cd77806e)
 

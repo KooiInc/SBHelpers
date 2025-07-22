@@ -1,7 +1,7 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.9.5",
-  "description": "Helper methods for Stackblitz ES/JS projects",
+  "version": "0.9.6",
+  "description": "Helper methods for Stackblitz ES/JS or other HTML projects",
   "keywords": [
     "Stackblitz",
     "es20xx",
@@ -15,7 +15,7 @@
     "jsregexphelper": "latest",
     "ticktock-es": "latest"
   },
-  "main": "index.js",
+  "main": "./bundle/index.min.js",
   "bugs": {
     "url": "https://github.com/KooiInc/SBHelpers/issues"
   },
