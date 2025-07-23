@@ -1,7 +1,6 @@
 <div align="center">
   <!-- bundlephobia sometimes breaks! -->
-  <a href="https://bundlephobia.com/package/stackblitzhelpers@latest" rel="nofollow"
-    ><img src="https://badgen.net/bundlephobia/min/stackblitzhelpers"></a>
+  <a href="https://bundlephobia.com/package/stackblitzhelpers@latest" rel="nofollow"><img src="https://badgen.net/bundlephobia/min/stackblitzhelpers"></a>
   <a target="_blank" href="https://www.npmjs.com/package/stackblitzhelpers"
     ><img src="https://img.shields.io/npm/v/stackblitzhelpers.svg?labelColor=cb3837&logo=npm&color=dcfdd9"></a>
 </div>
