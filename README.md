@@ -27,16 +27,16 @@ Some handy helpers for ES/JS/HTML projects.
 
 ### [Examples](https://kooiinc.codeberg.page/HtmlHelpers/Examples/) 
 
-### Install the package
-`npm install stackblitzhelpers`
-
 ### Use in Stackblitz front end project
 ```javascript
 import {logFactory /*, ...[see 'exposed as']*/} 
-  from "https://unpkg.com/stackblitzhelpers@latest/index.browser.js";
+  from "https://unpkg.com/stackblitzhelpers@latest/Bundle/htmlhelpers.min.js";
 ```
 > [!NOTE]
-> `index.browser.bundled.js` equals `index.browser.js`. It's there for legacy.
+> `index.browser.bundled.js` and `index.browser.js` in the repository root are there for legacy.
+
+### Install the package
+`npm install stackblitzhelpers`
 
 ### Use as standalone script
 ```html

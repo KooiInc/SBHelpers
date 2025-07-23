@@ -4,7 +4,7 @@ import {
   regexhelper as createRE,
   logFactory,
   $D,
- } from "../Bundle/index.min.js";
+ } from "../Bundle/htmlhelpers.min.js";
 
 const { log, logTop } = logFactory(); // initialize logging (to screen)
 const {DIV, button: $BUTTON} = $; // most html elements can be created with a function
