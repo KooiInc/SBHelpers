@@ -16,15 +16,13 @@ Some handy helpers for ES/JS/HTML projects.
 - [x] A library to manage ES `Date` (format, locale sensitive, calculation etc.)
 
 > [!IMPORTANT]
-> This repository was originally developed for Stackblitz projects (named SBHelpers)
+> This repository was originally developed for (my) [Stackblitz](https://stackblitz.com/@KooiInc) projects (named SBHelpers)
 > 
-> The repository is moved to [Codeberg.org](https://codeberg.org/KooiInc/HtmlHelpers).
+> The repository is moved to [Codeberg.org](https://codeberg.org/KooiInc/HtmlHelpers) and renamed to ***HtmlHelpers***.
 >
 > For now it is kept in sync with the original repository @[Github](https://github.com/KooiInc/SBHelpers).
 >
-> Depending on future USA/Microsoft/Github policies the Github version maybe discontinued later.
->
-> In other words, *starting july 23 2025 the Codeberg repository is ***authorative****.
+> Depending on future USA/Microsoft/Github policies the Github version may be discontinued later.
  
 
 ### Install the package
