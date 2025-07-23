@@ -1,6 +1,6 @@
 {
   "name": "stackblitzhelpers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper methods for ES/JS or other HTML projects",
   "keywords": [
     "es20xx",
@@ -17,7 +17,7 @@
     "jsregexphelper": "latest",
     "ticktock-es": "latest"
   },
-  "main": "./Bundle/index.min.js",
+  "main": "./Bundle/htmlhelpers.min.js",
   "bugs": {
     "url": "https://codeberg.org/KooiInc/HtmlHelpers/issues"
   },
