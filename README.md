@@ -42,7 +42,7 @@ import {logFactory /*, ...[see 'exposed as']*/}
 ```html
 <script src="https://unpkg.com/stackblitzhelpers@latest/Bundle/sbhelpers.script.min.js"></script>
 <script>
-  const {logFactory $ /*, ...[see 'exposed as']*/} = SBHelpers;
+  const {logFactory, $ /*, ...[see 'exposed as']*/} = SBHelpers;
   // ... 
 </script>
 ```
