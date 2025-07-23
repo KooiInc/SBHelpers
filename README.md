@@ -18,7 +18,8 @@ Some handy helpers for ES/JS/HTML projects.
 > [!IMPORTANT]
 > This repository was originally developed for (my) [Stackblitz](https://stackblitz.com/@KooiInc) projects (named SBHelpers)
 > 
-> The repository is moved to [Codeberg.org](https://codeberg.org/KooiInc/HtmlHelpers) and renamed to ***HtmlHelpers***.
+> The repository is moved to [Codeberg.org](https://codeberg.org/KooiInc/HtmlHelpers) and renamed to ***HtmlHelpers***. 
+> For the time being, the npm package will keep the name 'stackblitzhelpers'. 
 >
 > For now it is kept in sync with the original repository @[Github](https://github.com/KooiInc/SBHelpers).
 >
