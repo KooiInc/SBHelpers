@@ -9,10 +9,10 @@
 # HtmlHelpers
 Some handy helpers for ES/JS/HTML projects.
 
-**Highlights**
-
-- [x] A logger factory to print messages/html in a structured way to the browser screen
+**The helper contains**
+- [x] A logger factory to print text/html in a structured way to the browser screen
 - [x] A JQuery alike library to manage HTML elements (create, handle, modify, style, remove)
+- [x] A small library to create multiline regular expressions with comments
 - [x] A library to manage ES `Date` (format, locale sensitive, calculation etc.)
 
 > [!IMPORTANT]
