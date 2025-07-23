@@ -166,7 +166,7 @@ logTop(
   $.a({
     data: {header: 1},
     class: "ExternalLink arrow",
-    target: "_blank",
+    target: "_top",
     href: "https://codeberg.org/KooiInc/HtmlHelpers",
     text: "Codeberg repository"
   }),
