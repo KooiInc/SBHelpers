@@ -1,11 +1,13 @@
 {
   "name": "stackblitzhelpers",
-  "version": "0.9.9",
-  "description": "Helper methods for Stackblitz ES/JS or other HTML projects",
+  "version": "1.0.0",
+  "description": "Helper methods for ES/JS or other HTML projects",
   "keywords": [
-    "Stackblitz",
     "es20xx",
-    "utility"
+    "utility",
+    "html",
+    "css",
+    "datetime"
   ],
   "author": "KooiInc",
   "license": "CCO-1.0",
@@ -17,10 +19,10 @@
   },
   "main": "./Bundle/index.min.js",
   "bugs": {
-    "url": "https://github.com/KooiInc/SBHelpers/issues"
+    "url": "https://codeberg.org/KooiInc/HtmlHelpers/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KooiInc/SBHelpers.git"
+    "url": "https://codeberg.org/KooiInc/HtmlHelpers.git"
   }
 }

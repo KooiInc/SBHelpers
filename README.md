@@ -16,7 +16,7 @@ Some handy helpers for ES/JS/HTML projects.
 - [x] A library to manage ES `Date` (format, locale sensitive, calculation etc.)
 
 > [!IMPORTANT]
-> This repository was originally developed for (my) [Stackblitz](https://stackblitz.com/@KooiInc) projects (named SBHelpers)
+> This repository was originally developed for (my) [Stackblitz](https://stackblitz.com/@KooiInc) projects (npm package name stackblitzhelpers)
 > 
 > The repository is moved to [Codeberg.org](https://codeberg.org/KooiInc/HtmlHelpers) and renamed to ***HtmlHelpers***. 
 > For the time being, the npm package will keep the name 'stackblitzhelpers'. 
@@ -24,7 +24,8 @@ Some handy helpers for ES/JS/HTML projects.
 > For now it is kept in sync with the original repository @[Github](https://github.com/KooiInc/SBHelpers).
 >
 > Depending on future USA/Microsoft/Github policies the Github version may be discontinued later.
- 
+
+### [Examples](https://kooiinc.codeberg.page/HtmlHelpers/Examples/) 
 
 ### Install the package
 `npm install stackblitzhelpers`
@@ -76,8 +77,6 @@ import {logFactory /*, ...[see 'exposed as'] */} from "stackblitzhelpers"
 ### Automatic style creation
 The `SBHelpers` library supplies a default (css-)style for Stackblitz Ecmascript projects. 
 Style may be edited using `$.editCssRules`.
-
-### [Example project @Stackblitz](https://stackblitz.com/edit/js-eukuys?file=index.js)
 
 ## Notes
 - Stackblitz seems to rewrite links with `target="_top"` (to `target="_blank"`). 
