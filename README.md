@@ -7,7 +7,7 @@
 </div>
 
 # SBHelpers
-Some handy helpers for Stackblitz ES/html projects
+Some handy helpers for Stackblitz ES and/or HTML projects
 
 ### Install the package
 `npm install stackblitzhelpers`
