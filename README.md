@@ -1,16 +1,13 @@
 <div align="center">
-  <!-- bundlephobia is broken! 
+  <!-- bundlephobia sometimes breaks! -->
   <a href="https://bundlephobia.com/package/stackblitzhelpers@latest" rel="nofollow"
-    ><img src="https://badgen.net/bundlephobia/min/stackblitzhelpers"></a>-->
+    ><img src="https://badgen.net/bundlephobia/min/stackblitzhelpers"></a>
   <a target="_blank" href="https://www.npmjs.com/package/stackblitzhelpers"
     ><img src="https://img.shields.io/npm/v/stackblitzhelpers.svg?labelColor=cb3837&logo=npm&color=dcfdd9"></a>
 </div>
 
 # SBHelpers
 Some handy helpers for Stackblitz ES/html projects
-
-> [!NOTE]
-> `index.browser.bundled.js` equals `index.browser.js`. It's there for legacy.
 
 ### Install the package
 `npm install stackblitzhelpers`
@@ -20,6 +17,8 @@ Some handy helpers for Stackblitz ES/html projects
 import {logFactory /*, ...[see 'exposed as']*/} 
   from "https://unpkg.com/stackblitzhelpers@latest/index.browser.js";
 ```
+> [!NOTE]
+> `index.browser.bundled.js` equals `index.browser.js`. It's there for legacy.
 
 ### Use as standalone script
 ```html
