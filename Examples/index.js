@@ -65,13 +65,13 @@ log(
       `${xDateEx.format(dateFormat)}`,
 
   // ticktok usage
-    toHeader(DIV, "Can we calculate date differences using <code>$D</code>?"),
-    $.div(
-      {class: "normal"},
-      `...diff until `,
-      $.code(`$D.now.differenceFrom(new Date($D.now.year + 1, 0 ,1, 0, 0, 0))`)),
+  toHeader(DIV, "Can we calculate date differences using <code>$D</code>?"),
+  $.div(
+    {class: "normal"},
+    `...diff until `,
+    $.code(`$D.now.differenceFrom(new Date($D.now.year + 1, 0 ,1, 0, 0, 0))`)),
 
-    `<span id="showNwYear"></span>`,
+  `<span id="showNwYear"></span>`,
 );
 
 // create a timer from factory
