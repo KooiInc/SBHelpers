@@ -6,8 +6,26 @@
     ><img src="https://img.shields.io/npm/v/stackblitzhelpers.svg?labelColor=cb3837&logo=npm&color=dcfdd9"></a>
 </div>
 
-# SBHelpers
-Some handy helpers for Stackblitz ES and/or HTML projects
+# HtmlHelpers
+Some handy helpers for ES/JS/HTML projects.
+
+**Highlights**
+
+- [x] A logger factory to print messages/html in a structured way to the browser screen
+- [x] A JQuery alike library to manage HTML elements (create, handle, modify, style, remove)
+- [x] A library to manage ES `Date` (format, locale sensitive, calculation etc.)
+
+> [!IMPORTANT]
+> This repository was originally developed for Stackblitz projects (named SBHelpers)
+> 
+> The repository is moved to [Codeberg.org](https://codeberg.org/KooiInc/HtmlHelpers).
+>
+> For now it is kept in sync with the original repository @[Github](https://github.com/KooiInc/SBHelpers).
+>
+> Depending on future USA/Microsoft/Github policies the Github version maybe discontinued later.
+>
+> In other words, *starting july 23 2025 the Codeberg repository is ***authorative****.
+ 
 
 ### Install the package
 `npm install stackblitzhelpers`
